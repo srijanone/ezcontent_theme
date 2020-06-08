@@ -35,3 +35,10 @@ function ezcontent_theme_preprocess_views_view(&$variables) {
     $variables['view_array']['#attached']['library'][] = 'ezcontent_theme/moderation-dashboard-css';
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function ezcontent_theme_preprocess_field__node__field_thumbnail__article__card(&$variables) {
+  $variables['referenced_entity_url'] = $variables['element']['#object']->toUrl()->toString();
+}

@@ -53,11 +53,6 @@ paragraph-type-social-media:
     theme:
       css/paragraph/social.css: {}
 
-paragraph-type-gallery-carousel:
-  css:
-    theme:
-      css/paragraph/gallery_carousel.css: {}
-
 paragraph-type-map:
   css:
     theme:

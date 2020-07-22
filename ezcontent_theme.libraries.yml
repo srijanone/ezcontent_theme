@@ -95,3 +95,8 @@ moderation-dashboard-css:
   css:
     theme:
       css/admin/moderation_dashboard.css: {}
+
+layout_builder_threecol_section:
+  css:
+    theme:
+      css/paragraph/layout_builder_three_col.css: {}

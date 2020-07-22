@@ -10,6 +10,10 @@ libraries:
   - ezcontent_theme/bootstrap_cdn
   - ezcontent_theme/framework
 
+libraries-extend:
+  layout_builder/threecol_section:
+    - ezcontent_theme/layout_builder_threecol_section
+
 regions:
   top_header: 'Top Header'
   top_header_form: "Top Header Form"
@@ -33,3 +37,4 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
+

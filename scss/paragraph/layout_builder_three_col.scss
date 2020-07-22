@@ -1,0 +1,33 @@
+//import
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.layout--threecol-section {
+  .layout__region--first {
+    padding: 0;
+    @include respond(phone-min) {
+      padding: 0 14x 0 0;
+    }
+    @include respond(desktop-min) {
+      padding: 0 28px 0 0;
+    }
+  }
+  .layout__region--second {
+    padding: 0;
+    @include respond(phone-min) {
+      padding: 0 7px;
+    }
+    @include respond(desktop-min) {
+      padding: 0 14px;
+    }
+  }
+  .layout__region--third {
+    padding: 0;
+    @include respond(phone-min) {
+      padding: 0 0 0 14px;
+    }
+    @include respond(desktop-min) {
+      padding: 0 0 0 28px;
+    }
+  }
+}

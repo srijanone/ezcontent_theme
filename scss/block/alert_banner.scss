@@ -1,0 +1,13 @@
+//import
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.block--type-alert-banner {
+  margin-bottom: 30px;
+  .text-formatted {
+    padding: 30px;
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

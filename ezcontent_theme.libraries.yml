@@ -100,3 +100,8 @@ layout_builder_threecol_section:
   css:
     theme:
       css/paragraph/layout_builder_three_col.css: {}
+
+alert_banner:
+  css:
+    theme:
+      css/block/alert_banner.css: {}

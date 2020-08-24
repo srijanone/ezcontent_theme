@@ -9,5 +9,12 @@
   "require": {
     "drupal/bootstrap_barrio": "^4.22"
   },
-  "license": "GPL-2.0+"
+  "extra": {
+    "patches": {
+      "drupal/bootstrap_barrio": {
+        "Display Suite classes breaks Layout Builder if Display Suite is not installed": "https://www.drupal.org/files/issues/2018-06-01/2976934-3.patch"
+      }
+    }
+  },
+ "license": "GPL-2.0+"
 }

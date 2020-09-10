@@ -1,8 +1,10 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
 .card--list {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .card--grid {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   .row {
     margin-left: -10px;
     margin-right: -10px;
@@ -21,13 +23,17 @@
     .layout__region {
       padding: 0;
       .card_text_content {
-        padding: 24px 0;
+        padding: 10px 0;
+        @include respond(phone-min) {
+          padding: 24px 0 0;
+        }
       }
     }
-    // &.card_right_media {
-    //   .layout--twocol-section {
-    //     flex-direction: column-reverse;
-    //   }
-    // }
+  }
+}
+.paragraph--view-mode--default {
+  margin-bottom: 0;
+  .card--list {
+    margin-bottom: 0;
   }
 }

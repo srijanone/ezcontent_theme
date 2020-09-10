@@ -8,7 +8,7 @@
       "alt": "4x3 Image"
     },
     "landscape_16x9": {
-      "src": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-05/srijanhero.jpg",
+      "src": "../../../images/srijanhero.jpg",
       "alt": "16x9 Image"
     },
     "square": {
@@ -103,7 +103,7 @@
     "subTitle": " India Taj Mahal is an exceptional beauty",
     "location": " Taj Mahal",
     "url": "https://maps.google.com/maps?hl=en&q=Agra&t=m&z=14&output=embed",
-    "body": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor.",
+    "body": "We are a digital transformation company helping enterprises build and modernize their digital systems",
     "links": {
       "url": "http://www.google.com",
       "title": "Click Me"
@@ -117,7 +117,7 @@
   "heroComponent": {
     "heroAsset": {
       "id": 2,
-      "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+      "image": "../../images/hero-banner.jpg",
       "title": "Title 3",
       "description": "Maecenas faucibus mollis interdum.",
       "field_subhead": "Subhead 3",
@@ -137,7 +137,7 @@
     "heroAssets": [
       {
         "id": 1,
-        "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+        "image": "../../images/hero-banner.jpg",
         "title": "Title 3",
         "detail_class": "hero_banner-body hero_media_content w-100 position-absolute text-center",
         "description": "Maecenas faucibus mollis interdum.",
@@ -155,7 +155,7 @@
       },
       {
         "id": 2,
-        "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+        "image": "../../images/hero-banner.jpg",
         "title": "Title 4",
         "description": "Maecenas faucibus mollis interdum.",
         "field_subhead": "Subhead 3",
@@ -173,7 +173,7 @@
       },
       {
         "id": 2,
-        "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+        "image": "../../images/hero-banner.jpg",
         "title": "Title 4",
         "description": "Maecenas faucibus mollis interdum.",
         "field_subhead": "Subhead 3",
@@ -194,13 +194,13 @@
   "referenceCard": {
     "data": [
       {
-        "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+        "image": "../../images/drupal_8.png",
         "title": "Future of Drupal: 7, 8 or just Drupal 9? testtt",
         "path": "this is path",
         "summary": "With Drupal’s commitment to reinventing itself to enable ambitious digital experiences, the community is getting ready for the launch of Drupal 9, and end-of-life for Drupal 7 and Drupal 8."
       },
       {
-        "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+        "image": "../../images/drupal_8.png",
         "title": "Should Your Enterprise Go For a Headless Commerce Architecture?",
         "path": "this is path",
         "summary": "E-commerce enterprises looking to deliver seamless user experiences, often wonder how to do so. Is there a way that does not require them to invent their own IoT device or build back-end solutions from scratch?"
@@ -239,7 +239,7 @@
         },
         "file": {
           "filename": "srijanhero.jpg",
-          "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-05/srijanhero.jpg"
+          "url": "../../images/srijanhero.jpg"
         }
       },
       {
@@ -249,7 +249,7 @@
         },
         "file": {
           "filename": "create_content.png",
-          "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/create_content_0.png"
+          "url": "../../images/create_content.png"
         }
       },
       {
@@ -259,7 +259,7 @@
         },
         "file": {
           "filename": "page_builder.png",
-          "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/page_builder_0.png"
+          "url": "../../images/page_builder.png"
         }
       },
       {
@@ -268,8 +268,8 @@
           "metatag": null
         },
         "file": {
-          "filename": "srijanhero_0.jpg",
-          "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-05/srijanhero_0.jpg"
+          "filename": "srijanhero.jpg",
+          "url": "../../images/srijanhero.jpg"
         }
       },
       {
@@ -279,7 +279,7 @@
         },
         "file": {
           "filename": "decoupled.png",
-          "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/decoupled_0.png"
+          "url": "../../images/decoupled.png"
         }
       },
       {
@@ -289,7 +289,7 @@
         },
         "file": {
           "filename": "drupal_community.png",
-          "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/drupal_community_0.png"
+          "url": "../../images/drupal_community.png"
         }
       },
       {
@@ -299,7 +299,7 @@
         },
         "file": {
           "filename": "ai_content.png",
-          "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/ai_content_0.png"
+          "url": "../../images/ai_content.png"
         }
       }
     ],
@@ -325,10 +325,10 @@
   "galleryCarousel": {
     "images": [
       {
-        "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-05/srijanhero.jpg"
+        "url": "../../images/srijanhero.jpg"
       },
       {
-        "url": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-05/srijanhero.jpg"
+        "url": "../../images/srijanhero.jpg"
       }
     ],
     "field_body": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
@@ -341,7 +341,7 @@
       },
       {
         "d_id": 2,
-        "imagePath": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png"
+        "imagePath": "../../images/drupal_8.png"
       }
     ]
   },
@@ -496,7 +496,7 @@
                       content model with WYSIWYG, preview, layout builder, paragraphs, drag and
                       drop the content wherever you like it.<br /> Create content with utmost ease!",
     "link_text": "CTA Link",
-    "img_url": "https://ezcontent.srijan.net///sites/default/files/2020-04/create_content_0.png",
+    "img_url": "../../images/create_content.png",
     "img_alt": "image"
   }
 }

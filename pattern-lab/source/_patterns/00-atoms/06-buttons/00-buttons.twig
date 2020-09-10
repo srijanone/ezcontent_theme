@@ -1,8 +1,3 @@
-{#
-{% if button.url %}
-<a href={{ button.url }} class="{{ button.class }}">{{ button.text }}</a>
-{% endif %} #}
-
 <button {% if class %}class = "{{ class }}" {% endif %} {% if type %} type={{ type }} {% endif %} >
   {% block button_content %}
     {{ button_content }}

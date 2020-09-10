@@ -1,15 +1,3 @@
-{# {% for key,value in menu.menuitems %}
-  {% extends '@atoms/03-lists/00-list-item.twig' %}
-
-  {% block list_item %}
-    {% include '@atoms/12-links/00-links.twig' with {
-      text: value.text,
-      class: value.class,
-      href: value.url
-    } %}
-	{% endblock %}
-{% endfor %} #}
-
 {% for key, value in menu.menuitems %}
   <li>
     {% include '@atoms/12-links/00-links.twig' with {

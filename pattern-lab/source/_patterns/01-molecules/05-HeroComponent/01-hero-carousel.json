@@ -3,7 +3,7 @@
     "heroAssets": [
       {
         "id": 1,
-        "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+        "image": "../../../images/hero-banner.jpg",
         "title": "Title 1",
         "detail_class": "hero_banner-body hero_media_content w-100 position-absolute text-center",
         "description": "Maecenas faucibus mollis interdum.",
@@ -21,7 +21,7 @@
       },
       {
         "id": 2,
-        "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+        "image": "../../../images/hero-banner.jpg",
         "title": "Title 2",
         "description": "Maecenas faucibus mollis interdum.",
         "field_subhead": "Subhead 2",
@@ -39,7 +39,7 @@
       },
       {
         "id": 2,
-        "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+        "image": "../../../images/hero-banner.jpg",
         "title": "Title 4",
         "description": "Maecenas faucibus mollis interdum.",
         "field_subhead": "Subhead 4",

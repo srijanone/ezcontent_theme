@@ -55,9 +55,9 @@
     {% for key, value in assets.url %}
       {% include '@atoms/12-links/00-links.twig' with {
         key: loop.index,
-        href: value.link,
+        url: value.link,
         text: value.title,
-        class: 'button__group btn btn-primary rounded-0'
+        class: 'rounded-0'
       } %}
     {% endfor %}
   {% else %}
@@ -66,7 +66,7 @@
         key: loop.index,
         href: value.link,
         text: value.title,
-        class: 'button__group btn btn-primary rounded-0'
+        class: 'rounded-0'
       } %}
     {% endfor %}
   {% endif %}

@@ -55,25 +55,17 @@
     height: 100%;
     object-fit: cover;
   }
-
-  @media (min-width: 768px) {
-    margin-top: 125px; /* -15px */
-  }
-
-  @media (min-width: 992px) {
-    margin-top: 70px;
-    // padding: 70px 30px;
-  }
   div {
     color: #ffffff;
   }
 }
 .hero_banner-body {
+  font-family: $bold-font;
   cursor: grab;
   left: 0;
   bottom: 0;
   height: auto;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 70px 20px 70px;
 
   &.center {
     text-align: center;
@@ -89,53 +81,59 @@
 }
 
 .hero_banner_title {
-  // @extend %h2;
-  font-size: 72px;
-  letter-spacing: 1px;
-  line-height: 37px;
-  padding: 0 10px;
-  width: 100%;
-  margin: 0;
-  font-family: $heading-font;
-  color: white;
-  @include respond(tab-land) {
-    font-size: 25px;
-    line-height: 25px;
+  h1 {
+    font-family: $bold-font;
+    font-size: 72px;
+    letter-spacing: 1px;
+    line-height: 87px;
+    padding: 0 10px;
     width: 100%;
+    margin: 0;
+    color: white;
+    @include respond(tab-land) {
+      font-size: 25px;
+      line-height: 25px;
+      width: 100%;
+    }
   }
 }
 
 .hero_banner_short_title {
-  font-size: 18px;
-  padding: 5px 10px 0;
-  margin: 0;
-  @include respond(phone) {
-    display: none;
-  }
+  h4 {
+    font-family: $bold-font;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    @include respond(phone) {
+      display: none;
+    }
 
-  @include respond(tab-land) {
-    font-size: 14px;
+    @include respond(tab-land) {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 }
 
 .hero_banner_subhead {
   border-color: transparent;
-  font-size: 16px;
-  padding: 5px 10px 0;
+  font-size: 30px;
+  line-height: 36px;
   @include respond(phone) {
     display: none;
   }
 
   @include respond(tab-land) {
-    font-size: 14px;
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
 .hero_banner_text_desc {
   border-color: transparent;
   display: block;
-  font-size: 14px;
-  padding: 5px 10px;
+  font-size: 30px;
+  line-height: 36px;
 
   @include respond(phone) {
     display: none;
@@ -143,7 +141,8 @@
   }
 
   @include respond(tab-land) {
-    font-size: 14px;
+    font-size: 24px;
+    line-height: 30px;
     padding: 5px 10px;
   }
 }
@@ -157,7 +156,12 @@
   }
 
   a {
-    @include btnstyle;
-    min-width: 150px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-black;
+    font-family: $bold-font;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

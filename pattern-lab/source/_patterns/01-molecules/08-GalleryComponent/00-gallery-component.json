@@ -9,7 +9,7 @@
         "file": {
           "alt": "image",
           "filename": "srijanhero.jpg",
-          "src": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-05/srijanhero.jpg"
+          "src": "../../../images/srijanhero.jpg"
         }
       },
       {
@@ -20,7 +20,7 @@
         "file": {
           "alt": "image",
           "filename": "create_content.png",
-          "src": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/create_content_0.png"
+          "src": "../../../images/create_content.png"
         }
       },
       {
@@ -31,7 +31,7 @@
         "file": {
           "alt": "image",
           "filename": "page_builder.png",
-          "src": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/page_builder_0.png"
+          "src": "../../../images/page_builder.png"
         }
       },
       {
@@ -41,8 +41,8 @@
         },
         "file": {
           "alt": "image",
-          "filename": "srijanhero_0.jpg",
-          "src": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-05/srijanhero_0.jpg"
+          "filename": "srijanhero.jpg",
+          "src": "../../../images/srijanhero.jpg"
         }
       },
       {
@@ -53,7 +53,7 @@
         "file": {
           "alt": "image",
           "filename": "decoupled.png",
-          "src": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/decoupled_0.png"
+          "src": "../../../images/decoupled_0.png"
         }
       },
       {
@@ -64,7 +64,7 @@
         "file": {
           "alt": "image",
           "filename": "drupal_community.png",
-          "src": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/drupal_community_0.png"
+          "src": "../../../images/drupal_community.png"
         }
       },
       {
@@ -75,7 +75,7 @@
         "file": {
           "alt": "image",
           "filename": "ai_content.png",
-          "src": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com/sites/default/files/2020-04/ai_content_0.png"
+          "src": "../../../images/ai_content.png"
         }
       }
     ],

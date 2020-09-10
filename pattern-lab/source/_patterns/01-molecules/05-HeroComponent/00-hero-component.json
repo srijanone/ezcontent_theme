@@ -2,7 +2,7 @@
   "heroComponent": {
     "heroAsset": [ {
       "id": 2,
-      "image": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png",
+      "image": "../../../images/hero-banner.jpg",
 			"title": "Title 3",
       "description": "Maecenas faucibus mollis interdum.",
       "field_subhead": "Subhead 3",

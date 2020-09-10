@@ -19,7 +19,7 @@
 {% if heading_level %}
 
 {% set heading_base_class = heading_base_class|default('h' ~ heading_level) %}
-<h{{ heading_level }} {{ title_attributes }} {% if class %} class={{ class }} {% endif %}>
+<h{{ heading_level }} {{ title_attributes }} {% if class %} class="{{ class }}" {% endif %}>
   {% if heading_url %}
     {% include "@atoms/links/links.twig" with {
       "link_content": heading,

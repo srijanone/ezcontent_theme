@@ -1,0 +1,12 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+section > .field--name-field-title,
+section > .block-title,
+section > .field--name-field-short-title {
+  color: $color-blue-light;
+  font-family: $bold-font;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 36px 0;
+  text-align: center;
+}

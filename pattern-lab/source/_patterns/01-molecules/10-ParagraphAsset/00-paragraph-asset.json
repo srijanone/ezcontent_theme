@@ -7,7 +7,7 @@
       },
       {
         "d_id": 2,
-        "imagePath": "http://ezcontent53esqcn36d.devcloud.acquia-sites.com//sites/default/files/2020-04/drupal_8.png"
+        "imagePath": "../../../images/drupal_8.png"
       }
     ]
   }

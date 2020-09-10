@@ -8,7 +8,7 @@
                     drop the content wherever you like it.<br /> Create content with utmost ease!",
     "link_text": "CTA Link",
     "link_url": "#",
-		"img_url": "https://ezcontent.srijan.net///sites/default/files/2020-04/create_content_0.png",
+		"img_url": "../../../images/create_content_0.png",
 		"img_alt": "image"
   }
 }

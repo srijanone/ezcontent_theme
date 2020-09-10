@@ -3,11 +3,12 @@
 
 .map-component {
   @include clearfix;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 
   .field {
     &--name-field-title {
-      @extend %h2;
+      @include title;
+      color: $color-dark-blue;
     }
 
     &--name-field-short-title {
@@ -16,8 +17,11 @@
     }
 
     &--name-field-body {
-      font-size: 16px;
-      padding: 10px 0;
+      font-size: 32px;
+      line-height: 39px;
+      color: $color-dark-blue;
+      font-family: $bold-font;
+      padding: 30px 0;
       margin-bottom: 0;
     }
 
@@ -25,8 +29,15 @@
       text-align: right;
 
       a {
-        @include btnstyle;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-dark-blue;
+        font-family: $bold-font;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
 }
+//map end

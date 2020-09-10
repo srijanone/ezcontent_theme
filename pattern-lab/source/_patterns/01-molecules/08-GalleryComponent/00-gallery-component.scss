@@ -1,7 +1,7 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
-.paragraph--type--gallery {
+.gallery-component {
   @include clearfix;
   margin-bottom: 50px;
   padding: 0;
@@ -9,7 +9,7 @@
 
   .field {
     &--name-field-title {
-      @extend %h2;
+      @include title;
       margin-top: 20px;
       font-family: $heading-font;
       margin-bottom: 10px;

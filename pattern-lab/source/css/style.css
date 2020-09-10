@@ -15,16 +15,6 @@ html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, 
 header, footer, nav, section, article, hgroup, figure {
   display: block; }
 
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
-
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
@@ -61,7 +51,7 @@ h4,
 h5,
 h6,
 caption {
-  font-family: "ProximaNovaT-Thin", sans-serif; }
+  font-family: "ProximaNova-Bold", sans-serif; }
 
 .no-padding {
   padding-left: 0;
@@ -983,6 +973,12 @@ img {
 .glyphicon-menu-up:before {
   content: "\e260"; }
 
+.hbspt-form {
+  width: 550px;
+  margin: 0 auto; }
+  .hbspt-form .actions {
+    text-align: right; }
+
 .btn {
   background: #3367d6;
   border: 0;
@@ -1007,16 +1003,6 @@ img {
   color: #122760;
   font-size: 12px;
   line-height: 15px; }
-
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1056,16 +1042,6 @@ img {
     color: black; }
     .region-footer .menu--footer-menu li a:hover, .region-footer .menu--footer-menu li a:focus {
       background: transparent; }
-
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1107,16 +1083,6 @@ img {
       float: right;
       color: #fff; }
 
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
-
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
@@ -1141,16 +1107,6 @@ img {
 #embedded-container {
   text-align: center; }
 
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
-
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
@@ -1164,24 +1120,33 @@ img {
     flex: 0 1 100%; }
 
 @media screen and (min-width: 40em) {
-  .layout--twocol-section.layout--twocol-section--50-50 > .layout__region--first,
-  .layout--twocol-section.layout--twocol-section--50-50 > .layout__region--second {
+  .layout--twocol-section.layout--twocol-section--50-50
+> .layout__region--first,
+  .layout--twocol-section.layout--twocol-section--50-50
+> .layout__region--second {
     flex: 0 1 50%; }
-  .layout--twocol-section.layout--twocol-section--33-67 > .layout__region--first,
-  .layout--twocol-section.layout--twocol-section--67-33 > .layout__region--second {
+  .layout--twocol-section.layout--twocol-section--33-67
+> .layout__region--first,
+  .layout--twocol-section.layout--twocol-section--67-33
+> .layout__region--second {
     flex: 0 1 33%; }
-  .layout--twocol-section.layout--twocol-section--33-67 > .layout__region--second,
-  .layout--twocol-section.layout--twocol-section--67-33 > .layout__region--first {
+  .layout--twocol-section.layout--twocol-section--33-67
+> .layout__region--second,
+  .layout--twocol-section.layout--twocol-section--67-33
+> .layout__region--first {
     flex: 0 1 67%; }
-  .layout--twocol-section.layout--twocol-section--25-75 > .layout__region--first,
-  .layout--twocol-section.layout--twocol-section--75-25 > .layout__region--second {
+  .layout--twocol-section.layout--twocol-section--25-75
+> .layout__region--first,
+  .layout--twocol-section.layout--twocol-section--75-25
+> .layout__region--second {
     flex: 0 1 25%; }
-  .layout--twocol-section.layout--twocol-section--25-75 > .layout__region--second,
-  .layout--twocol-section.layout--twocol-section--75-25 > .layout__region--first {
+  .layout--twocol-section.layout--twocol-section--25-75
+> .layout__region--second,
+  .layout--twocol-section.layout--twocol-section--75-25
+> .layout__region--first {
     flex: 0 1 75%; } }
 
 .card_media {
-  margin-bottom: 30px;
   padding: 0; }
   .card_media::after {
     clear: both;
@@ -1230,7 +1195,8 @@ img {
       .card_media .layout .layout__region .card_text_content .field--name-field-link a {
         font-size: 18px;
         line-height: 22px;
-        color: #000; }
+        color: #000;
+        font-family: "ProximaNova-Bold", sans-serif; }
         .card_media .layout .layout__region .card_text_content .field--name-field-link a:hover {
           text-decoration: none; }
   .card_media .layout .layout__region .block-field-blockparagraphcardfield-media {
@@ -1239,6 +1205,28 @@ img {
     .card_media .layout .layout__region .block-field-blockparagraphcardfield-media section {
       height: 100%; }
 
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+section > .field--name-field-title,
+section > .block-title,
+section > .field--name-field-short-title {
+  color: #2F9EB9;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 36px 0;
+  text-align: center; }
+
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
 header {
   background: #fff;
   border-bottom: 1px solid #ddd;
@@ -1251,6 +1239,12 @@ header {
 .ezcontent-main-wrapper {
   margin-top: 6em; }
 
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
 .footer {
   border-top: 1px solid #e8e8e8;
   margin: 0;
@@ -1267,11 +1261,17 @@ header {
     .footer--about--address p {
       margin: 0; }
 
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
 .card--list {
-  margin-bottom: 50px; }
+  margin-bottom: 60px; }
 
 .card--grid {
-  margin-bottom: 20px; }
+  margin-bottom: 60px; }
   .card--grid .row {
     margin-left: -10px;
     margin-right: -10px; }
@@ -1285,17 +1285,15 @@ header {
   .card--grid .card_media .layout__region {
     padding: 0; }
     .card--grid .card_media .layout__region .card_text_content {
-      padding: 24px 0; }
+      padding: 10px 0; }
+      @media only screen and (min-width: 37.5em) {
+        .card--grid .card_media .layout__region .card_text_content {
+          padding: 24px 0 0; } }
 
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
+.paragraph--view-mode--default {
+  margin-bottom: 0; }
+  .paragraph--view-mode--default .card--list {
+    margin-bottom: 0; }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1329,16 +1327,6 @@ header {
   .quote-component .field--name-field-source .field__item {
     display: inline; }
 
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
-
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
@@ -1346,51 +1334,39 @@ header {
 	Usage: @include font-size(1, large);
 */
 .map-component {
-  margin-bottom: 50px; }
+  margin-bottom: 60px; }
   .map-component::after {
     clear: both;
     content: "";
     display: table; }
+  .map-component .field--name-field-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "ProximaNova-Bold", sans-serif;
+    color: #122760; }
+    @media only screen and (min-width: 37.5em) {
+      .map-component .field--name-field-title {
+        font-size: 26px;
+        line-height: 30px; } }
   .map-component .field--name-field-short-title {
     font-size: 18px;
     padding: 10px 0; }
   .map-component .field--name-field-body {
-    font-size: 16px;
-    padding: 10px 0;
+    font-size: 32px;
+    line-height: 39px;
+    color: #122760;
+    font-family: "ProximaNova-Bold", sans-serif;
+    padding: 30px 0;
     margin-bottom: 0; }
   .map-component .field--name-field-link {
     text-align: right; }
     .map-component .field--name-field-link a {
-      background: #3367d6;
-      border: 0;
-      color: #fff;
-      display: inline-block;
-      font-size: 16px;
-      line-height: 1.42857143;
-      margin-bottom: 0;
-      padding: 7px 15px;
-      position: relative;
-      text-align: center;
-      vertical-align: middle;
-      white-space: nowrap; }
+      font-size: 18px;
+      line-height: 22px;
+      color: #122760;
+      font-family: "ProximaNova-Bold", sans-serif; }
       .map-component .field--name-field-link a:hover {
-        background: #4285f4;
-        color: #fff;
         text-decoration: none; }
-      .map-component .field--name-field-link a:focus {
-        background: #4285f4;
-        color: #fff;
-        text-decoration: none; }
-
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1441,22 +1417,16 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  @media (min-width: 768px) {
-    .hero_banner_wrapper {
-      margin-top: 125px;
-      /* -15px */ } }
-  @media (min-width: 992px) {
-    .hero_banner_wrapper {
-      margin-top: 70px; } }
   .hero_banner_wrapper div {
     color: #ffffff; }
 
 .hero_banner-body {
+  font-family: "ProximaNova-Bold", sans-serif;
   cursor: grab;
   left: 0;
   bottom: 0;
   height: auto;
-  padding: 20px 40px 20px 40px; }
+  padding: 20px 70px 20px 70px; }
   .hero_banner-body.center {
     text-align: center; }
   .hero_banner-body.left {
@@ -1464,55 +1434,59 @@ header {
   .hero_banner-body.right {
     text-align: right; }
 
-.hero_banner_title {
+.hero_banner_title h1 {
+  font-family: "ProximaNova-Bold", sans-serif;
   font-size: 72px;
   letter-spacing: 1px;
-  line-height: 37px;
+  line-height: 87px;
   padding: 0 10px;
   width: 100%;
   margin: 0;
-  font-family: "ProximaNovaT-Thin", sans-serif;
   color: white; }
   @media only screen and (max-width: 75em) {
-    .hero_banner_title {
+    .hero_banner_title h1 {
       font-size: 25px;
       line-height: 25px;
       width: 100%; } }
 
-.hero_banner_short_title {
-  font-size: 18px;
-  padding: 5px 10px 0;
+.hero_banner_short_title h4 {
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
   margin: 0; }
   @media only screen and (max-width: 37.5em) {
-    .hero_banner_short_title {
+    .hero_banner_short_title h4 {
       display: none; } }
   @media only screen and (max-width: 75em) {
-    .hero_banner_short_title {
-      font-size: 14px; } }
+    .hero_banner_short_title h4 {
+      font-size: 24px;
+      line-height: 30px; } }
 
 .hero_banner_subhead {
   border-color: transparent;
-  font-size: 16px;
-  padding: 5px 10px 0; }
+  font-size: 30px;
+  line-height: 36px; }
   @media only screen and (max-width: 37.5em) {
     .hero_banner_subhead {
       display: none; } }
   @media only screen and (max-width: 75em) {
     .hero_banner_subhead {
-      font-size: 14px; } }
+      font-size: 24px;
+      line-height: 30px; } }
 
 .hero_banner_text_desc {
   border-color: transparent;
   display: block;
-  font-size: 14px;
-  padding: 5px 10px; }
+  font-size: 30px;
+  line-height: 36px; }
   @media only screen and (max-width: 37.5em) {
     .hero_banner_text_desc {
       display: none;
       margin-bottom: 0; } }
   @media only screen and (max-width: 75em) {
     .hero_banner_text_desc {
-      font-size: 14px;
+      font-size: 24px;
+      line-height: 30px;
       padding: 5px 10px; } }
 
 .hero_banner_btn_wrapper {
@@ -1522,87 +1496,58 @@ header {
     .hero_banner_btn_wrapper {
       display: none; } }
   .hero_banner_btn_wrapper a {
-    background: #3367d6;
-    border: 0;
-    color: #fff;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 1.42857143;
-    margin-bottom: 0;
-    padding: 7px 15px;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-    min-width: 150px; }
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    font-family: "ProximaNova-Bold", sans-serif; }
     .hero_banner_btn_wrapper a:hover {
-      background: #4285f4;
-      color: #fff;
-      text-decoration: none; }
-    .hero_banner_btn_wrapper a:focus {
-      background: #4285f4;
-      color: #fff;
       text-decoration: none; }
 
 .hero_banner_wrapper {
   height: 580px !important;
   position: relative; }
 
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
-
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
 */
-.paragraph--type--referenced-card {
+.referenced-card {
   margin-bottom: 30px; }
   @media only screen and (min-width: 37.5em) {
-    .paragraph--type--referenced-card .field--name-field-article {
+    .referenced-card .field--name-field-article {
       display: flex;
       flex-wrap: wrap; } }
-  .paragraph--type--referenced-card .field--name-field-article > .field__item {
+  .referenced-card .field--name-field-article > .field__item {
     margin-bottom: 30px;
     flex: 0 0 100%; }
     @media only screen and (min-width: 37.5em) {
-      .paragraph--type--referenced-card .field--name-field-article > .field__item {
+      .referenced-card .field--name-field-article > .field__item {
         margin-bottom: 20px; } }
     @media only screen and (min-width: 37.5em) {
-      .paragraph--type--referenced-card .field--name-field-article > .field__item:nth-child(3n + 2) {
+      .referenced-card .field--name-field-article > .field__item:nth-child(3n + 2) {
         margin: 0 20px; } }
     @media only screen and (min-width: 37.5em) {
-      .paragraph--type--referenced-card .field--name-field-article > .field__item {
+      .referenced-card .field--name-field-article > .field__item {
         max-width: calc(33% - 20px); } }
-  .paragraph--type--referenced-card .field--type-image {
+  .referenced-card .field--type-image {
     margin-bottom: 30px; }
-    .paragraph--type--referenced-card .field--type-image img {
+    .referenced-card .field--type-image img {
       max-width: 100%;
       height: auto; }
-  .paragraph--type--referenced-card .block-field-blocknodearticletitle {
+  .referenced-card .block-field-blocknodearticletitle {
     margin-bottom: 25px; }
-    .paragraph--type--referenced-card .block-field-blocknodearticletitle a {
-      color: black; }
-  .paragraph--type--referenced-card .referenced-summary {
+    @media only screen and (min-width: 37.5em) {
+      .referenced-card .block-field-blocknodearticletitle a {
+        font-size: 30px;
+        line-height: 36px;
+        font-family: "ProximaNova-Bold", sans-serif;
+        color: #122760; } }
+    .referenced-card .block-field-blocknodearticletitle a:hover {
+      text-decoration: none; }
+  .referenced-card .referenced-summary {
     margin-bottom: 0; }
-
-.map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black; }
-  @media only screen and (min-width: 37.5em) {
-    .map-component .field--name-field-title, .paragraph--type--referenced-card .block-field-blocknodearticletitle a, .paragraph--type--gallery .field--name-field-title {
-      font-size: 26px;
-      line-height: 30px; } }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1610,37 +1555,44 @@ header {
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
 	Usage: @include font-size(1, large);
 */
-.paragraph--type--gallery {
+.gallery-component {
   margin-bottom: 50px;
   padding: 0;
   position: relative; }
-  .paragraph--type--gallery::after {
+  .gallery-component::after {
     clear: both;
     content: "";
     display: table; }
-  .paragraph--type--gallery .field--name-field-title {
+  .gallery-component .field--name-field-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "ProximaNova-Bold", sans-serif;
     margin-top: 20px;
     font-family: "ProximaNovaT-Thin", sans-serif;
     margin-bottom: 10px; }
-  .paragraph--type--gallery .field--name-field-body {
+    @media only screen and (min-width: 37.5em) {
+      .gallery-component .field--name-field-title {
+        font-size: 26px;
+        line-height: 30px; } }
+  .gallery-component .field--name-field-body {
     display: block;
     font-size: 16px; }
-  .paragraph--type--gallery .field--name-field-media-items {
+  .gallery-component .field--name-field-media-items {
     display: flex;
     flex-wrap: wrap;
     margin: 20px 0 0;
     align-items: center;
     justify-content: center;
     width: 100%; }
-    .paragraph--type--gallery .field--name-field-media-items > .field--item {
+    .gallery-component .field--name-field-media-items > .field--item {
       display: inline-block;
       padding: 2px; }
-  .paragraph--type--gallery .field--name-field-media-image {
+  .gallery-component .field--name-field-media-image {
     align-items: center;
     display: flex;
     margin: 0 auto;
     overflow: hidden; }
-    .paragraph--type--gallery .field--name-field-media-image img {
+    .gallery-component .field--name-field-media-image img {
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       transition: opacity 0.35s, transform 0.35s;
       -webkit-transform: scale(1.15);
@@ -1766,5 +1718,16 @@ header {
 .content-listing-component {
   padding: 30px;
   margin-bottom: 30px; }
-  .content-listing-component p:last-child {
-    margin-bottom: 0; }
+  .content-listing-component .field--name-field-title {
+    padding-top: 15px; }
+  .content-listing-component .field--name-field-image {
+    padding-top: 30px; }
+  .content-listing-component .author-details {
+    padding-top: 30px; }
+    .content-listing-component .author-details .author,
+    .content-listing-component .author-details .tag {
+      display: inline; }
+  .content-listing-component .field--name-field-summary {
+    padding-top: 30px; }
+    .content-listing-component .field--name-field-summary p:last-child {
+      margin-bottom: 0; }

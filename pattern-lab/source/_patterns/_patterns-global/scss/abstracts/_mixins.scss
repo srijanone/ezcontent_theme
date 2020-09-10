@@ -78,11 +78,12 @@
   }
 }
 
+
 // placeholder
 %h1 {
   font-size: 36px;
   line-height: 40px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
+  font-family: $bold-font;
   @include respond(phone-min) {
     font-size: 42px;
     line-height: 46px;
@@ -91,12 +92,25 @@
 %h2 {
   font-size: 20px;
   line-height: 24px;
-  font-family: 'ProximaNovaT-Thin', sans-serif;
-  color: black;
+  font-family: $bold-font;
   @include respond(phone-min) {
     font-size: 26px;
     line-height: 30px;
   }
+}
+@mixin title {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $bold-font;
+  @include respond(phone-min) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+%h3 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $primary-font;
 }
 
 

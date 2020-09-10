@@ -1,3 +1,5 @@
+@import '../../../_patterns-global/scss/abstracts/variables';
+@import '../../../_patterns-global/scss/abstracts/mixins';
 header {
   background: $color-white;
   border-bottom: 1px solid $color-grey-light-2;

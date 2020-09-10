@@ -1,3 +1,5 @@
+@import 'variables';
+
 body {
   color: $color-text;
   font-family: $primary-font;
@@ -11,7 +13,7 @@ h4,
 h5,
 h6,
 caption {
-  font-family: $heading-font;
+  font-family: $bold-font;
 }
 
 .no-padding {

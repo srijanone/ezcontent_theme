@@ -45,10 +45,8 @@
     flex: 0 1 75%;
   }
 }
-
 .card_media {
   @include clearfix;
-  margin-bottom: 30px;
   padding: 0;
   .layout {
     .layout__region {
@@ -71,7 +69,6 @@
         }
         .field {
           &--name-field-title {
-            // @extend %h2;
             font-family: $bold-font;
             font-size: 36px;
             line-height: 40px;
@@ -110,6 +107,8 @@
               font-size: 18px;
               line-height: 22px;
               color: $color-black;
+              font-family: $bold-font;
+              
               &:hover {
                 text-decoration: none;
               }

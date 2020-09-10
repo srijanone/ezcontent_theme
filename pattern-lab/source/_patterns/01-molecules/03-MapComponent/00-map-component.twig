@@ -1,8 +1,8 @@
-{# map component #}
 <div class="map-component">
   {% include '@atoms/02-text/00-headings.twig' with {
     heading_level: 2,
-    heading: map.title
+    heading: map.title,
+    class: 'field--name-field-title'
   } %}
 
   {% include '@atoms/02-text/00-headings.twig' with {
@@ -31,7 +31,7 @@
       {% include '@atoms/12-links/00-links.twig' with {
         text: map.links.title ? map.links.title : map.links.url,
         url: map.links.url,
-        class: 'nounderline btn-primary rounded-0 white-color'
+        class: 'rounded-0'
       } %}
     </div>
   {% endif %}

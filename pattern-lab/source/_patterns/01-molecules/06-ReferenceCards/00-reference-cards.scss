@@ -1,7 +1,7 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
-.paragraph--type--referenced-card {
+.referenced-card {
   margin-bottom: 30px;
   .field--name-field-article {
     @include respond(phone-min) {
@@ -24,10 +24,6 @@
       @include respond(phone-min) {
         max-width: calc(33% - 20px);
       }
-      // .layout__region {
-      //   width: 100%;
-      //   flex: 0 0 100%;
-      // }
     }
   }
   .field--type-image {
@@ -38,17 +34,18 @@
     margin-bottom: 30px;
   }
   .block-field {
-    // &-blocknodearticlefield-thumbnail {
-    //   margin-bottom: 10px;
-    // }
     &-blocknodearticletitle {
       margin-bottom: 25px;
-      // h2 {
-
-      // }
       a {
-        @extend %h2;
-        color: black;
+        @include respond(phone-min) {
+          font-size: 30px;
+          line-height: 36px;
+          font-family: $bold-font;
+          color: $color-dark-blue;
+        }
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }

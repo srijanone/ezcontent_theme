@@ -1,6 +1,0 @@
-{
-  "content_list": {
-    "label": "Content Listing Component",
-    "content": "Content Listing is a useful component, which allows the editor to list the teaser display of your article by mentioning the author's name or tags related to an article. Articles will be filtered automatically and displayed as a teaser."
-  }
-}

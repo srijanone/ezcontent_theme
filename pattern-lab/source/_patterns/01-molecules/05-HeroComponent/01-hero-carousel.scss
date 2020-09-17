@@ -1,5 +1,9 @@
 .hero_banner_wrapper {
   height: 580px !important;
   position: relative;
+
+  @include respond(phone) {
+    height:auto !important;
+  }
   
 }

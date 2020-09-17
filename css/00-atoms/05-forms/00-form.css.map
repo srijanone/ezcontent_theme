@@ -1,0 +1,1 @@
+{"version":3,"sources":["00-atoms/05-forms/00-form.scss","00-form.css"],"names":[],"mappings":"AAAA,YACE,YACA,aAAc,CAFhB,qBAII,gBAAiB,CAClB;;ACHH,sYAAsY","file":"00-form.css","sourcesContent":[".hbspt-form {\n  width: 550px;\n  margin: 0 auto;\n  .actions {\n    text-align: right;\n  }\n}\n"]}

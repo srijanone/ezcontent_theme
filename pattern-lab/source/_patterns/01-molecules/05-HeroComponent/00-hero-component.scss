@@ -3,9 +3,9 @@
 
 .hero-media-component {
   padding: 0;
-  margin: 30px 0;
+  // margin: 30px 0;
   @include respond(phone-min) {
-    margin: 30px 0 90px;
+    // margin: 30px 0 90px;
   }
   .slick-dotted.slick-slider {
     margin-bottom: 0;
@@ -49,6 +49,11 @@
   height: 580px !important;
   position: relative;
   @include clearfix;
+  
+  @include respond(phone) {
+    min-height: auto;
+    height:auto !important;
+  }
 
   img {
     width: 100%;
@@ -65,7 +70,7 @@
   left: 0;
   bottom: 0;
   height: auto;
-  padding: 20px 70px 20px 70px;
+  padding: 20px 70px 20px 70px !important;
 
   &.center {
     text-align: center;

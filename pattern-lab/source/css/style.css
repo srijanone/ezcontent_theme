@@ -1375,11 +1375,7 @@ header {
 	Usage: @include font-size(1, large);
 */
 .hero-media-component {
-  padding: 0;
-  margin: 30px 0; }
-  @media only screen and (min-width: 37.5em) {
-    .hero-media-component {
-      margin: 30px 0 90px; } }
+  padding: 0; }
   .hero-media-component .slick-dotted.slick-slider {
     margin-bottom: 0; }
   .hero-media-component .slick-dots {
@@ -1413,6 +1409,10 @@ header {
     clear: both;
     content: "";
     display: table; }
+  @media only screen and (max-width: 37.5em) {
+    .hero_banner_wrapper {
+      min-height: auto;
+      height: auto !important; } }
   .hero_banner_wrapper img {
     width: 100%;
     height: 100%;
@@ -1426,7 +1426,7 @@ header {
   left: 0;
   bottom: 0;
   height: auto;
-  padding: 20px 70px 20px 70px; }
+  padding: 20px 70px 20px 70px !important; }
   .hero_banner-body.center {
     text-align: center; }
   .hero_banner-body.left {
@@ -1506,6 +1506,9 @@ header {
 .hero_banner_wrapper {
   height: 580px !important;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .hero_banner_wrapper {
+      height: auto !important; } }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1731,3 +1734,12 @@ header {
     padding-top: 30px; }
     .content-listing-component .field--name-field-summary p:last-child {
       margin-bottom: 0; }
+
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+.ezcontent-main-wrapper section .paragraph:first-child {
+  margin: 0; }

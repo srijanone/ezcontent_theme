@@ -1,0 +1,1 @@
+{"version":3,"sources":["01-molecules/14-AlertBanner/00-alert.scss","00-alert.css"],"names":[],"mappings":"AAAA,cACE,aACA,kBAAmB,CAFrB,2BAKM,eAAgB,CACjB;;ACJL,kbAAkb","file":"00-alert.css","sourcesContent":[".alert-banner {\n  padding: 30px;\n  margin-bottom: 30px;\n  p {\n    &:last-child {\n      margin-bottom: 0;\n    }\n  }\n}\n"]}

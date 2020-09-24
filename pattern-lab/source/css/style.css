@@ -973,9 +973,18 @@ img {
 .glyphicon-menu-up:before {
   content: "\e260"; }
 
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
 .hbspt-form {
-  width: 550px;
+  width: 100%;
   margin: 0 auto; }
+  @media only screen and (min-width: 700px) {
+    .hbspt-form {
+      width: 550px; } }
   .hbspt-form .actions {
     text-align: right; }
 
@@ -1015,7 +1024,7 @@ img {
   margin-bottom: 15px;
   width: 100%;
   border-bottom: 1px solid #e8e8e8; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 700px) {
     .region-footer .block--type-text-block {
       width: calc(25% - 30px);
       margin-right: 30px;
@@ -1025,7 +1034,7 @@ img {
 .region-footer .menu--footer-menu {
   display: inline-block;
   vertical-align: top; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 700px) {
     .region-footer .menu--footer-menu {
       width: 74%; } }
 
@@ -1034,7 +1043,7 @@ img {
   display: inline-block;
   width: 100%;
   padding: 0 10px; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 700px) {
     .region-footer .menu--footer-menu li {
       width: 25%; } }
   .region-footer .menu--footer-menu li a {
@@ -1067,11 +1076,9 @@ img {
     margin: 0; }
   .region-footer .menu--privacy-policy li {
     display: inline-block;
-    padding: 3px 10px; }
-    @media only screen and (max-width: 37.5em) {
-      .region-footer .menu--privacy-policy li {
-        width: 100%;
-        margin-bottom: 15px; } }
+    padding: 3px 10px;
+    width: 100%;
+    margin-bottom: 15px; }
     .region-footer .menu--privacy-policy li a {
       padding: 0;
       color: #fff;
@@ -1092,15 +1099,13 @@ img {
 .embed-block {
   margin: 0 0 50px; }
   .embed-block iframe {
-    max-width: 100%; }
+    max-width: 100%;
+    height: 300px; }
     .embed-block iframe::after {
       clear: both;
       content: "";
       display: table; }
-    @media only screen and (max-width: 37.5em) {
-      .embed-block iframe {
-        height: 300px; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 700px) {
       .embed-block iframe {
         height: 400px; } }
 
@@ -1152,58 +1157,66 @@ img {
     clear: both;
     content: "";
     display: table; }
-  .card_media .layout .layout__region .field--name-field-media-image {
-    width: 100%; }
-    @media only screen and (min-width: 37.5em) {
-      .card_media .layout .layout__region .field--name-field-media-image {
-        height: 500px; } }
-    .card_media .layout .layout__region .field--name-field-media-image img {
-      display: block;
-      margin: 0 auto;
-      height: 100%;
-      object-fit: cover; }
-  .card_media .layout .layout__region .card_text_content {
-    color: #122760; }
-    @media only screen and (min-width: 37.5em) {
-      .card_media .layout .layout__region .card_text_content {
-        padding: 100px 80px 0; } }
-    .card_media .layout .layout__region .card_text_content .field--name-field-title {
-      font-family: "ProximaNova-Bold", sans-serif;
-      font-size: 36px;
-      line-height: 40px; }
-    .card_media .layout .layout__region .card_text_content .field--name-field-short-title {
-      font-size: 16px;
-      margin-top: 8px; }
-    .card_media .layout .layout__region .card_text_content .field--name-field-subhead {
-      border-top: 1px solid #fff;
-      font-size: 14px;
-      margin-top: 8px; }
-    .card_media .layout .layout__region .card_text_content .field--name-field-summary {
-      border-bottom: 1px solid #fff;
-      display: block;
-      font-size: 16px;
-      margin-top: 30px; }
-    .card_media .layout .layout__region .card_text_content .field--name-field-media-image {
-      align-items: center;
-      display: flex;
-      margin: 0 auto;
+  .card_media .layout .layout__region {
+    padding: 20px 0 0; }
+    @media only screen and (min-width: 700px) {
+      .card_media .layout .layout__region {
+        padding: 0; } }
+    .card_media .layout .layout__region .field--name-field-media-image {
       width: 100%; }
-    .card_media .layout .layout__region .card_text_content .field--name-field-link {
-      text-align: left;
-      margin-top: 40px;
-      font-weight: bold; }
-      .card_media .layout .layout__region .card_text_content .field--name-field-link a {
-        font-size: 18px;
-        line-height: 22px;
-        color: #000;
-        font-family: "ProximaNova-Bold", sans-serif; }
-        .card_media .layout .layout__region .card_text_content .field--name-field-link a:hover {
-          text-decoration: none; }
-  .card_media .layout .layout__region .block-field-blockparagraphcardfield-media {
-    height: 100%; }
-    .card_media .layout .layout__region .block-field-blockparagraphcardfield-media div,
-    .card_media .layout .layout__region .block-field-blockparagraphcardfield-media section {
+      @media only screen and (min-width: 700px) {
+        .card_media .layout .layout__region .field--name-field-media-image {
+          height: 500px; } }
+      .card_media .layout .layout__region .field--name-field-media-image img {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        object-fit: cover; }
+    .card_media .layout .layout__region .card_text_content {
+      color: #122760; }
+      @media only screen and (min-width: 700px) {
+        .card_media .layout .layout__region .card_text_content {
+          padding: 60px 40px 0; } }
+      @media only screen and (min-width: 1200px) {
+        .card_media .layout .layout__region .card_text_content {
+          padding: 100px 80px 0; } }
+      .card_media .layout .layout__region .card_text_content .field--name-field-title {
+        font-family: "ProximaNova-Bold", sans-serif;
+        font-size: 36px;
+        line-height: 40px; }
+      .card_media .layout .layout__region .card_text_content .field--name-field-short-title {
+        font-size: 16px;
+        margin-top: 8px; }
+      .card_media .layout .layout__region .card_text_content .field--name-field-subhead {
+        border-top: 1px solid #fff;
+        font-size: 14px;
+        margin-top: 8px; }
+      .card_media .layout .layout__region .card_text_content .field--name-field-summary {
+        border-bottom: 1px solid #fff;
+        display: block;
+        font-size: 16px;
+        margin-top: 30px; }
+      .card_media .layout .layout__region .card_text_content .field--name-field-media-image {
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        width: 100%; }
+      .card_media .layout .layout__region .card_text_content .field--name-field-link {
+        text-align: left;
+        margin-top: 40px;
+        font-weight: bold; }
+        .card_media .layout .layout__region .card_text_content .field--name-field-link a {
+          font-size: 18px;
+          line-height: 22px;
+          color: #000;
+          font-family: "ProximaNova-Bold", sans-serif; }
+          .card_media .layout .layout__region .card_text_content .field--name-field-link a:hover {
+            text-decoration: none; }
+    .card_media .layout .layout__region .block-field-blockparagraphcardfield-media {
       height: 100%; }
+      .card_media .layout .layout__region .block-field-blockparagraphcardfield-media div,
+      .card_media .layout .layout__region .block-field-blockparagraphcardfield-media section {
+        height: 100%; }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1218,8 +1231,13 @@ section > .field--name-field-short-title {
   font-family: "ProximaNova-Bold", sans-serif;
   font-size: 24px;
   line-height: 30px;
-  padding: 36px 0;
+  padding: 20px 0;
   text-align: center; }
+  @media only screen and (min-width: 700px) {
+    section > .field--name-field-title,
+    section > .block-title,
+    section > .field--name-field-short-title {
+      padding: 36px 0; } }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1254,7 +1272,7 @@ header {
   .footer--about--address {
     position: relative;
     margin-bottom: 20px; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 700px) {
       .footer--about--address {
         margin-bottom: 0;
         border-right: 1px solid #e8e8e8; } }
@@ -1283,12 +1301,12 @@ header {
     .card--grid .card_media .layout--twocol-section > .layout__region--second {
       flex: 0 1 100%; }
   .card--grid .card_media .layout__region {
-    padding: 0; }
+    padding: 20px 0 0; }
+    @media only screen and (min-width: 700px) {
+      .card--grid .card_media .layout__region {
+        padding: 24px 0 0; } }
     .card--grid .card_media .layout__region .card_text_content {
-      padding: 10px 0; }
-      @media only screen and (min-width: 37.5em) {
-        .card--grid .card_media .layout__region .card_text_content {
-          padding: 24px 0 0; } }
+      padding: 0; }
 
 .paragraph--view-mode--default {
   margin-bottom: 0; }
@@ -1344,7 +1362,7 @@ header {
     line-height: 24px;
     font-family: "ProximaNova-Bold", sans-serif;
     color: #122760; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 700px) {
       .map-component .field--name-field-title {
         font-size: 26px;
         line-height: 30px; } }
@@ -1375,11 +1393,7 @@ header {
 	Usage: @include font-size(1, large);
 */
 .hero-media-component {
-  padding: 0;
-  margin: 30px 0; }
-  @media only screen and (min-width: 37.5em) {
-    .hero-media-component {
-      margin: 30px 0 90px; } }
+  padding: 0; }
   .hero-media-component .slick-dotted.slick-slider {
     margin-bottom: 0; }
   .hero-media-component .slick-dots {
@@ -1402,17 +1416,21 @@ header {
 
 .hero_banner_wrapper {
   width: 100%;
-  min-height: 540px;
+  min-height: auto;
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% !important;
-  height: 580px !important;
+  height: auto !important;
   position: relative; }
   .hero_banner_wrapper::after {
     clear: both;
     content: "";
     display: table; }
+  @media only screen and (min-width: 700px) {
+    .hero_banner_wrapper {
+      min-height: 540px;
+      height: 580px !important; } }
   .hero_banner_wrapper img {
     width: 100%;
     height: 100%;
@@ -1426,7 +1444,7 @@ header {
   left: 0;
   bottom: 0;
   height: auto;
-  padding: 20px 70px 20px 70px; }
+  padding: 20px 70px 20px 70px !important; }
   .hero_banner-body.center {
     text-align: center; }
   .hero_banner-body.left {
@@ -1436,54 +1454,55 @@ header {
 
 .hero_banner_title h1 {
   font-family: "ProximaNova-Bold", sans-serif;
-  font-size: 72px;
   letter-spacing: 1px;
-  line-height: 87px;
+  font-size: 25px;
+  line-height: 25px;
   padding: 0 10px;
   width: 100%;
   margin: 0;
   color: white; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (min-width: 1200px) {
     .hero_banner_title h1 {
-      font-size: 25px;
-      line-height: 25px;
-      width: 100%; } }
+      font-size: 72px;
+      line-height: 87px; } }
 
 .hero_banner_short_title h4 {
+  display: none;
   font-family: "ProximaNova-Bold", sans-serif;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 30px;
   margin: 0; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 700px) {
     .hero_banner_short_title h4 {
-      display: none; } }
-  @media only screen and (max-width: 75em) {
+      display: block; } }
+  @media only screen and (min-width: 1200px) {
     .hero_banner_short_title h4 {
-      font-size: 24px;
-      line-height: 30px; } }
+      font-size: 30px;
+      line-height: 36px; } }
 
 .hero_banner_subhead {
   border-color: transparent;
-  font-size: 30px;
-  line-height: 36px; }
-  @media only screen and (max-width: 37.5em) {
+  font-size: 24px;
+  line-height: 30px;
+  display: none; }
+  @media only screen and (min-width: 700px) {
     .hero_banner_subhead {
-      display: none; } }
-  @media only screen and (max-width: 75em) {
+      display: block; } }
+  @media only screen and (min-width: 1200px) {
     .hero_banner_subhead {
-      font-size: 24px;
-      line-height: 30px; } }
+      font-size: 30px;
+      line-height: 36px; } }
 
 .hero_banner_text_desc {
   border-color: transparent;
-  display: block;
   font-size: 30px;
-  line-height: 36px; }
-  @media only screen and (max-width: 37.5em) {
+  line-height: 36px;
+  display: none;
+  margin-bottom: 0; }
+  @media only screen and (min-width: 700px) {
     .hero_banner_text_desc {
-      display: none;
-      margin-bottom: 0; } }
-  @media only screen and (max-width: 75em) {
+      display: block; } }
+  @media only screen and (min-width: 1200px) {
     .hero_banner_text_desc {
       font-size: 24px;
       line-height: 30px;
@@ -1491,10 +1510,11 @@ header {
 
 .hero_banner_btn_wrapper {
   padding: 0 10px;
-  text-align: right; }
-  @media only screen and (max-width: 37.5em) {
+  text-align: right;
+  display: none; }
+  @media only screen and (min-width: 700px) {
     .hero_banner_btn_wrapper {
-      display: none; } }
+      display: block; } }
   .hero_banner_btn_wrapper a {
     font-size: 18px;
     line-height: 22px;
@@ -1503,9 +1523,18 @@ header {
     .hero_banner_btn_wrapper a:hover {
       text-decoration: none; }
 
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
 .hero_banner_wrapper {
-  height: 580px !important;
+  height: auto !important;
   position: relative; }
+  @media only screen and (min-width: 700px) {
+    .hero_banner_wrapper {
+      height: 580px !important; } }
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
@@ -1515,20 +1544,20 @@ header {
 */
 .referenced-card {
   margin-bottom: 30px; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 700px) {
     .referenced-card .field--name-field-article {
       display: flex;
       flex-wrap: wrap; } }
   .referenced-card .field--name-field-article > .field__item {
     margin-bottom: 30px;
     flex: 0 0 100%; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 700px) {
       .referenced-card .field--name-field-article > .field__item {
         margin-bottom: 20px; } }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 700px) {
       .referenced-card .field--name-field-article > .field__item:nth-child(3n + 2) {
         margin: 0 20px; } }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 700px) {
       .referenced-card .field--name-field-article > .field__item {
         max-width: calc(33% - 20px); } }
   .referenced-card .field--type-image {
@@ -1538,7 +1567,7 @@ header {
       height: auto; }
   .referenced-card .block-field-blocknodearticletitle {
     margin-bottom: 25px; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 700px) {
       .referenced-card .block-field-blocknodearticletitle a {
         font-size: 30px;
         line-height: 36px;
@@ -1570,7 +1599,7 @@ header {
     margin-top: 20px;
     font-family: "ProximaNovaT-Thin", sans-serif;
     margin-bottom: 10px; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 700px) {
       .gallery-component .field--name-field-title {
         font-size: 26px;
         line-height: 30px; } }
@@ -1731,3 +1760,12 @@ header {
     padding-top: 30px; }
     .content-listing-component .field--name-field-summary p:last-child {
       margin-bottom: 0; }
+
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+.ezcontent-main-wrapper section .paragraph:first-child {
+  margin: 0; }

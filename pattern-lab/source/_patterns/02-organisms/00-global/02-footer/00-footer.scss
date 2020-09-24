@@ -10,7 +10,7 @@
     &--address {
       position: relative;
       margin-bottom: 20px;
-      @include respond(phone-min) {
+      @include respond(tab) {
         margin-bottom: 0;
         border-right: 1px solid $color-grey-light-dark;
       }

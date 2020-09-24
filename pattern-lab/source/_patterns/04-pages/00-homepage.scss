@@ -1,0 +1,12 @@
+@import '../_patterns-global/scss/abstracts/variables';
+@import '../_patterns-global/scss/abstracts/mixins';
+
+.ezcontent-main-wrapper {
+	section {
+		.paragraph {
+			&:first-child {
+				margin: 0;
+			}
+		}
+	}
+}

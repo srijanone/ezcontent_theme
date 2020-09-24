@@ -1,5 +1,11 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
 .hero_banner_wrapper {
-  height: 580px !important;
+  height: auto !important;
   position: relative;
-  
+
+  @include respond(tab) {
+    height: 580px !important;
+  }
 }

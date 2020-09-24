@@ -4,24 +4,24 @@
 .referenced-card {
   margin-bottom: 30px;
   .field--name-field-article {
-    @include respond(phone-min) {
+    @include respond(tab) {
       display: flex;
       flex-wrap: wrap;
     }
     > .field__item {
       margin-bottom: 30px;
       flex: 0 0 100%;
-      @include respond(phone-min) {
+      @include respond(tab) {
         margin-bottom: 20px;
       }
 
       &:nth-child(3n + 2) {
-        @include respond(phone-min) {
+        @include respond(tab) {
           margin: 0 20px;
         }
       }
 
-      @include respond(phone-min) {
+      @include respond(tab) {
         max-width: calc(33% - 20px);
       }
     }
@@ -37,7 +37,7 @@
     &-blocknodearticletitle {
       margin-bottom: 25px;
       a {
-        @include respond(phone-min) {
+        @include respond(tab) {
           font-size: 30px;
           line-height: 36px;
           font-family: $bold-font;

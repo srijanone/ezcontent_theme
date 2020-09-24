@@ -21,12 +21,12 @@
       }
     }
     .layout__region {
-      padding: 0;
+      padding: 20px 0 0;
+      @include respond(tab) {
+        padding: 24px 0 0;
+      }
       .card_text_content {
-        padding: 10px 0;
-        @include respond(phone-min) {
-          padding: 24px 0 0;
-        }
+        padding: 0;
       }
     }
   }

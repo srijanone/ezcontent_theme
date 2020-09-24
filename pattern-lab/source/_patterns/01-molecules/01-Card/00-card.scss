@@ -50,9 +50,13 @@
   padding: 0;
   .layout {
     .layout__region {
+      padding: 20px 0 0;
+      @include respond(tab) {
+        padding: 0;
+      }
       .field--name-field-media-image {
         width: 100%;
-        @include respond(phone-min) {
+        @include respond(tab) {
           height: 500px;
         }
         img {
@@ -64,7 +68,10 @@
       }
       .card_text_content {
         color: $color-dark-blue;
-        @include respond(phone-min) {
+        @include respond(tab) {
+          padding: 60px 40px 0;
+        }
+        @include respond(desktop) {
           padding: 100px 80px 0;
         }
         .field {

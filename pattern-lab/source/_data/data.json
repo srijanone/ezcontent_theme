@@ -497,6 +497,7 @@
                       drop the content wherever you like it.<br /> Create content with utmost ease!",
     "link_text": "CTA Link",
     "img_url": "../../images/create_content.png",
-    "img_alt": "image"
+    "img_alt": "image",
+    "select_layout": "card_left_media"
   }
 }

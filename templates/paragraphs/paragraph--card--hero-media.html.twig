@@ -38,7 +38,7 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library("ezcontent_theme/paragraph-type-card") }}
+{{ attach_library("ezcontent_pattern/paragraph-type-card") }}
 {%
     set classes = [
     'paragraph',
@@ -55,23 +55,23 @@
 
 
 {% set data = {
-  "heroComponent":{
-    "heroAsset":{
-      "image": img_url,
-      "title": paragraph.field_title.value,
-      "description": paragraph.field_summary.value,
-      "field_subhead": paragraph.field_subhead.value,
-      "bgColor": content.group_hero_media_content.field_text_background_color.0['#markup'],
-      "textPosition": paragraph.field_text_position.0.value,
-      "field_short_title": paragraph.field_short_title.value,
-      "url": [
-        {
-          "link": paragraph.field_link.0.uri,
-          "title": paragraph.field_link.0.title
-        }
-      ]
+    "heroComponent":{
+      "heroAsset":{
+          "image": img_url,
+          "title": paragraph.field_title.value,
+          "description": paragraph.field_summary.value,
+          "field_subhead": paragraph.field_subhead.value,
+          "bgColor": content.group_hero_media_content.field_text_background_color.0['#markup'],
+          "textPosition": paragraph.field_text_position.0.value,
+          "field_short_title": paragraph.field_short_title.value,
+          "url": [
+            {
+              "link": paragraph.field_link.0.uri,
+              "title": paragraph.field_link.0.title
+            }
+          ]
+      }
     }
-  }
 } %}
 
 {% block paragraph %}

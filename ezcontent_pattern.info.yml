@@ -6,12 +6,8 @@ name: 'Ezcontent Pattern Theme'
 description: 'A Drupal based Ezcontent Pattern Theme.'
 
 libraries:
-  - ezcontent_pattern-lab/bootstrap_cdn
-  - ezcontent_pattern-lab/framework
-
-libraries-extend:
-  layout_builder/threecol_section:
-    # - ezcontent_pattern-lab/layout_builder_threecol_section
+  - ezcontent_pattern/bootstrap_cdn
+  - ezcontent_pattern/framework
 
 regions:
   top_header: 'Top Header'

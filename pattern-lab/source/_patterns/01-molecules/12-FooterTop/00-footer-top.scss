@@ -6,7 +6,7 @@
     margin-bottom: 15px;
     width: 100%;
     border-bottom: 1px solid $color-grey-light-dark;
-    @include respond(phone-min) {
+    @include respond(tab) {
       width: calc(25% - 30px);
       margin-right: 30px;
       border: none;
@@ -14,7 +14,7 @@
     }
   }
   .menu--footer-menu {
-    @include respond(phone-min) {
+    @include respond(tab) {
       width: 74%;
     }
     display: inline-block;
@@ -25,7 +25,7 @@
       list-style: none;
       display: inline-block;
       width: 100%;
-      @include respond(phone-min) {
+      @include respond(tab) {
         width: 25%;
       }
       padding: 0 10px;

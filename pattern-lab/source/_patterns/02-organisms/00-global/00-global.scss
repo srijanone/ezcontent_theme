@@ -7,6 +7,9 @@ section > .field--name-field-short-title {
   font-family: $bold-font;
   font-size: 24px;
   line-height: 30px;
-  padding: 36px 0;
+  padding: 20px 0;
   text-align: center;
+  @include respond(tab) {
+    padding: 36px 0;
+  }
 }

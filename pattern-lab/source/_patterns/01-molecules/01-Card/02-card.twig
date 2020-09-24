@@ -1,18 +1,18 @@
 <div class="card_media">
   <div class="layout layout--twocol-section layout--twocol-section--50-50">
     <div class="layout__region layout__region--first">
-      {% if text__content %}
-        {% include '@molecules/01-Card/01-card-text-content.twig' %}
-      {% else %}
+      {% if (card.select_layout == "card_left_media") or (card.select_layout == NULL) %}
         {% include '@molecules/01-Card/00-card-image.twig' %}
+      {% else %}
+        {% include '@molecules/01-Card/01-card-text-content.twig' %}
       {% endif %}
     </div>
 
     <div class="layout__region layout__region--second">
-      {% if image %}
-        {% include '@molecules/01-Card/00-card-image.twig' %}
-      {% else %}
+      {% if (card.select_layout == "card_left_media") or (card.select_layout == NULL) %}
         {% include '@molecules/01-Card/01-card-text-content.twig' %}
+      {% else %}
+        {% include '@molecules/01-Card/00-card-image.twig' %}
       {% endif %}
     </div>
   </div>

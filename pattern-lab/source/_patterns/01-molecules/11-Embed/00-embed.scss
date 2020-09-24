@@ -1,3 +1,4 @@
+@import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
 .embed-block {
@@ -6,12 +7,8 @@
   iframe {
     max-width: 100%;
     @include clearfix;
-
-    @include respond(phone) {
-      height: 300px;
-    }
-
-    @include respond(tab-port) {
+    height: 300px;
+    @include respond(tab) {
       height: 400px;
     }
   }

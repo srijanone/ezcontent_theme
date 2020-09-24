@@ -1,36 +1,53 @@
 @import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
 
 .faq-wrapper {
   margin-bottom: 50px;
   padding: 0;
   .card {
     margin-bottom: 10px;
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid $color-border-line;
   }
   .card-header {
     padding: 15px 15px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-color: $color-white-light;
-    border-color: $color-grey-light-2;
+    background-color: $color-white;
     border-bottom: none;
     cursor: pointer;
-    h3 {
-      font-size: 20px;
-      line-height: 22px;
-      font-family: $heading-font;
+    @include respond(tab) {
+      padding: 30px 15px;
+    }
+    &:before {
+      content: '\e259';
+      font-family: 'Glyphicons Halflings' !important;
+      display: block;
+      font-size: 14px;
+      color: $color-border-line;
+      position: absolute;
+      right: 14px;
+      @include respond(tab) {
+        font-size: 22px;
+      }
+    }
+    h4 {
+      font-family: $bold-font;
     }
     &[aria-expanded='true'] {
-      border-bottom: 1px solid $color-grey-light-2;
-      img {
-        transform: rotate(90deg);
+      border-bottom: none;
+      &:before {
+        content: '\e259';
+        transform: rotate(180deg);
       }
     }
   }
   .card-body {
-    background-color: #fff;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    background-color: $color-white;
+    border-bottom: none;
+    padding: 0px 15px 15px;
+    @include respond(tab) {
+      padding: 0px 15px 30px;
+    }
   }
 }
 .faq-btn {

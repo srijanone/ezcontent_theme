@@ -38,7 +38,7 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library("ezcontent_theme/paragraph-type-card") }}
+{{ attach_library("ezcontent_pattern/paragraph-type-card") }}
 {%
   set classes = [
     'paragraph',
@@ -62,7 +62,8 @@
     "link_text": paragraph.field_link.0.title,
     "link_url": paragraph.field_link.0.uri,
     "img_url": img_url,
-    "img_alt": paragraph.field_media.0.entity.field_media_image.alt
+    "img_alt": paragraph.field_media.0.entity.field_media_image.alt,
+    "select_layout": paragraph.layout_selection.0.value.target_id
   }
 } %}
 

@@ -1,6 +1,12 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
 .hbspt-form {
-  width: 550px;
+  width: 100%;
   margin: 0 auto;
+  @include respond(tab) {
+    width: 550px;
+  }
   .actions {
     text-align: right;
   }

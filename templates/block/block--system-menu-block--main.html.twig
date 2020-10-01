@@ -31,6 +31,23 @@
  * http://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
  */
 #}
+
+{% set menuArray = [] %}
+{% for key,item in content['#items'] %}
+  {% set menuArray = menuArray|merge([{
+    "url": item.url,
+    "text": item.title,
+    "attributes": item.attributes,
+    "class": "nav-link"
+  }])
+  %}
+{% endfor %}
+{% set data = {
+  "menu":{
+    "menuitems": menuArray
+  }
+} %}
+
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
 <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
@@ -41,8 +58,8 @@
   <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
   {{ title_suffix }}
 
-  {# Menu. #}
+  {# Menu #}
   {% block content %}
-    {{ content }}
+    {% include '@molecules/00-Menus/02-main-menu.twig' with data %}
   {% endblock %}
 </nav>

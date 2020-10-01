@@ -1,5 +1,6 @@
+{% set menuData = menu %}
 <nav id="nav" class="navbar-collapse collapse" id="navbarSupportedContent">
   <div class="form-inline navbar-form">
-    {% include '@molecules/00-Menus/01-menu-list.twig' %}
+    {% include '@molecules/00-Menus/01-menu-list.twig' with menuData %}
   </div>
 </nav>

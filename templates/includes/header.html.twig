@@ -1,9 +1,9 @@
-<header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+<header id="header" class="header navbar fixed-top navbar-expand-lg ezcontent-header" role="banner" aria-label="{{ 'Site header'|t}}">
   {% block head %}
     {% if page.secondary_menu or page.top_header or page.top_header_form %}
       <nav{{ navbar_top_attributes.addClass('ezcontent-header') }}>
       {% if container_navbar %}
-      <div class="container tt">
+      <div class="container">
       {% endif %}
           {{ page.secondary_menu }}
           {{ page.top_header }}
@@ -19,7 +19,7 @@
     {% endif %}
     <nav{{ navbar_attributes.addClass('ezcontent-header') }}>
       {% if container_navbar %}
-      <div class="container ttt">
+      <div class="container">
       {% endif %}
         {{ page.header }}
         {% if page.primary_menu or page.header_form %}

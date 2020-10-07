@@ -8,7 +8,8 @@
                     drop the content wherever you like it.<br /> Create content with utmost ease!",
     "link_text": "CTA Link",
     "link_url": "#",
-		"img_url": "../../../images/create_content_0.png",
-		"img_alt": "image"
+    "img_url": "../../../images/create_content_0.png",
+    "img_alt": "image",
+    "select_layout": "card_left_media"
   }
 }

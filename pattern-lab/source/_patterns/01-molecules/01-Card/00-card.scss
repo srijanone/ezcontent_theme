@@ -50,9 +50,13 @@
   padding: 0;
   .layout {
     .layout__region {
+      margin-bottom: 20px;
+      @include respond(tab) {
+        margin-bottom: 0;
+      }
       .field--name-field-media-image {
         width: 100%;
-        @include respond(phone-min) {
+        @include respond(tab) {
           height: 500px;
         }
         img {
@@ -64,14 +68,21 @@
       }
       .card_text_content {
         color: $color-dark-blue;
-        @include respond(phone-min) {
+        @include respond(tab) {
+          padding: 60px 40px 0;
+        }
+        @include respond(desktop) {
           padding: 100px 80px 0;
         }
         .field {
           &--name-field-title {
             font-family: $bold-font;
-            font-size: 36px;
-            line-height: 40px;
+            font-size: 28px;
+            line-height: 32px;
+            @include respond(tab) {
+              font-size: 36px;
+              line-height: 40px;
+            }
           }
 
           &--name-field-short-title {
@@ -90,6 +101,13 @@
             display: block;
             font-size: 16px;
             margin-top: 30px;
+            margin-bottom: 20px;
+            @include respond(tab) {
+              margin-bottom: 40px;
+            }
+            p {
+              margin: 0;
+            }
           }
 
           &--name-field-media-image {
@@ -101,14 +119,11 @@
 
           &--name-field-link {
             text-align: left;
-            margin-top: 40px;
-            font-weight: bold;
             a {
               font-size: 18px;
               line-height: 22px;
               color: $color-black;
               font-family: $bold-font;
-              
               &:hover {
                 text-decoration: none;
               }

@@ -38,7 +38,6 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library("ezcontent_theme/paragraph-type-card") }}
 {%
   set classes = [
     'paragraph',
@@ -68,10 +67,10 @@
 } %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{attributes.addClass(classes)}}>
     {{ content.contextual_links }}
     {% block content %}
-      {% include "@organisms/01-cards/00-card-list.twig" with data %}
+      {% include "@organisms/01-cards/01-card-grid.twig" with data %}
     {% endblock %}
   </div>
 {% endblock paragraph %}

@@ -1,87 +1,15 @@
 framework:
   css:
     theme:
-      css/glyphicons.css: {}
-      css/style.css: {}
-      css/block/hero_media.css: {}
-      css/block/map.css: {}
-      css/block/embed.css: {}
-      css/block/socialmedia.css: {}
-      css/page/article.css: {}
-      css/admin/layout_builder_modal.css: {}
-      css/admin/liveblog.css: {}
-      css/block/content-listing-component.css: {}
-      css/block/card_list.css: {}
-      css/block/referenced-card.css: {}
-      css/page/error-page.css: {}
-      css/page/landing-page.css: {}
-
-paragraph-type-gallery:
-  css:
-    theme:
-      css/paragraph/gallery.css: {}
-
-paragraph-type-faq:
-  css:
-    theme:
-      css/paragraph/faq.css: {}
-
-paragraph-type-quote:
-  css:
-    theme:
-      css/paragraph/quotes.css: {}
-
-paragraph-type-card:
-  css:
-    theme:
-      css/paragraph/card.css: {}
-      css/paragraph/card_list.css: {}
-      css/paragraph/card_gallery.css: {}
-
-paragraph-type-hero-media:
-  css:
-    theme:
-      css/paragraph/hero_media.css: {}
-
-paragraph-type-embed:
-  css:
-    theme:
-      css/paragraph/embed.css: {}
-
-paragraph-type-social-media:
-  css:
-    theme:
-      css/paragraph/social.css: {}
-
-paragraph-type-map:
-  css:
-    theme:
-      css/paragraph/map.css: {}
-
-paragraph-type-assets:
-  css:
-    theme:
-      css/paragraph/asset.css: {}
-
-paragraph-type-form:
-  css:
-    theme:
-      css/paragraph/form.css: {}
-
-paragraph-type-view:
-  css:
-    theme:
-      css/paragraph/view.css: {}
-
-paragraph-type-referenced-card:
-  css:
-    theme:
-      css/paragraph/referenced-card.css: {}
-
-full-width-bg-background:
-  css:
-    theme:
-      css/layout/full-width-bg-background.css: {}
+      css/_patterns-global/style.css: {}
+      css/00-atoms/05-forms/00-form.css: {}
+      css/01-molecules/05-HeroComponent/00-hero-component.css: {}
+      css/01-molecules/05-HeroComponent/00-hero-carousel.css: {}
+      css/01-molecules/03-MapComponent/00-map-component.css: {}
+      css/01-molecules/11-Embed/00-embed.css: {}
+      css/01-molecules/04-SocialMedia/00-social-media.css: {}
+      css/02-organisms/00-global/00-global.css: {}
+      css/04-pages/00-homepage.css: {}
 
 bootstrap_cdn:
   js:
@@ -90,18 +18,3 @@ bootstrap_cdn:
   css:
     component:
       //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}
-
-moderation-dashboard-css:
-  css:
-    theme:
-      css/admin/moderation_dashboard.css: {}
-
-layout_builder_threecol_section:
-  css:
-    theme:
-      css/paragraph/layout_builder_three_col.css: {}
-
-alert_banner:
-  css:
-    theme:
-      css/block/alert_banner.css: {}

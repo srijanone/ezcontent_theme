@@ -2,12 +2,78 @@
 
 /**
  * @file
+ *
  * Place your custom PHP code in this file.
  */
 
+use Drupal\node\NodeInterface;
+use Drupal\Core\Link;
+
  /**
-  * Implements hook_preprocess_HOOK().
-  */
-function ezcontent_pattern_preprocess_block(&$variables) {
-  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ezcontent_pattern_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof NodeInterface) {
+    $suggestions[] = 'page__' . $node->bundle();
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ezcontent_pattern_preprocess_field(&$variables) {
+  if (($variables['element']['#field_name'] == 'field_card' && $variables['element']['#entity_type'] == 'block_content')) {
+    $variables['card_block_view_mode'] = $variables['element']['#view_mode'];
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_view().
+ */
+/**
+function ezcontent_pattern_preprocess_views_view(&$variables) {
+  if (in_array($variables['view']->id(),['content_moderation_dashboard_in_review', 'moderation_dashboard_recent_changes', 'moderation_dashboard_recently_created'])) {
+    $variables['view_array']['#attached']['library'][] = 'ezcontent_theme/moderation-dashboard-css';
+  }
+}
+*/
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function ezcontent_pattern_preprocess_field__node__field_thumbnail__article__card(&$variables) {
+  $node = $variables['element']['#object'];
+  if ($node instanceof NodeInterface && !$node->in_preview) {
+    $variables['referenced_entity_url'] = $node->toUrl()->toString();
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for menu-local-task.html.twig.
+ */
+function ezcontent_pattern_preprocess_menu_local_task(&$variables) {
+  $link = $variables['element']['#link'];
+  $url = $link['url'];
+  $options = $url->getOptions();
+  $url->setOptions($options + $link['localized_options']);
+  $variables['item'] = Link::fromTextAndUrl($link['title'], $url);
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for menu-local-action.html.twig.
+ */
+function ezcontent_pattern_preprocess_menu_local_action(&$variables) {
+  $link = $variables['element']['#link'];
+  $link += [
+    'localized_options' => [],
+  ];
+  $link['localized_options']['attributes']['class'][] = 'btn';
+  $link['localized_options']['attributes']['class'][] = 'btn-secondary';
+  $link['localized_options']['set_active_class'] = TRUE;
+  $variables['link'] = [
+    '#type' => 'link',
+    '#title' => $link['title'],
+    '#options' => $link['localized_options'],
+    '#url' => $link['url'],
+  ];
 }

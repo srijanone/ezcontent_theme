@@ -4,32 +4,43 @@
 .referenced-card {
   margin-bottom: 30px;
   .field--name-field-article {
-    @include respond(phone-min) {
+    @include respond(tab) {
       display: flex;
       flex-wrap: wrap;
     }
     > .field__item {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       flex: 0 0 100%;
-      @include respond(phone-min) {
-        margin-bottom: 20px;
+      @include respond(tab) {
+        margin-bottom: 30px;
       }
 
       &:nth-child(3n + 2) {
-        @include respond(phone-min) {
+        @include respond(tab) {
+          margin: 0 18px;
+        }
+        @include respond(desktop) {
           margin: 0 20px;
         }
       }
 
-      @include respond(phone-min) {
+      @include respond(tab) {
+        max-width: calc(33% - 10px);
+      }
+      @include respond(desktop) {
         max-width: calc(33% - 20px);
       }
     }
   }
   .field--type-image {
+    height: 300px;
+    @include respond(desktop) {
+      height: 400px;
+    }
     img {
       max-width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
     margin-bottom: 30px;
   }
@@ -37,11 +48,13 @@
     &-blocknodearticletitle {
       margin-bottom: 25px;
       a {
-        @include respond(phone-min) {
+        font-family: $bold-font;
+        color: $color-dark-blue;
+        font-size: 24px;
+        line-height: 30px;
+        @include respond(tab) {
           font-size: 30px;
           line-height: 36px;
-          font-family: $bold-font;
-          color: $color-dark-blue;
         }
         &:hover {
           text-decoration: none;

@@ -1,3 +1,9 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
 .social-media {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  @include respond(tab) {
+    margin-bottom: 40px;
+  }
 }

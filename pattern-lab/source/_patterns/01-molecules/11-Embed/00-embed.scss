@@ -1,22 +1,21 @@
+@import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
 .embed-block {
-  margin: 0 0 50px;
-
+  margin: 0 0 20px;
+  @include respond(tab) {
+    margin: 0 0 40px;
+  }
   iframe {
     max-width: 100%;
     @include clearfix;
-
-    @include respond(phone) {
-      height: 300px;
-    }
-
-    @include respond(tab-port) {
+    height: 300px;
+    @include respond(tab) {
       height: 400px;
     }
   }
-}
 
-#embedded-container {
-  text-align: center;
+  #embedded-container {
+    text-align: center;
+  }
 }

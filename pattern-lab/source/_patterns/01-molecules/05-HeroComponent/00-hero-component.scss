@@ -3,10 +3,6 @@
 
 .hero-media-component {
   padding: 0;
-  margin: 30px 0;
-  @include respond(phone-min) {
-    margin: 30px 0 90px;
-  }
   .slick-dotted.slick-slider {
     margin-bottom: 0;
   }
@@ -41,14 +37,19 @@
 
 .hero_banner_wrapper {
   width: 100%;
-  min-height: 540px;
+  min-height: auto;
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% !important;
-  height: 580px !important;
+  height: auto !important;
   position: relative;
   @include clearfix;
+
+  @include respond(tab) {
+    min-height: 540px;
+    height: 580px !important;
+  }
 
   img {
     width: 100%;
@@ -65,7 +66,7 @@
   left: 0;
   bottom: 0;
   height: auto;
-  padding: 20px 70px 20px 70px;
+  padding: 20px 70px 20px 70px !important;
 
   &.center {
     text-align: center;
@@ -83,64 +84,62 @@
 .hero_banner_title {
   h1 {
     font-family: $bold-font;
-    font-size: 72px;
     letter-spacing: 1px;
-    line-height: 87px;
+    font-size: 25px;
+    line-height: 25px;
     padding: 0 10px;
     width: 100%;
     margin: 0;
     color: white;
-    @include respond(tab-land) {
-      font-size: 25px;
-      line-height: 25px;
-      width: 100%;
+    @include respond(desktop) {
+      font-size: 72px;
+      line-height: 87px;
     }
   }
 }
 
 .hero_banner_short_title {
   h4 {
+    display: none;
     font-family: $bold-font;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 30px;
     margin: 0;
-    @include respond(phone) {
-      display: none;
+    @include respond(tab) {
+      display: block;
     }
-
-    @include respond(tab-land) {
-      font-size: 24px;
-      line-height: 30px;
+    @include respond(desktop) {
+      font-size: 30px;
+      line-height: 36px;
     }
   }
 }
 
 .hero_banner_subhead {
   border-color: transparent;
-  font-size: 30px;
-  line-height: 36px;
-  @include respond(phone) {
-    display: none;
+  font-size: 24px;
+  line-height: 30px;
+  display: none;
+  @include respond(tab) {
+    display: block;
   }
-
-  @include respond(tab-land) {
-    font-size: 24px;
-    line-height: 30px;
+  @include respond(desktop) {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
 .hero_banner_text_desc {
   border-color: transparent;
-  display: block;
-  font-size: 30px;
-  line-height: 36px;
-
-  @include respond(phone) {
-    display: none;
-    margin-bottom: 0;
+  font-size: 20px;
+  line-height: 26px;
+  display: none;
+  margin-bottom: 0;
+  @include respond(tab) {
+    display: block;
   }
 
-  @include respond(tab-land) {
+  @include respond(desktop) {
     font-size: 24px;
     line-height: 30px;
     padding: 5px 10px;
@@ -150,9 +149,9 @@
 .hero_banner_btn_wrapper {
   padding: 0 10px;
   text-align: right;
-
-  @include respond(phone) {
-    display: none;
+  display: none;
+  @include respond(tab) {
+    display: block;
   }
 
   a {

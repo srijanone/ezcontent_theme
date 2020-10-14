@@ -38,7 +38,6 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library("ezcontent_theme/paragraph-type-social-media") }}
 {%
   set classes = [
     'paragraph',
@@ -60,7 +59,7 @@
   <div{{ attributes.addClass(classes) }}>
     {{ content.contextual_links }}
     {% block content %}
-      {% include "@molecules/04-socialMedia/00-social-media.twig" with data %}
+      {% include "@molecules/04-SocialMedia/00-social-media.twig" with data %}
     {% endblock %}
   </div>
 {% endblock paragraph %}

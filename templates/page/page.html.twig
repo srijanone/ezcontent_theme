@@ -73,7 +73,7 @@
     {% include "@ezcontent_pattern/includes/header.html.twig" %}
     {% if page.highlighted %}
       <div class="highlighted">
-        <aside class="{{ container }} section clearfix" role="complementary">
+        <aside class="container section clearfix" role="complementary">
           {{ page.highlighted }}
         </aside>
       </div>
@@ -81,7 +81,7 @@
     {% if page.featured_top %}
       {% block featured %}
         <div class="featured-top">
-          <aside class="featured-top__inner section {{ container }} clearfix" role="complementary">
+          <aside class="featured-top__inner section container clearfix" role="complementary">
             {{ page.featured_top }}
           </aside>
         </div>
@@ -89,13 +89,13 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper ezcontent-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="{{ container }}">
+        <div id="main" class="container">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
             {% if (page.sidebar_first or page.sidebar_second) %}
-              <main{{ content_attributes.addClass('col-lg-9') }}>
+              <main class="main-content col-lg-9" id="content" role="main">
             {% else %}
-              <main{{ content_attributes }}>
+              <main class="main-content col" id="content" role="main">
             {% endif %}
                 <section class="section">
                   <a id="main-content" tabindex="-1"></a>
@@ -122,7 +122,7 @@
     </div>
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
       <div class="featured-bottom">
-        <aside class="{{ container }} clearfix" role="complementary">
+        <aside class="container clearfix" role="complementary">
           {{ page.featured_bottom_first }}
           {{ page.featured_bottom_second }}
           {{ page.featured_bottom_third }}

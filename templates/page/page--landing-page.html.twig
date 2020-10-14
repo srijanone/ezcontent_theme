@@ -88,13 +88,13 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper ezcontent-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="{{ container }}">
+        <div id="main" class="container">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
             {% if (page.sidebar_first or page.sidebar_second) %}
-              <main{{ content_attributes.addClass('col-lg-9') }}>
+              <main class="main-content col-lg-9" id="content" role="main">
             {% else %}
-              <main{{ content_attributes }}>
+              <main class="main-content col" id="content" role="main">
             {% endif %}
                 <section class="section">
                   <a id="main-content" tabindex="-1"></a>

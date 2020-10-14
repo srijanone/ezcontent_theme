@@ -95,7 +95,7 @@
             {% if (page.sidebar_first or page.sidebar_second) %}
               <main class="main-content col-lg-9" id="content" role="main">
             {% else %}
-              <main{{ content_attributes }}>
+              <main class="main-content col" id="content" role="main">
             {% endif %}
                 <section class="section">
                   <a id="main-content" tabindex="-1"></a>
@@ -122,7 +122,7 @@
     </div>
     {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
       <div class="featured-bottom">
-        <aside class="{{ container }} clearfix" role="complementary">
+        <aside class="container clearfix" role="complementary">
           {{ page.featured_bottom_first }}
           {{ page.featured_bottom_second }}
           {{ page.featured_bottom_third }}

@@ -1,7 +1,7 @@
-<header id="header" class="header navbar fixed-top navbar-expand-lg ezcontent-header" role="banner" aria-label="{{ 'Site header'|t}}">
+<header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
   {% block head %}
     {% if page.secondary_menu or page.top_header or page.top_header_form %}
-      <nav{{ navbar_top_attributes.addClass('ezcontent-header') }}>
+      <nav class="navbar fixed-top navbar-light navbar-expand-lg ezcontent-header">
       {% if container_navbar %}
       <div class="container">
       {% endif %}
@@ -17,14 +17,14 @@
       {% endif %}
       </nav>
     {% endif %}
-    <nav{{ navbar_attributes.addClass('ezcontent-header') }}>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg ezcontent-header">
       {% if container_navbar %}
       <div class="container">
       {% endif %}
         {{ page.header }}
         {% if page.primary_menu or page.header_form %}
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="CollapsingNavbar">
+          <div class="navbar-collapse collapse" id="CollapsingNavbar">
             {{ page.primary_menu }}
             {% if page.header_form %}
               <div class="form-inline navbar-form float-right">

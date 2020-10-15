@@ -1,5 +1,5 @@
 {% for key, value in menuData.menuitems %}
-  <li {{value.attributes}}>
+  <li class="nav-item">
     {% include '@atoms/12-links/00-links.twig' with {
       text: value.text,
       class: value.class,

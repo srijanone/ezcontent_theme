@@ -1,17 +1,27 @@
 @import '../../../_patterns-global/scss/abstracts/variables';
 @import '../../../_patterns-global/scss/abstracts/mixins';
 header {
-  background: $color-white;
-  border-bottom: 1px solid $color-grey-light-2;
-  z-index: 99;
   .navbar-collapse {
     justify-content: flex-end;
     .menu--main {
       padding: 0 15px;
     }
   }
+  .ezcontent-header {
+    z-index: 99;
+    background: $color-white;
+    border-bottom: 1px solid $color-grey-light-2;
+    padding: 10px;
+  }
 }
 
 .ezcontent-main-wrapper {
   margin-top: 6em;
+}
+
+.user-logged-in .ezcontent-header {
+  top: 38px;
+  @include respond(tab) {
+    top: 79px;
+  }
 }

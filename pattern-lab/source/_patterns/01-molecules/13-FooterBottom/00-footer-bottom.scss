@@ -7,37 +7,29 @@
   .row {
     padding: 10px 0;
   }
-  .menu--privacy-policy {
-    background-color: $color-bg-dark-cyan;
-    float: left;
-    font-size: 11px;
-    padding: 45px 40px;
-    margin-top: 20px;
+  .block-system-menu-blockprivacy-policy {
     width: 100%;
-    .menu {
-      padding: 0;
-      margin: 0;
+    padding: 30px 20px;
+    background: $color-bg-dark-cyan;
+    @include respond(tab) {
+      padding: 60px 40px 60px 30px;
     }
-    li {
-      display: inline-block;
-      padding: 3px 10px;
-      @include respond(phone) {
-        width: 100%;
-        margin-bottom: 15px;
-      }
-      a {
-        padding: 0;
-        color: $color-white;
-        font-family: $primary-font;
-        font-size: 11px;
-        &:hover,
-        &:focus {
-          background: transparent;
+    ul {
+      li {
+        display: inline-block;
+        a {
+          color: $color-white;
         }
       }
-      &.last {
-        float: right;
+      p {
+        display: block;
         color: $color-white;
+        padding: 20px 0 0 10px;
+        @include respond(tab) {
+          padding: 8px 0 0;
+          display: inline-block;
+          float: right;
+        }
       }
     }
   }

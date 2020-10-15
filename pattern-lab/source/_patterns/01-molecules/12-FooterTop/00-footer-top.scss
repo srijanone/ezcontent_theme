@@ -14,6 +14,7 @@
   }
   .block-system-menu-blockfooter-menu {
     display: block;
+    width: 100%;
     @include respond(tab) {
       width: 70%;
       display: inline-block;

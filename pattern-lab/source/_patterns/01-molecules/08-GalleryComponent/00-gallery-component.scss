@@ -23,14 +23,14 @@
     &--name-field-media-items {
       display: flex;
       flex-wrap: wrap;
-      margin: 20px 0 0;
       align-items: center;
       justify-content: center;
       width: 100%;
+      background-color: $color-bg-grey;
 
-      > .field--item {
+      > .field__item {
         display: inline-block;
-        padding: 2px;
+        padding: 10px;
       }
     }
 
@@ -48,5 +48,9 @@
         height: auto;
       }
     }
+  }
+  > .field--name-field-media-items {
+    margin: 20px 0 0;
+    padding: 50px 60px;
   }
 }

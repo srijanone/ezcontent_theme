@@ -1,0 +1,13 @@
+.node--type-article {
+  .layout-main-wrapper {
+    .container {
+      max-width: 1048px;
+    }
+  }
+
+  .field--name-field-content {
+    & > .field__item {
+      margin-bottom: 36px;
+    }
+  }
+}

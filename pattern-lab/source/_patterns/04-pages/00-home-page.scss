@@ -1,0 +1,43 @@
+@import '../_patterns-global/scss/abstracts/variables';
+@import '../_patterns-global/scss/abstracts/mixins';
+
+.path-frontpage {
+  .ezcontent-header {
+    .container {
+      padding: 0 20px;
+      @include respond(desktop) {
+        padding: 0 60px;
+      }
+    }
+  }
+
+  .container {
+    .main-content {
+      padding: 0;
+      .block--type-cards {
+        .field--name-field-card {
+          > .field--item {
+            padding: 0;
+          }
+        }
+      }
+
+      .block--type-referenced-cards {
+        padding: 0 10px;
+        @include respond(tab) {
+          padding: 0 30px;
+        }
+      }
+      .block--type-embed-block {
+        background: $color-bg-grey;
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  footer {
+    .container {
+      padding: 0;
+    }
+  }
+}

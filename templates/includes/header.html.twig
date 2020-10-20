@@ -2,9 +2,7 @@
   {% block head %}
     {% if page.secondary_menu or page.top_header or page.top_header_form %}
       <nav class="navbar fixed-top navbar-light navbar-expand-lg ezcontent-header">
-      {% if container_navbar %}
       <div class="container">
-      {% endif %}
           {{ page.secondary_menu }}
           {{ page.top_header }}
           {% if page.top_header_form %}
@@ -18,9 +16,7 @@
       </nav>
     {% endif %}
     <nav class="navbar fixed-top navbar-light navbar-expand-lg ezcontent-header">
-      {% if container_navbar %}
       <div class="container">
-      {% endif %}
         {{ page.header }}
         {% if page.primary_menu or page.header_form %}
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>

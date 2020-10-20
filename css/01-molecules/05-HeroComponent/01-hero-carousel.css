@@ -1,4 +1,4 @@
-.hero_banner_wrapper{height:580px !important;position:relative}
+.hero_banner_wrapper{height:auto !important;position:relative}@media only screen and (min-width: 700px){.hero_banner_wrapper{height:580px !important}}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjAxLW1vbGVjdWxlcy8wNS1IZXJvQ29tcG9uZW50LzAxLW1vbGVjdWxlcy8wNS1IZXJvQ29tcG9uZW50LzAxLWhlcm8tY2Fyb3VzZWwuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxQkFDRSx3QkFDQSxpQkFBa0IsQ0FFbkIiLCJmaWxlIjoidG8uY3NzIn0= */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIjAxLW1vbGVjdWxlcy8wNS1IZXJvQ29tcG9uZW50LzAxLW1vbGVjdWxlcy8wNS1IZXJvQ29tcG9uZW50LzAxLWhlcm8tY2Fyb3VzZWwuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQSxxQkFDRSx1QkFDQSxpQkFBa0IsQ0FJbkIsMENBTkQscUJBSUksdUJBQXdCLENBRTNCLENBQUEiLCJmaWxlIjoidG8uY3NzIn0= */
 /*# sourceMappingURL=01-hero-carousel.css.map */

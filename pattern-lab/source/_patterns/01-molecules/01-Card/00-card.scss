@@ -80,6 +80,10 @@
             font-size: 28px;
             line-height: 32px;
             @include respond(tab) {
+              font-size: 32px;
+              line-height: 36px;
+            }
+            @include respond(desktop) {
               font-size: 36px;
               line-height: 40px;
             }
@@ -91,13 +95,11 @@
           }
 
           &--name-field-subhead {
-            border-top: 1px solid $color-white;
             font-size: 14px;
             margin-top: 8px;
           }
 
           &--name-field-summary {
-            border-bottom: 1px solid $color-white;
             display: block;
             font-size: 16px;
             margin-top: 30px;

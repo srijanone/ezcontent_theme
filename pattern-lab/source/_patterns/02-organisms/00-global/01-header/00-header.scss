@@ -6,6 +6,14 @@ header {
     .menu--main {
       padding: 0 15px;
     }
+    .form-inline {
+      & > div {
+        display: flex;
+        .block-ez-tmp-segment {
+          padding-left: 10px;
+        }
+      }
+    }
   }
   .ezcontent-header {
     z-index: 99;
@@ -23,5 +31,12 @@ header {
   top: 38px;
   @include respond(tab) {
     top: 79px;
+  }
+}
+.user-logged-in.gin--vertical-toolbar .ezcontent-header {
+  top: 38px;
+  @include respond(tab) {
+    top: 0;
+    left: 79px;
   }
 }

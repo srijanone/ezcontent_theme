@@ -27,16 +27,24 @@ header {
   margin-top: 6em;
 }
 
-.user-logged-in .ezcontent-header {
-  top: 38px;
-  @include respond(tab) {
-    top: 79px;
+.user-logged-in {
+  &.gin--classic-toolbar{
+    &.toolbar-tray-open .ezcontent-header {
+      top: 79px;
+    }
   }
-}
-.user-logged-in.gin--vertical-toolbar .ezcontent-header {
-  top: 38px;
-  @include respond(tab) {
-    top: 0;
-    left: 79px;
+  &.gin--vertical-toolbar {
+    .ezcontent-header {
+      top: 0;
+      left: 80px;
+    }
+    &[data-toolbar-menu="open"] {
+      .ezcontent-header {
+        left: 240px;
+      }
+    }
+  }
+  .ezcontent-header {
+    top: 54px;
   }
 }

@@ -1,12 +1,14 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
-.referenced-card {
+.referenced-card,
+.block--type-referenced-cards {
   margin-bottom: 30px;
   .field--name-field-article {
     @include respond(tab) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     > .field__item {
       margin-bottom: 20px;
@@ -64,5 +66,11 @@
   }
   .referenced-summary {
     margin-bottom: 0;
+  }
+}
+
+.block--type-referenced-cards {
+  .layout--twocol-section--50-50 {
+    display: block;
   }
 }

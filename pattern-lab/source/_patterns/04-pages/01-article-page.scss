@@ -1,4 +1,16 @@
+@import '../_patterns-global/scss/abstracts/variables';
 .node--type-article {
+  .block-page-title-block {
+    h1 {
+      font-family: $primary-font;
+      color: $color-dark-blue;
+    }
+  }
+  .block-social-sharing-block {
+    margin-top: 40px;
+    border-bottom: solid 1px $color-border-line;
+    padding-bottom: 15px;
+  }
   .layout-main-wrapper {
     .container {
       max-width: 1048px;
@@ -8,6 +20,28 @@
   .field--name-field-content {
     & > .field__item {
       margin-bottom: 36px;
+    }
+  }
+
+  .paragraph--type--text,
+  .paragraph--type--assets,
+  .paragraph--type--quote,
+  .paragraph--type--faq {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .paragraph--type--embed {
+    max-width: 980px;
+  }
+
+  .paragraph--type--gallery {
+    .field.field--name-field-media-items {
+      background: #d8d8d8;
+      padding: 45px 20px;
+      .field__item {
+        margin: 6px;
+      }
     }
   }
 }

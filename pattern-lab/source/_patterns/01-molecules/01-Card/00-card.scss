@@ -50,6 +50,7 @@
   padding: 0;
   .layout {
     .layout__region {
+      padding: 0;
       margin-bottom: 20px;
       @include respond(tab) {
         margin-bottom: 0;

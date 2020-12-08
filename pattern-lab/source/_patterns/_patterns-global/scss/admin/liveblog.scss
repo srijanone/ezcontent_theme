@@ -1,0 +1,16 @@
+.user-logged-in {
+  &.node--type-liveblog {
+    .main-content {
+      .section {
+        padding-top: 42px;
+      }
+      nav.tabs {
+       position: absolute;
+       top: 0;
+      }
+      article.contextual-region {
+        position: static;
+      }
+    }
+  }
+}

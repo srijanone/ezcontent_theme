@@ -1,0 +1,1 @@
+{"version":3,"sources":["_patterns-global/scss/admin/moderation_dashboard.scss","moderation_dashboard.css"],"names":[],"mappings":"AAAA,wCAGI,SACA,aAAc,CACb;;ACHL,sZAAsZ","file":"moderation_dashboard.css","sourcesContent":[".moderation-dashboard  {\n  .view-content  {\n    &.row {\n    margin: 0;\n    display: block;\n    }\n  }\n}\n"]}

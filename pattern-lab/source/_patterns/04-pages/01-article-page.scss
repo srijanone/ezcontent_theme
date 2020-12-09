@@ -1,6 +1,10 @@
 @import '../_patterns-global/scss/abstracts/variables';
+@import '../_patterns-global/scss/abstracts/mixins';
+
 .node--type-article {
   .block-page-title-block {
+    max-width: 1280px;
+    margin: 0 auto;
     h1 {
       font-family: $primary-font;
       color: $color-dark-blue;
@@ -8,14 +12,12 @@
     }
   }
   .block-social-sharing-block {
+    max-width: 1280px;
+    margin: 0 auto;
     margin-top: 40px;
     border-bottom: solid 1px $color-border-line;
     padding-bottom: 15px;
-  }
-  .layout-main-wrapper {
-    .container {
-      max-width: 1048px;
-    }
+    margin-bottom: 40px;
   }
 
   .field--name-field-content {
@@ -38,9 +40,28 @@
   }
 
   .paragraph--type--gallery {
+    max-width: 1080px;
+    margin: 0 auto;
     .field.field--name-field-media-items {
       background: #d8d8d8;
-      padding: 45px 20px;
+      padding: 20px 30px;
+      @include respond(desktop) {
+        padding: 30px 45px;
+      }
+      > .field__item {
+        display: flex;
+        padding: 10px;
+        @include respond(desktop) {
+          padding: 15px;
+        }
+        .field--name-field-media-image {
+          img {
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+          }
+        }
+      }
     }
   }
 }

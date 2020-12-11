@@ -1,3 +1,5 @@
+@import '../abstracts/variables';
+
 #layout-builder-modal {
   .field--name-field-card {
     padding: 0;
@@ -98,20 +100,41 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 .ui-dialog {
   .ui-dialog-titlebar {
     padding: 16px 24px;
-  }
-  .ui-dialog-titlebar-close {
-    top: 13px;
-    &:before {
-      content: '\e014';
-      font-family: 'Glyphicons Halflings' !important;
-      display: block;
-      font-size: 16px;
-      line-height: 12px;
-      color: #fff;
+
+    .ui-dialog-titlebar-close {
+      top: 13px;
+      background: $color-primary;
+      border-radius: 100%;
+      &:before {
+        content: '\e014';
+        font-family: 'Glyphicons Halflings' !important;
+        display: block;
+        font-size: 16px;
+        line-height: 12px;
+        color: #fff;
+      }
+      &:active,
+      &:focus {
+        background-color: transparent;
+      }
     }
-    &:active,
-    &:focus {
-      background-color: transparent;
+  }
+  label {
+    color: $color-white !important;
+  }
+  .ui-dialog-content {
+    .form-item {
+      padding-bottom: 10px;
+      input.form-text {
+        width: 100%;
+      }
+    }
+
+    .button--primary {
+      box-shadow: none !important;
+    }
+    .form-submit {
+      margin-top: 20px;
     }
   }
 }
@@ -155,7 +178,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   top: 80px !important;
   left: auto !important;
   right: 0;
-  height: 100vh !important;
+  height: calc(100vh - 80px) !important;
   border-radius: 0;
   background-color: #333;
 }

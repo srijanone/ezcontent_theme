@@ -1,0 +1,74 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.content-listing-component {
+  .view-content {
+    .views-row {
+      padding-bottom: 30px;
+      display: block;
+      @include respond(tab) {
+        display: flex;
+      }
+      .views-field-field-thumbnail {
+        padding-bottom: 20px;
+        padding-right: 0;
+        @include respond(tab) {
+          padding-bottom: 0;
+          padding-right: 30px;
+        }
+        img {
+          width: 400px;
+          height: 320px;
+          object-fit: cover;
+        }
+      }
+      .views-field-title {
+        .right-content {
+          .author-tags {
+            padding-bottom: 15px;
+            a {
+              color: $color-dark-blue;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          .title {
+            font-family: $bold-font;
+            font-size: 24px;
+            line-height: 28px;
+            @include respond(tab) {
+              font-size: 24px;
+              line-height: 28px;
+            }
+            @include respond(desktop) {
+              font-size: 28px;
+              line-height: 32px;
+            }
+            a {
+              color: $color-dark-blue;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          .summary {
+            font-size: 16px;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.node--type-author {
+  .layout--twocol-section {
+    .layout__region--first {
+      padding-right: 15px;
+    }
+    .layout__region--second {
+      padding-left: 15px;
+    }
+  }
+}

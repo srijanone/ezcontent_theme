@@ -1,101 +1,72 @@
 @import '../abstracts/variables';
 
-.moderation-dashboard {
-  .view-content {
-    &.row {
-      margin: 0;
-      display: block;
-    }
+section[class*="block-views-blockcontent-moderation-view-blocks-"] {
+  margin-top: 30px;
+  border: 1px solid $color-grey-light-2;
+  border-radius: 10px;
+  .block-title {
+    text-align: left;
+    color: $color-dark-blue;
+    background-color: $color-bg-grey;
+    padding: 15px 10px 15px;
+    border-bottom: 1px solid $color-grey-light-2;
+    border-radius: 10px 10px 0 0;
   }
-}
-.view-content-moderation-view-blocks {
-  .view-content {
-    table {
-      width: 100%;
-      thead {
-        background-color: $color-bg-grey;
-        tr {
-          th {
-            font-weight: normal;
-            width: 12%;
-            &.views-field-title {
-              width: 40%;
-            }
-          }
-        }
-      }
-      tbody {
-        tr {
-          td.views-field-title {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 200px;
-          }
-        }
-      }
-      .views-field-operations {
-        .dropbutton-wrapper {
-          .dropbutton-widget {
-            width: 120px;
-            background: $color-white;
-            padding-left: 1em;
-            ul {
-              li {
-                padding: 5px 0;
+  .view-content-moderation-view-blocks {
+    padding: 10px 15px 15px;
+    .view-content {
+      table {
+        width: 100%;
+        thead {
+          background-color: $color-bg-grey;
+          tr {
+            th {
+              font-weight: normal;
+              width: 12%;
+              &.views-field-title {
+                width: 40%;
               }
             }
           }
-          &.open {
+        }
+        tbody {
+          tr {
+            td.views-field-title {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 200px;
+            }
+          }
+        }
+        .views-field-operations {
+          .dropbutton-wrapper {
             .dropbutton-widget {
-              background: $color-bg-grey;
-              box-shadow: 1px 1px 2px 2px $color-border-line;
+              width: 120px;
+              background: $color-white;
+              padding-left: 1em;
+              ul {
+                li {
+                  padding: 5px 0;
+                }
+              }
+            }
+            &.open {
+              .dropbutton-widget {
+                background: $color-bg-grey;
+                box-shadow: 1px 1px 2px 2px $color-border-line;
+              }
             }
           }
         }
       }
     }
-  }
-  .view-footer {
-    float: right;
-    padding: 10px 20px;
-    background: $color-primary-hover;
-    margin-top: 30px;
-    &:hover {
-      background: $color-primary-hover;
-    }
-    a {
-      color: $color-white;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-.user-shortcuts-block-wrapper {
-  background: none !important;
-  .shorcut-operation {
-    .btn {
-      background-color: #d4d4d8 !important;
-      margin-right: 16px;
-      border-radius: 0;
-      &:hover {
-        background-color: #c2c3ca !important;
-      }
-      a {
-        color: $color-black;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  .user-shortcut-block {
-    .btn {
-      background: #00bfff !important;
-      margin: 0 !important;
-      border-radius: 0;
+    .view-footer {
+      float: right;
+      padding: 10px 20px;
+      background: #219FAD;
+      margin: 30px 0;
+      border-radius: 5px;
       a {
         color: $color-white;
         &:hover {
@@ -106,12 +77,63 @@
   }
 }
 
+
+.block-ezcontent-user-shortcut-block {
+  margin-top: 30px;
+  border: 1px solid $color-grey-light-2;
+  border-radius: 10px;
+  .block-title {
+    text-align: left;
+    color: $color-dark-blue;
+    background-color: $color-bg-grey;
+    padding: 15px 10px 15px;
+    border-bottom: 1px solid $color-grey-light-2;
+    border-radius: 10px 10px 0 0;
+  }
+  .user-shortcuts-block-wrapper {
+    background: none !important;
+    padding: 10px 15px 15px;
+    .shorcut-operation {
+      .btn {
+        padding: 0px 10px !important;
+        background-color: #d4d4d8 !important;
+        margin-right: 5px;
+        border-radius: 5px;
+        border: 1px solid #A9A9A9;
+        &:hover {
+          background-color: #c2c3ca !important;
+        }
+        a {
+          color: $color-black;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .user-shortcut-block {
+      .btn {
+        background: #219FAD !important;
+        margin: 0 5px 0 0 !important;
+        border-radius: 5px;
+        padding: 10px 15px;
+        a {
+          font-size: 20px;
+          color: $color-white;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .layout__region {
   section.block-views {
     &:last-child {
-      .view-footer {
-        margin-bottom: 30px;
-      }
+      margin-bottom: 30px;
     }
   }
 }

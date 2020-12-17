@@ -98,20 +98,22 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 .ui-dialog {
   .ui-dialog-titlebar {
     padding: 16px 24px;
-  }
-  .ui-dialog-titlebar-close {
-    top: 13px;
-    &:before {
-      content: "\e014";
-      font-family: "Glyphicons Halflings" !important;
-      display: block;
-      font-size: 16px;
-      line-height: 12px;
-      color: #FFF;
-    }
-    &:active,
-    &:focus {
-      background-color: transparent;
+    .ui-dialog-titlebar-close {
+      top: 13px;
+      background-color: #3367d6;
+      border-radius: 100%;
+      &:before {
+        content: "\e014";
+        font-family: "Glyphicons Halflings" !important;
+        display: block;
+        font-size: 16px;
+        line-height: 12px;
+        color: #FFF;
+      }
+      &:active,
+      &:focus {
+        background-color: transparent;
+      }
     }
   }
 }
@@ -158,6 +160,9 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   height: 100vh!important;
   border-radius: 0;
   background-color: #333;
+  &.entity-browser-modal {
+    width: 85% !important;
+  }
 }
 .node--type-landing-page .ui-dialog .ui-widget-content.ui-dialog-content {
   max-height: 92%!important;
@@ -165,6 +170,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   color: #fff;
   padding-right: 15px;
   padding-left: 15px;
+  height: 100vh !important;
 }
 .node--type-landing-page .ui-dialog table thead,
 .node--type-landing-page .ui-dialog table tbody {

@@ -10,6 +10,7 @@ framework:
       css/page/article.css: {}
       css/admin/layout_builder_modal.css: {}
       css/admin/liveblog.css: {}
+      css/admin/moderation_dashboard.css: {}
       css/block/content-listing-component.css: {}
       css/block/card_list.css: {}
       css/block/referenced-card.css: {}

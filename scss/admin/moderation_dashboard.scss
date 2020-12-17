@@ -1,8 +1,115 @@
-.moderation-dashboard  {
-  .view-content  {
-    &.row {
-    margin: 0;
-    display: block;
+section[class*='block-views-blockcontent-moderation-view-blocks-'] {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  .block-title {
+    text-align: left;
+    color: #122760;
+    background-color: #f1f1f1;
+    padding: 15px 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+  }
+  .view-content-moderation-view-blocks {
+    padding: 10px 15px 15px;
+    .view-content {
+      table {
+        width: 100%;
+        thead {
+          background-color: #f1f1f1;
+          tr {
+            th {
+              font-weight: normal;
+              width: 12%;
+              &.views-field-title {
+                width: 40%;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            td.views-field-title {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 200px;
+            }
+          }
+        }
+      }
+    }
+    .view-footer {
+      float: right;
+      padding: 10px 20px;
+      background: #219fad;
+      margin: 30px 0;
+      border-radius: 5px;
+      a {
+        color: #fff;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.block-ezcontent-user-shortcut-block {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  .block-title {
+    text-align: left;
+    color: #122760;
+    background-color: #f1f1f1;
+    padding: 15px 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+  }
+  .user-shortcuts-block-wrapper {
+    background: none !important;
+    padding: 10px 15px 15px;
+    .shorcut-operation {
+      .btn {
+        padding: 0px 10px !important;
+        background-color: #d4d4d8 !important;
+        margin-right: 5px;
+        border-radius: 5px;
+        border: 1px solid #a9a9a9;
+        &:hover {
+          background-color: #c2c3ca !important;
+        }
+        a {
+          color: #000;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .user-shortcut-block {
+      .btn {
+        background: #219fad !important;
+        margin: 0 5px 0 0 !important;
+        border-radius: 5px;
+        padding: 10px 15px;
+        a {
+          font-size: 20px;
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.layout__region {
+  section.block-views {
+    &:last-child {
+      margin-bottom: 30px;
     }
   }
 }

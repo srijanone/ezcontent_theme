@@ -57,9 +57,11 @@
   a.tabledrag-handle .handle {
     width: 25px;
     height: 25px;
+    margin-top: 2px;
   }
   .paragraph--type--card {
     padding: 0;
+    margin-bottom: 0;
     .field--name-field-subhead,
     .field--name-field-summary {
       border: none;
@@ -114,26 +116,35 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
         color: #fff;
       }
       &:active,
-      &:focus {
+      &:focus,
+      &:hover {
         background-color: transparent;
+        background-image: none;
+        border: 2px solid #fff;
       }
     }
-  }
-  label {
-    color: $color-white !important;
   }
   .ui-dialog-content {
     .form-item {
       padding-bottom: 10px;
-      input.form-text {
+      input.form-text, textarea {
         width: 100%;
-      }
+      }      
     }
     .button--primary {
       box-shadow: none !important;
     }
     .form-submit {
       margin-top: 20px;
+    }
+  }
+
+  form {
+    > .form-wrapper {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      margin-bottom: 20px;
+      color: #000;
     }
   }
 }
@@ -173,16 +184,19 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 }
 
 .node--type-landing-page .ui-dialog {
-  width: 60% !important;
-  top: 80px !important;
+  width: auto !important;
+  max-width: 60% !important;
+  min-width: 30%;
+  top: 0 !important;
   left: auto !important;
   right: 0;
-  height: calc(100vh - 80px) !important;
+  height: 100vh !important;
   border-radius: 0;
   background-color: #333;
 
   &.entity-browser-modal {
     width: 85% !important;
+    max-width: 85% !important;
     position: fixed;
   }
 }
@@ -193,12 +207,66 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   color: #fff;
   padding-right: 15px;
   padding-left: 15px;
-  height: calc(100vh - 80px) !important;
+  height: 100vh !important;
   top: 0;
 }
 .node--type-landing-page .ui-dialog table thead,
 .node--type-landing-page .ui-dialog table tbody {
   border: none;
+}
+.node--type-landing-page .ui-dialog table {
+  margin-top: 20px;
+  thead {
+    background: rgba(0, 0, 0, 0.51);
+    color: #fff;
+    tr th.field-label {
+      .label {
+        display: inline;
+      }
+      .paragraphs-actions {
+        .form-submit {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+.node--type-landing-page .ui-dialog table tbody tr.paragraph-type--card {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  margin-bottom: 0;
+  border-bottom: 10px solid #d7d7d7;
+  .form-wrapper {
+    padding: 0 30px;
+    .form-wrapper {
+      padding: 0;
+
+      .paragraphs-actions {
+        .form-submit {
+          margin-top: 0;
+        }
+      }
+    }
+    label {
+      color: #000;
+    }
+  }
+  .paragraph--type--card {
+    padding-top: 30px !important;
+    .card--list {
+      margin-bottom: 20px;
+      .card_media {
+        .layout {
+          display: block;
+          .layout__region {
+            .card_text_content {
+              padding: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .node--type-landing-page .ui-dialog table td,
 .node--type-landing-page .ui-dialog table th {

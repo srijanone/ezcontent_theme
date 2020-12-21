@@ -10,3 +10,10 @@ section > .field--name-field-short-title {
   padding: 36px 0;
   text-align: center;
 }
+
+#block-languageswitcher {
+  margin: 5px 0 0 10px;
+  ul.links {
+    visibility: hidden;
+  }
+}

@@ -11,6 +11,8 @@ framework:
       css/02-organisms/00-global/00-global.css: {}
       css/04-pages/00-home-page.css: {}
       css/04-pages/01-article-page.css: {}
+  js:
+    js/init.js: {}
 
 bootstrap_cdn:
   js:

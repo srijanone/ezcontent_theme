@@ -9,41 +9,61 @@ section[class*='block-views-blockcontent-moderation-view-blocks-'] {
     padding: 15px 10px 15px;
     border-bottom: 1px solid #ddd;
     border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
   }
   .view-content-moderation-view-blocks {
-    padding: 10px 15px 15px;
+    padding: 0;
     .view-content {
-      table {
-        width: 100%;
-        thead {
-          background-color: #f1f1f1;
-          tr {
-            th {
-              font-weight: normal;
-              width: 12%;
-              &.views-field-title {
-                width: 40%;
+      .table-responsive {
+        padding: 0;
+        table {
+          width: 100%;
+          margin: 0;
+          thead {
+            border: none;
+            tr {
+              background: none;
+              border: none;
+              th {
+                font-weight: 700;
+                width: 12%;
+                border: none;
+                background: none;
+                color: #000;
+                &.views-field-title {
+                  width: 40%;
+                }
+              }
+            }
+          }
+          tbody {
+            border: none;
+            tr {
+              background: none;
+              border: none;
+              &:nth-child(odd) {
+                background: rgb(241, 241, 241);
+              }
+              td {
+                border: none;
+                &.views-field-title {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  max-width: 200px;
+                }
               }
             }
           }
         }
-        tbody {
-          tr {
-            td.views-field-title {
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              max-width: 200px;
-            }
-          }
-        }
       }
+      
     }
     .view-footer {
       float: right;
       padding: 10px 20px;
       background: #219fad;
-      margin: 30px 0;
+      margin: 15px;
       border-radius: 5px;
       a {
         color: #fff;

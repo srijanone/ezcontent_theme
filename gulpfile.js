@@ -85,8 +85,8 @@ gulp.task('watch', function() {
 });
 
 // Default task
-gulp.task('default', ['scss', 'js', 'sass-lint', 'watch']);
+gulp.task('default', gulp.series('scss', 'js', 'sass-lint', 'watch'));
 
 // Build Prod
-gulp.task('build:prod', ['scss', 'js', 'sass-lint']);
+gulp.task('build:prod', gulp.series('scss', 'js', 'sass-lint'));
 

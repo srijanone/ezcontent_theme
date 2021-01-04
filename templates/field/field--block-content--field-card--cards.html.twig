@@ -55,11 +55,11 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field--items') }}>
+    <div{{ attributes.addClass(classes, 'row field--items') }}>
       {% for item in items %}
         {% set layoutClassC = item.content['#paragraph'].layout_selection.target_id %}
         {% if layoutClassC == '' and card_block_view_mode == 'cards_grid_3xn' %}
-            {% set layoutClass = 'col-12 col-sm-12 col-md-4' %}
+            {% set layoutClass = 'col-12 col-sm-12 col-md-4 cards-grid' %}
         {% else %}
             {% set layoutClass = 'col-12 col-sm-12' %}
         {% endif %}

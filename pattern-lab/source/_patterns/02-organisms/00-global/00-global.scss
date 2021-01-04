@@ -2,7 +2,7 @@
 @import '../../_patterns-global/scss/abstracts/mixins';
 section > .field--name-field-title,
 section > .block-title,
-section > .field--name-field-short-title {
+.paragraph--type--card-list > .field--name-field-title {
   color: $color-blue-light;
   font-family: $bold-font;
   font-size: 24px;

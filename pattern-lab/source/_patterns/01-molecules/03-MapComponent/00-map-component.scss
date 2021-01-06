@@ -1,7 +1,8 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
-.map-component {
+.map-component,
+.block--type-map-block {
   @include clearfix;
   margin-bottom: 60px;
 
@@ -14,9 +15,11 @@
     &--name-field-short-title {
       font-size: 18px;
       padding: 10px 0;
+      font-family: $bold-font;
     }
 
-    &--name-field-body {
+    &--name-field-body,
+    &--name-body {
       font-size: 20px;
       line-height: 26px;
       color: $color-dark-blue;
@@ -48,4 +51,14 @@
     border: none;
   }
 }
-//map end
+.map-component {
+  h2.block-title {
+    @include title;
+    color: $color-dark-blue;
+  }
+  h4.block-title {
+    font-size: 18px;
+    padding: 10px 0;
+    font-family: $bold-font;
+  }
+}

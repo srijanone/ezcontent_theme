@@ -2,11 +2,17 @@
 @import '../../_patterns-global/scss/abstracts/mixins';
 section > .field--name-field-title,
 section > .block-title,
-section > .field--name-field-short-title {
+.paragraph--type--card-list > .field--name-field-title {
   color: $color-blue-light;
   font-family: $bold-font;
   font-size: 24px;
   line-height: 30px;
   padding: 36px 0;
   text-align: center;
+}
+#block-languageswitcher {
+  margin: 5px 0 0 10px;
+  ul.links {
+    visibility: hidden;
+  }
 }

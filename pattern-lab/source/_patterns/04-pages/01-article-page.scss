@@ -47,7 +47,7 @@
 
   .paragraph--type--gallery {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     @include respond(desktop) {
       max-width: 1080px;
     }

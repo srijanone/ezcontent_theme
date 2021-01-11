@@ -156,8 +156,13 @@
   a {
     font-size: 18px;
     line-height: 22px;
-    color: $color-black;
     font-family: $bold-font;
+    background: $color-cta-button;
+    border-color: $color-cta-button;
+    padding: 8px 17px;
+    color: $color-white;
+    line-height: 24px;
+    font-weight: normal;
     &:hover {
       text-decoration: none;
     }

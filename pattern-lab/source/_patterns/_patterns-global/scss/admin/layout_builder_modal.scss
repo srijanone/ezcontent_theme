@@ -26,11 +26,6 @@
   .paragraphs-actions {
     float: right;
     margin-right: -11px;
-    .paragraphs-previewer {
-      padding: calc(0.25rem - 1px) calc(0.75rem - 1px);
-      height: 1.75rem;
-      min-height: 1.75rem;
-    }
   }
   .paragraphs-dropdown-actions {
     .button {
@@ -137,6 +132,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     }
     .form-submit {
       margin-top: 20px;
+      background-color: #0444c4;
+      color: #fff;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+        color: #0444c4;
+      }
     }
   }
 
@@ -146,6 +149,20 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       padding: 20px;
       margin-bottom: 20px;
       color: $color-white;
+    }
+  }
+
+  #layout-builder-add-block,
+  #layout-builder-update-block {
+    .button {
+      background-color: #0444c4;
+      color: #fff;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+        color: #0444c4;
+      }
     }
   }
 }
@@ -237,23 +254,51 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   }
 }
 .node--type-landing-page .ui-dialog table tbody tr.paragraph-type--card {
-  background: rgba(255, 255, 255, 0.8);
-  color: #000;
+  background: #4a4a4a;
+  color: #fff;
   margin-bottom: 0;
   border-bottom: 10px solid #3a3a3a;
   .form-wrapper {
     padding: 0 30px;
     .form-wrapper {
       padding: 0;
-
+      input.remove-button,
+      input.edit-button,
+      input.entity-browser-processed {
+        width: 120px;
+        background-color: #0444c4;
+        color: #fff;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: transparent;
+          color: #0444c4;
+        }
+      }
+      input.entity-browser-processed {
+        width: auto;
+      }
       .paragraphs-actions {
+        .paragraphs-previewer {
+          height: 34px;
+          padding: 0.25rem 0.75rem;
+        }
         .form-submit {
           margin-top: 0;
+          width: 110px;
+          background-color: #0444c4;
+          color: #fff;
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: transparent;
+            color: #0444c4;
+          }
         }
       }
     }
     label {
-      color: #000;
+      color: #fff;
     }
   }
   .paragraph--type--card {

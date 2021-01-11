@@ -1,1 +1,0 @@
-{"version":3,"sources":["01-molecules/10-ParagraphAsset/00-paragraph-asset.scss","00-paragraph-asset.css"],"names":[],"mappings":"AAAA,yBACE,mBACA,SAAU,CAFZ,4DAII,aAAc,CACf;;ACHH,8dAA8d","file":"00-paragraph-asset.css","sourcesContent":[".paragraph--type--assets {\n  margin-bottom: 50px;\n  padding: 0;\n  .field--name-field-media-image img {\n    margin: 0 auto;\n  }\n}\n"]}

@@ -5,7 +5,8 @@
   border-top: 1px solid $color-grey-light-dark;
   margin: 0;
   padding: 20px 0 0;
-  display: inline-block;
+  background-color: $color-bg-dark-cyan;
+  color: $color-white;
   width: 100%;
   @include respond(tab) {
     padding: 36px 0 0;

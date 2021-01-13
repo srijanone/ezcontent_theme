@@ -9,10 +9,10 @@
   }
   .block-system-menu-blockprivacy-policy {
     width: 100%;
-    padding: 30px 20px;
     background: $color-bg-dark-cyan;
     @include respond(tab) {
-      padding: 40px 40px 30px 30px;
+      width: 33%;
+      display: inline-block;
     }
     ul {
       li {
@@ -31,6 +31,14 @@
           float: right;
         }
       }
+    }
+  }
+  .copyright {
+    padding: 20px 30px;
+    background-color: #1B2638;
+    p {
+      margin-bottom: 0;
+      text-align: center;
     }
   }
 }

@@ -7,7 +7,7 @@
     max-width: $component-xxl;
     h1 {
       color: $color-dark-blue;
-      font-family: $primary-font;
+      font-family: $heading-font;
       font-size: 48px;
     }
   }
@@ -114,8 +114,11 @@
         margin: 0 auto;
       }
     }
-    margin: 0 auto;
-    max-width: 100%;
+    #embedded-container {
+      & > div {
+        margin: 0 auto;
+      }
+    }
   }
 
   .paragraph--type--gallery {
@@ -133,7 +136,6 @@
       @include respond(desktop) {
         right: -60px;
       }
-
       @include respond(large-desktop) {
         right: -115px;
       }
@@ -184,7 +186,6 @@
               @include respond(desktop) {
                 width: 260px;
               }
-
               @include respond(large-desktop) {
                 width: 300px;
               }
@@ -280,7 +281,6 @@
       }
     }
   }
-
   .paragraph {
     margin-bottom: 30px;
     @include respond(desktop) {

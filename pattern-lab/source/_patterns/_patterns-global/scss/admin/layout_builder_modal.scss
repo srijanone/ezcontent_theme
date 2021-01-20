@@ -93,15 +93,22 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   border: none;
   color: #222330;
 }
+.ui-widget.ui-dialog.ui-dialog-off-canvas button.ui-dialog-titlebar-close {
+  top: 50%;
+  transform: translateY(-50%);
+  text-indent: 0px;
+}
 
 .ui-dialog {
   .ui-dialog-titlebar {
     padding: 16px 24px;
-
     .ui-dialog-titlebar-close {
-      top: 13px;
+      top: 50%;
+      transform: translateY(-50%);
       background: $color-primary;
       border-radius: 100%;
+      font-size: 0;
+      right: 20px;
       &:before {
         content: '\e014';
         font-family: 'Glyphicons Halflings' !important;
@@ -150,8 +157,65 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       margin-bottom: 20px;
       color: $color-white;
     }
+    &.shortcut-form {
+      > .form-wrapper {
+        padding: 0 20px;
+        margin-bottom: 0;
+      }
+    }
   }
-
+  #drupal-off-canvas {
+    .shortcut-form {
+      label {
+        font-size: 16px;
+        font-weight: 700;
+        color: $color-white;
+      }
+      .form-text {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    .shortcut-set-form {
+      .tabledrag-toggle-weight-wrapper {
+        .tabledrag-toggle-weight {
+          color: #fff;
+          background: #0069d9;
+          padding: 10px;
+          margin-bottom: 20px;
+        }
+      }
+      table {
+        thead {
+          th {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            &:first-child {
+              width: 200px;
+            }
+            &:last-child {
+              text-align: end;
+            }
+          }
+        }
+        tbody {
+          tr {
+            height: 40px;
+            &:hover {
+              td.tabledrag-hide {
+                background: #222;
+                div {
+                  background: #222;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   #layout-builder-add-block,
   #layout-builder-update-block {
     .button {

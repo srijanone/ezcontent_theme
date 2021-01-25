@@ -88,9 +88,6 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
 
 
 .block-ezcontent-user-shortcut-block {
-  margin-top: 30px;
-  border: 1px solid $color-grey-light-2;
-  border-radius: 10px;
   .block-title {
     text-align: left;
     color: $color-dark-blue;
@@ -100,18 +97,8 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
     border-radius: 10px 10px 0 0;
   }
   .user-shortcuts-block-wrapper {
-    background: none !important;
-    padding: 10px 15px 15px;
     .shorcut-operation {
       .btn {
-        padding: 0px 10px !important;
-        background-color: #d4d4d8 !important;
-        margin-right: 5px;
-        border-radius: 5px;
-        border: 1px solid #A9A9A9;
-        &:hover {
-          background-color: #c2c3ca !important;
-        }
         a {
           color: $color-black;
           &:hover {
@@ -122,8 +109,8 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
     }
     .user-shortcut-block {
       .btn {
-        background: #219FAD !important;
-        margin: 0 5px 0 0 !important;
+        background: #219FAD;
+        margin: 0 5px 0 0;
         border-radius: 5px;
         padding: 10px 15px;
         a {

@@ -3,7 +3,7 @@
 @mixin clearfix {
   &::after {
     clear: both;
-    content: "";
+    content: '';
     display: table;
   }
 }
@@ -61,65 +61,80 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == tab {
-    @media only screen and (min-width: 700px) { @content }; //tab
+    @media only screen and (min-width: $screen-sm) {
+      @content;
+    } //tab
   }
+
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 1200px) { @content }; //desktop
+    @media only screen and (min-width: $screen-md) {
+      @content;
+    } //desktop
+  }
+
+  @if $breakpoint == large-desktop {
+    @media only screen and (min-width: $screen-lg) {
+      @content;
+    } //desktop
   }
 }
 
-
 // placeholder
 %h1 {
+  font-family: $bold-font;
   font-size: 36px;
   line-height: 40px;
-  font-family: $bold-font;
   @include respond(phone-min) {
     font-size: 42px;
     line-height: 46px;
   }
 }
+
 %h2 {
+  font-family: $bold-font;
   font-size: 20px;
   line-height: 24px;
-  font-family: $bold-font;
   @include respond(phone-min) {
     font-size: 26px;
     line-height: 30px;
   }
-}
-@mixin title {
-  font-size: 20px;
-  line-height: 24px;
-  font-family: $bold-font;
-  @include respond(phone-min) {
-    font-size: 26px;
-    line-height: 30px;
-  }
-}
-%h3 {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: $primary-font;
 }
 
+@mixin title {
+  font-family: $bold-font;
+  font-size: 20px;
+  line-height: 24px;
+  @include respond(phone-min) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+%h3 {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 /* CSS Transition
 	Usage: @include transition(width,0.3s,ease-out);
  */
- @mixin transition($transition-property, $transition-time, $method) {
-	-webkit-transition: $transition-property $transition-time $method;
-	-moz-transition: $transition-property $transition-time $method;
-	-ms-transition: $transition-property $transition-time $method;
-	-o-transition: $transition-property $transition-time $method;
-	transition: $transition-property $transition-time $method;
+@mixin transition($transition-property, $transition-time, $method) {
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  -webkit-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
 }
 
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
 	Usage: @include font-size(1, large);
 */
-@mixin font-size( $decimal-size, $keyword: null ) {
-  @if $keyword{ font-size: $keyword; }
-  @else { font-size: $decimal-size * $base-font-multiplier * 16px;}
+@mixin font-size($decimal-size, $keyword: null) {
+  @if $keyword {
+    font-size: $keyword;
+  } @else {
+    font-size: $decimal-size * $base-font-multiplier * 16px;
+  }
   font-size: $decimal-size * 1rem;
 }

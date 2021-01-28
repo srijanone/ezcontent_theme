@@ -14,23 +14,35 @@ $color-white: #fff;
 $color-black: #000;
 $color-text: #000;
 $color-footer-border-lighter: rgba(107, 164, 57, 0.25);
-$color-bg-dark-cyan: #3E5063;
+$color-bg-dark-cyan: #3e5063;
 $color-dark-blue: #122760;
-$color-blue-light: #2F9EB9;
+$color-blue-light: #2f9eb9;
 $color-border-line: #979797;
 $color-bg-grey: #f1f1f1;
 $color-primary-btn: #003cc5;
 $color-primary-btn-hover: #0036b1;
-$color-cta-button: #1A73E8;
-
+$color-cta-button: #1a73e8;
 
 // FONT SIZE
 $default-font-size: 16px;
 
 // fonts
-$primary-font: 'ProximaNova-Regular', sans-serif;
-$secondary-font: 'ProximaNova-Regular', sans-serif;
-$heading-font: 'ProximaNovaT-Thin', sans-serif;
-$bold-font: 'ProximaNova-Bold', sans-serif;
+$primary-font: "ProximaNova-Regular", sans-serif;
+$secondary-font: "ProximaNova-Regular", sans-serif;
+$heading-font: "ProximaNovaT-Thin", sans-serif;
+$bold-font: "ProximaNova-Bold", sans-serif;
 
-$greadient: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+$greadient: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+//screen width
+$screen-sm: 700px;
+$screen-md: 1200px;
+$screen-lg: 1300px;
+
+//component width
+$component-xs: 800px;
+$component-sm: 850px;
+$component-md: 960px;
+$component-lg: 980px;
+$component-xl: 1080px;
+$component-xxl: 1280px;

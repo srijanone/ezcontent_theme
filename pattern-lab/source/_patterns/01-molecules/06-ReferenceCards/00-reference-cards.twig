@@ -5,6 +5,7 @@
 {{ title_suffix }}
 
 {% block content %}
+<div class="layout-builder__actions layout-builder__actions__section"> {{ actions }} </div>
   <div class="text-left referenced-card" aria-label="reference cards">
     <div class="field--name-field-article">
       {% for key,value in referenceCard.data %}

@@ -3,21 +3,22 @@
 
 .node--type-article {
   .block-page-title-block {
-    max-width: 1280px;
     margin: 0 auto;
+    max-width: $component-xxl;
     h1 {
-      font-family: $primary-font;
       color: $color-dark-blue;
+      font-family: $primary-font;
       font-size: 48px;
     }
   }
+
   .block-social-sharing-block {
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-top: 40px;
     border-bottom: solid 1px $color-border-line;
-    padding-bottom: 15px;
+    margin: 0 auto;
     margin-bottom: 40px;
+    margin-top: 40px;
+    max-width: $component-xxl;
+    padding-bottom: 15px;
   }
 
   .field--name-field-content {
@@ -27,99 +28,190 @@
   }
 
   .paragraph--type--text,
-  .paragraph--type--assets,
   .paragraph--type--quote,
-  .paragraph--type--faq {
+  .paragraph--type--faq,
+  .paragraph--type--map,
+  .paragraph--type--card-list,
+  .paragraph--type--card {
+    margin: 0 auto;
     max-width: 100%;
     width: 100%;
-    margin: 0 auto;
     @include respond(desktop) {
-      max-width: 850px;
+      max-width: $component-sm;
     }
   }
-  .paragraph--type--embed {
-    max-width: 100%;
+
+  .paragraph--type--card-list {
+    & > .field--name-field-title {
+      font-family: $bold-font;
+      font-size: 22px;
+      line-height: 26px;
+      padding-bottom: 20px;
+      @include respond(tab) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      @include respond(desktop) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    .card_media {
+      .layout {
+        .layout__region {
+          .card_text_content {
+            max-height: 500px;
+            padding: 60px 40px 0;
+          }
+        }
+      }
+    }
+
+    .paragraph--type--card {
+      .card_text_content {
+        max-height: 600px;
+        overflow: hidden;
+      }
+    }
+
+    .paragraph {
+      margin-bottom: 0;
+    }
+
+    .col-12,
+    .col-sm-12 {
+      padding: 0;
+    }
+
+    .row {
+      margin: 0;
+    }
+  }
+
+  .paragraph--type--assets {
     margin: 0 auto;
+    max-width: 100%;
     @include respond(desktop) {
-      max-width: 980px;
+      left: -23px;
+      max-width: $component-xs;
+    }
+  }
+
+  .paragraph--type--embed {
+    margin: 0 auto;
+    max-width: 100%;
+    @include respond(desktop) {
+      max-width: $component-lg;
+    }
+
+    #embedded-container {
+      & > div {
+        margin: 0 auto;
+      }
     }
   }
 
   .paragraph--type--gallery {
+    margin: 0 auto;
     max-width: 100%;
-    margin: 0 auto 30px;
     @include respond(desktop) {
-      max-width: 1080px;
+      max-width: $component-md;
     }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+
     .gallery-component {
       position: relative;
       @include respond(desktop) {
+        right: -60px;
+      }
+
+      @include respond(large-desktop) {
         right: -115px;
       }
+
       .gc--field--name-field-title {
-        padding-bottom: 20px;
         font-family: $bold-font;
         font-size: 22px;
         line-height: 26px;
+        padding-bottom: 20px;
         @include respond(tab) {
           font-size: 22px;
           line-height: 26px;
         }
+
         @include respond(desktop) {
           font-size: 24px;
           line-height: 32px;
         }
       }
+
       .field.field--name-field-media-items {
         background: #d8d8d8;
         padding: 20px 30px;
         @include respond(tab) {
           padding: 20px 15px;
         }
+
         @include respond(desktop) {
           padding: 30px 45px;
         }
+
         > .field__item {
           display: flex;
           padding: 10px;
           @include respond(desktop) {
             padding: 15px;
           }
+
           .field--name-field-media-image {
             img {
-              width: 300px;
               height: 250px;
               object-fit: cover;
+              width: 300px;
               @include respond(tab) {
                 width: 215px;
               }
+
               @include respond(desktop) {
+                width: 260px;
+              }
+
+              @include respond(large-desktop) {
                 width: 300px;
               }
             }
           }
         }
       }
+
       .field--name-field-body {
         padding-top: 20px;
       }
+
       a.link {
+        color: $color-black;
+        display: block;
+        font-family: $bold-font;
         font-size: 18px;
         line-height: 22px;
-        color: $color-black;
-        font-family: $bold-font;
-        display: block;
         padding-top: 20px;
         &:hover {
           text-decoration: none;
         }
       }
     }
+
     &.paragraph--view-mode--gallery-carousel {
       max-width: 100%;
       @include respond(desktop) {
-        max-width: 850px;
+        max-width: $component-sm;
       }
+
       .gallery-carousel {
         .gc--field--name-field-title {
           font-family: $bold-font;
@@ -129,11 +221,13 @@
             font-size: 22px;
             line-height: 26px;
           }
+
           @include respond(desktop) {
             font-size: 24px;
             line-height: 32px;
           }
         }
+
         .slick-wrapper {
           .slick {
             .slick-slider {
@@ -142,6 +236,7 @@
                 &.draggable {
                   padding-top: 20px;
                 }
+
                 .slick-track {
                   padding: 0;
                 }
@@ -149,21 +244,38 @@
             }
           }
         }
+
         .field--name-field-body {
           padding-top: 20px;
         }
+
         a.link {
+          color: $color-black;
+          display: block;
+          font-family: $bold-font;
           font-size: 18px;
           line-height: 22px;
-          color: $color-black;
-          font-family: $bold-font;
-          display: block;
           padding-top: 20px;
           &:hover {
             text-decoration: none;
           }
         }
       }
+    }
+  }
+
+  .paragraph--type--hero-media {
+    .hero-media-component {
+      .hero_banner-body {
+        padding: 20px 40px;
+      }
+    }
+  }
+
+  .paragraph {
+    margin-bottom: 30px;
+    @include respond(desktop) {
+      margin-bottom: 50px;
     }
   }
 }

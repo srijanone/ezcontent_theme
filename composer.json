@@ -8,7 +8,7 @@
   },
   "require": {
     "drupal/bootstrap_barrio": "^4.22",
-    "drupal/components": "^1.1"
+    "drupal/components": "2.x"
   },
   "extra": {
     "patches": {

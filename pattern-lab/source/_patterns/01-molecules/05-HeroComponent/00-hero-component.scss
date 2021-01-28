@@ -7,7 +7,7 @@
     margin-bottom: 0;
   }
   .slick-dots {
-    display: none !important;
+    display: none;
   }
   .slick-list {
     z-index: -1;
@@ -35,49 +35,45 @@
   }
 }
 
-.hero_banner_wrapper {
-  width: 100%;
-  min-height: auto;
-  background-color: #ffffff;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% !important;
-  height: auto !important;
-  position: relative;
-  @include clearfix;
-
-  @include respond(tab) {
-    min-height: 540px;
-    height: 580px !important;
-  }
-
-  img {
+.paragraph--type--card {
+  .hero_banner_wrapper {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  div {
-    color: #ffffff;
-  }
-}
-.hero_banner-body {
-  font-family: $bold-font;
-  cursor: grab;
-  left: 0;
-  bottom: 0;
-  height: auto;
-  padding: 20px 70px 20px 70px !important;
+    min-height: auto;
+    background: $color-white center/100% no-repeat ;
+    height: auto;
+    position: relative;
+    @include clearfix;
 
-  &.center {
-    text-align: center;
-  }
+    @include respond(tab) {
+      min-height: 540px;
+      height: 580px;
+    }
 
-  &.left {
-    text-align: left;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
+  .hero_banner-body {
+    font-family: $bold-font;
+    cursor: grab;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    padding: 20px 70px 20px 70px;
 
-  &.right {
-    text-align: right;
+    &.center {
+      text-align: center;
+    }
+
+    &.left {
+      text-align: left;
+    }
+
+    &.right {
+      text-align: right;
+    }
   }
 }
 
@@ -156,13 +152,8 @@
   a {
     font-size: 18px;
     line-height: 22px;
+    color: $color-black;
     font-family: $bold-font;
-    background: $color-cta-button;
-    border-color: $color-cta-button;
-    padding: 8px 17px;
-    color: $color-white;
-    line-height: 24px;
-    font-weight: normal;
     &:hover {
       text-decoration: none;
     }

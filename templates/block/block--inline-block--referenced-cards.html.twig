@@ -45,39 +45,38 @@
  * @see template_process()
  */
 #}
-{%
-  set classes = [
-    'block',
-    'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
-    bundle ? 'block--type-' ~ bundle|clean_class,
-    view_mode ? 'block--view-mode-' ~ view_mode|clean_class,
-    'clearfix',
-  ]
-%}
-
+{% set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+  bundle ? 'block--type-' ~ bundle|clean_class,
+  view_mode ? 'block--view-mode-' ~ view_mode|clean_class,
+  'clearfix',
+] %}
 {% set cardArray = [] %}
-{% for key , item in content['#block_content'].field_article %}
-  {% set imgUrl =  file_url(content['#block_content'].field_article[key].entity.field_thumbnail.0.entity.field_media_image.0.entity.uri.value) %}
-  {% set pathUrl = path('entity.node.canonical', {'node':content['#block_content'].field_article[key].entity.nid.0.value}) %}
+{% for key , item in content.content['#block_content'].field_article %}
+  {% set imgUrl =  file_url(content.content['#block_content'].field_article[key].entity.field_thumbnail.0.entity.field_media_image.0.entity.uri.value) %}
+  {% set pathUrl = path('entity.node.canonical', {'node':content.content['#block_content'].field_article[key].entity.nid.0.value}) %}
   {% set cardArray = cardArray|merge([{
-    'image' : imgUrl,
-    'title': content['#block_content'].field_article[key].entity.title(),
-    'path': pathUrl,
-    'summary': content['#block_content'].field_article[key].entity.field_summary.value
-  }])
-  %}
+      'image' : imgUrl,
+      'title': content.content['#block_content'].field_article[key].entity.title(),
+      'path': pathUrl,
+      'summary': content.content['#block_content'].field_article[key].entity.field_summary.value
+  }]) %}
 {% endfor %}
+{% set actions = content.actions %}
 {% set data = {
   "referenceCard":{
-    "data": cardArray
+      "data": cardArray
   },
+  "actions": actions,
   "label": label,
   "title_prefix": title_prefix,
   "title_suffix": title_suffix,
   "title_attributes": title_attributes
 } %}
-
 <section{{ attributes.addClass(classes) }}>
-  {% include "@molecules/06-ReferenceCards/00-reference-cards.twig" with data %}
+  {% block content %}
+    {% include "@molecules/06-ReferenceCards/00-reference-cards.twig" with data %}
+  {% endblock %}
 </section>

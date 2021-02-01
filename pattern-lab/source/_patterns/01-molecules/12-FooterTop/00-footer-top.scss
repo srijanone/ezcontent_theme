@@ -1,42 +1,48 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
+
 .region-footer {
   .block--type-text-block {
+    @include respond(tab) {
+      border: 0;
+      margin-bottom: 0;
+      padding-left: 30px;
+      width: 33%;
+    }
     display: inline-block;
     margin-bottom: 15px;
     width: 100%;
-    @include respond(tab) {
-      width: 33%;
-      border: none;
-      margin-bottom: 0;
-      padding-left: 30px;
-    }
   }
+
   .block-system-menu-blockfooter-menu {
-    display: block;
-    width: 100%;
     @include respond(tab) {
-      width: 33%;
       display: inline-block;
       vertical-align: top;
+      width: 33%;
     }
+    display: block;
+    width: 100%;
+
     .menu--footer-menu {
-      padding-bottom: 20px;
       @include respond(tab) {
         padding-bottom: 0;
       }
+      padding-bottom: 20px;
+
       li {
-        list-style: none;
-        display: inline-block;
-        width: 100%;
-        padding: 0;
         @include respond(tab) {
-          width: 25%;
           padding: 0 10px;
+          width: 25%;
         }
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
         a {
-          padding: 0;
           color: $color-white;
+          padding: 0;
+
           &:hover,
           &:focus {
             background: transparent;

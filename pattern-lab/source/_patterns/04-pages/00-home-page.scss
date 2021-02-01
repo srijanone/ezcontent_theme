@@ -4,16 +4,17 @@
 .path-frontpage {
   .ezcontent-header {
     .container {
-      padding: 0 20px;
       @include respond(desktop) {
         padding: 0 60px;
       }
+      padding: 0 20px;
     }
   }
 
   .container {
     .main-content {
       padding: 0;
+
       .block--type-cards {
         .field--name-field-card {
           > .field--item {
@@ -23,11 +24,12 @@
       }
 
       .block--type-referenced-cards {
-        padding: 0 10px;
         @include respond(tab) {
           padding: 0 30px;
         }
+        padding: 0 10px;
       }
+
       .block--type-embed-block {
         background: $color-bg-grey;
         padding-bottom: 40px;
@@ -46,6 +48,7 @@
   .layout__region--first {
     padding-right: 15px;
   }
+
   .layout__region--second {
     padding-left: 15px;
   }

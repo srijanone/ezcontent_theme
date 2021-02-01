@@ -4,6 +4,7 @@
 .layout--twocol-section {
   display: flex;
   flex-wrap: wrap;
+
   > .layout--region {
     flex: 0 1 100%;
   }
@@ -45,49 +46,57 @@
     flex: 0 1 75%;
   }
 }
+
 .card-media {
   @include clearfix;
   padding: 0;
+
   .layout {
     .layout--region {
-      padding: 0;
-      margin-bottom: 20px;
       @include respond(tab) {
         margin-bottom: 0;
       }
+      margin-bottom: 20px;
+      padding: 0;
+
       .field--name-field-media-image {
-        width: 100%;
         @include respond(tab) {
           height: 500px;
         }
+        width: 100%;
+
         img {
           display: block;
-          margin: 0 auto;
           height: 100%;
+          margin: 0 auto;
           object-fit: cover;
         }
       }
+
       .card-text-content {
-        color: $color-dark-blue;
         @include respond(tab) {
           padding: 60px 40px 0;
         }
+
         @include respond(desktop) {
           padding: 100px 80px 0;
         }
+        color: $color-dark-blue;
+
         .field {
           &--name-field-title {
-            font-family: $bold-font;
-            font-size: 28px;
-            line-height: 32px;
             @include respond(tab) {
               font-size: 32px;
               line-height: 36px;
             }
+
             @include respond(desktop) {
               font-size: 36px;
               line-height: 40px;
             }
+            font-family: $bold-font;
+            font-size: 28px;
+            line-height: 32px;
           }
 
           &--name-field-short-title {
@@ -101,13 +110,14 @@
           }
 
           &--name-field-summary {
-            display: block;
-            font-size: 16px;
-            margin-top: 30px;
-            margin-bottom: 20px;
             @include respond(tab) {
               margin-bottom: 40px;
             }
+            display: block;
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+
             p {
               margin: 0;
             }
@@ -122,11 +132,13 @@
 
           &--name-field-link {
             text-align: left;
+
             a {
-              font-size: 18px;
-              line-height: 22px;
               color: $color-black;
               font-family: $bold-font;
+              font-size: 18px;
+              line-height: 22px;
+
               &:hover {
                 text-decoration: none;
               }

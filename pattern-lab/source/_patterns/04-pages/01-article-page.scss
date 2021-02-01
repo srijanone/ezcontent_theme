@@ -97,6 +97,9 @@
       left: -23px;
       max-width: $component-xs;
     }
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
   }
 
   .paragraph--type--embed {
@@ -111,6 +114,8 @@
         margin: 0 auto;
       }
     }
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .paragraph--type--gallery {
@@ -125,7 +130,6 @@
     }
 
     .gallery-component {
-      position: relative;
       @include respond(desktop) {
         right: -60px;
       }
@@ -148,11 +152,13 @@
           font-size: 24px;
           line-height: 32px;
         }
+        font-family: $bold-font;
+        font-size: 22px;
+        line-height: 26px;
+        padding-bottom: 20px;
       }
 
       .field.field--name-field-media-items {
-        background: #d8d8d8;
-        padding: 20px 30px;
         @include respond(tab) {
           padding: 20px 15px;
         }
@@ -162,8 +168,6 @@
         }
 
         > .field__item {
-          display: flex;
-          padding: 10px;
           @include respond(desktop) {
             padding: 15px;
           }
@@ -184,6 +188,9 @@
               @include respond(large-desktop) {
                 width: 300px;
               }
+              height: 250px;
+              object-fit: cover;
+              width: 300px;
             }
           }
         }
@@ -200,6 +207,7 @@
         font-size: 18px;
         line-height: 22px;
         padding-top: 20px;
+
         &:hover {
           text-decoration: none;
         }
@@ -207,16 +215,12 @@
     }
 
     &.paragraph--view-mode--gallery-carousel {
-      max-width: 100%;
       @include respond(desktop) {
         max-width: $component-sm;
       }
 
       .gallery-carousel {
         .gc--field--name-field-title {
-          font-family: $bold-font;
-          font-size: 22px;
-          line-height: 26px;
           @include respond(tab) {
             font-size: 22px;
             line-height: 26px;
@@ -226,6 +230,9 @@
             font-size: 24px;
             line-height: 32px;
           }
+          font-family: $bold-font;
+          font-size: 22px;
+          line-height: 26px;
         }
 
         .slick-wrapper {
@@ -233,6 +240,7 @@
             .slick-slider {
               .slick-list {
                 padding: 0;
+
                 &.draggable {
                   padding-top: 20px;
                 }
@@ -256,6 +264,7 @@
           font-size: 18px;
           line-height: 22px;
           padding-top: 20px;
+
           &:hover {
             text-decoration: none;
           }

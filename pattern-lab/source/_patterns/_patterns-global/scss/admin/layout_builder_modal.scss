@@ -4,78 +4,95 @@
   .field--name-field-card {
     padding: 0;
   }
+
   .form-check {
     padding-left: 1.5rem;
+
     &-label {
       padding-left: 0;
     }
   }
+
   .form-type-color {
     .form-control {
-      min-height: 3rem;
-      max-width: 3rem;
-      padding: 1px;
       border-radius: 0.125rem;
+      max-width: 3rem;
+      min-height: 3rem;
+      padding: 1px;
     }
   }
+
   .form-type-number {
     .form-control {
       max-width: 4.5rem;
     }
   }
+
   .paragraphs-actions {
     float: right;
     margin-right: -11px;
   }
+
   .paragraphs-dropdown-actions {
     .button {
       border-radius: 0;
     }
   }
+
   .paragraphs-subform .paragraphs-content {
     .col-auto {
       padding: 0;
     }
   }
+
   [id^='edit-block-form'] {
     > .col-auto {
       padding: 0;
+
       > .col-auto {
         padding: 0;
       }
     }
   }
+
   .dropbutton {
     list-style: none;
     padding-left: 0;
   }
+
   a.tabledrag-handle .handle {
-    width: 25px;
     height: 25px;
     margin-top: 2px;
+    width: 25px;
   }
+
   .paragraph--type--card {
-    padding: 0;
     margin-bottom: 0;
+    padding: 0;
+
     .field--name-field-subhead,
     .field--name-field-summary {
-      border: none;
+      border: 0;
     }
   }
+
   .btn-primary {
-    color: #0069d9;
     box-shadow: none;
+    color: #0069d9;
+
     &:hover,
     &:active,
     &:focus,
     &:disabled {
       background: #0069d9;
-      color: white;
+      color: #ffffff;
     }
   }
+
   .dropbutton-widget {
     .btn-primary {
       border-radius: 0;
+
       &:hover,
       &:active,
       &:focus {
@@ -88,35 +105,39 @@
 ul.paragraphs-add-dialog-list input.field-add-more-submit {
   background-color: #d4d4d8;
   background-size: auto calc(100% - 20px);
-  font-weight: 700;
-  font-size: 1rem;
-  border: none;
+  border: 0;
   color: #222330;
+  font-size: 1rem;
+  font-weight: 700;
 }
+
 .ui-widget.ui-dialog.ui-dialog-off-canvas button.ui-dialog-titlebar-close {
+  text-indent: 0;
   top: 50%;
   transform: translateY(-50%);
-  text-indent: 0px;
 }
 
 .ui-dialog {
   .ui-dialog-titlebar {
     padding: 16px 24px;
+
     .ui-dialog-titlebar-close {
-      top: 50%;
-      transform: translateY(-50%);
       background: $color-primary;
       border-radius: 100%;
       font-size: 0;
       right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      
       &:before {
+        color: #fff;
         content: '\e014';
-        font-family: 'Glyphicons Halflings' !important;
         display: block;
+        font-family: 'Glyphicons Halflings' !important;
         font-size: 16px;
         line-height: 12px;
-        color: #fff;
       }
+
       &:active,
       &:focus,
       &:hover {
@@ -126,21 +147,26 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       }
     }
   }
+
   .ui-dialog-content {
     .form-item {
       padding-bottom: 10px;
+
       input.form-text,
       textarea {
         width: 100%;
       }
     }
+
     .button--primary {
       box-shadow: none !important;
     }
+
     .form-submit {
-      margin-top: 20px;
       background-color: #0444c4;
       color: #fff;
+      margin-top: 20px;
+
       &:hover,
       &:focus,
       &:active {
@@ -153,59 +179,69 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   form {
     > .form-wrapper {
       background: #3a3a3a;
-      padding: 20px;
-      margin-bottom: 20px;
       color: $color-white;
+      margin-bottom: 20px;
+      padding: 20px;
     }
+
     &.shortcut-form {
       > .form-wrapper {
-        padding: 0 20px;
         margin-bottom: 0;
+        padding: 0 20px;
       }
     }
   }
+
   #drupal-off-canvas {
     .shortcut-form {
       label {
+        color: $color-white;
         font-size: 16px;
         font-weight: 700;
-        color: $color-white;
       }
+
       .form-text {
         &:focus {
           box-shadow: none;
         }
       }
     }
+
     .shortcut-set-form {
       .tabledrag-toggle-weight-wrapper {
         .tabledrag-toggle-weight {
-          color: #fff;
           background: #0069d9;
-          padding: 10px;
+          color: #fff;
           margin-bottom: 20px;
+          padding: 10px;
         }
       }
+
       table {
         thead {
           th {
+            color: #fff;
             font-size: 16px;
             font-weight: 700;
-            color: #fff;
+
             &:first-child {
               width: 200px;
             }
+
             &:last-child {
               text-align: end;
             }
           }
         }
+
         tbody {
           tr {
             height: 40px;
+
             &:hover {
               td.tabledrag-hide {
                 background: #222;
+
                 div {
                   background: #222;
                 }
@@ -216,11 +252,13 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       }
     }
   }
+
   #layout-builder-add-block,
   #layout-builder-update-block {
     .button {
       background-color: #0444c4;
       color: #fff;
+
       &:hover,
       &:focus,
       &:active {
@@ -253,62 +291,68 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
 .js {
   .paragraph-type-icon {
-    width: 40px;
     height: auto;
+    width: 40px;
   }
 }
 
 .alert-warning::before {
-  background-size: 1rem 1rem;
   background-position: 0 0.28rem;
-  width: 1.25rem;
+  background-size: 1rem 1rem;
   height: 1.25rem;
+  width: 1.25rem;
 }
 
 .node--type-landing-page .ui-dialog {
-  width: auto !important;
+  background-color: #333;
+  border-radius: 0;
+  height: 100vh !important;
+  left: auto !important;
   max-width: 60% !important;
   min-width: 30%;
-  top: 0 !important;
-  left: auto !important;
   right: 0;
-  height: 100vh !important;
-  border-radius: 0;
-  background-color: #333;
+  top: 0 !important;
+  width: auto !important;
 
   &.entity-browser-modal {
-    width: 85% !important;
     max-width: 85% !important;
     position: fixed;
+    width: 85% !important;
   }
 }
+
 .node--type-landing-page .ui-dialog .ui-widget-content.ui-dialog-content {
-  max-height: 92% !important;
-  width: 100% !important;
   background-color: #333;
   color: #fff;
-  padding-right: 15px;
-  padding-left: 15px;
   height: 100vh !important;
+  max-height: 92% !important;
+  padding-left: 15px;
+  padding-right: 15px;
   top: 0;
+  width: 100% !important;
+
   label {
-    font-weight: 700;
     color: $color-white;
+    font-weight: 700;
   }
 }
+
 .node--type-landing-page .ui-dialog table thead,
 .node--type-landing-page .ui-dialog table tbody {
-  border: none;
+  border: 0;
 }
+
 .node--type-landing-page .ui-dialog table {
   margin-top: 20px;
   thead {
     background: rgba(0, 0, 0, 0.51);
     color: #fff;
+
     tr th.field-label {
       .label {
         display: inline;
       }
+
       .paragraphs-actions {
         .form-submit {
           margin-top: 0;
@@ -317,21 +361,26 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     }
   }
 }
+
 .node--type-landing-page .ui-dialog table tbody tr.paragraph-type--card {
   background: #4a4a4a;
+  border-bottom: 10px solid #3a3a3a;
   color: #fff;
   margin-bottom: 0;
-  border-bottom: 10px solid #3a3a3a;
+
   .form-wrapper {
     padding: 0 30px;
+
     .form-wrapper {
       padding: 0;
+
       input.remove-button,
       input.edit-button,
       input.entity-browser-processed {
-        width: 120px;
         background-color: #0444c4;
         color: #fff;
+        width: 120px;
+
         &:hover,
         &:focus,
         &:active {
@@ -339,19 +388,23 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
           color: #0444c4;
         }
       }
+
       input.entity-browser-processed {
         width: auto;
       }
+
       .paragraphs-actions {
         .paragraphs-previewer {
           height: 34px;
           padding: 0.25rem 0.75rem;
         }
+
         .form-submit {
-          margin-top: 0;
-          width: 110px;
           background-color: #0444c4;
           color: #fff;
+          margin-top: 0;
+          width: 110px;
+
           &:hover,
           &:focus,
           &:active {
@@ -361,17 +414,22 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
         }
       }
     }
+
     label {
       color: #fff;
     }
   }
+
   .paragraph--type--card {
     padding-top: 30px !important;
+    
     .card--list {
       margin-bottom: 20px;
+
       .card_media {
         .layout {
           display: block;
+
           .layout__region {
             .card_text_content {
               padding: 20px;
@@ -382,12 +440,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     }
   }
 }
+
 .node--type-landing-page .ui-dialog table td,
 .node--type-landing-page .ui-dialog table th {
   border-color: #333;
 }
+
 .node--type-landing-page .ui-dialog .ui-dialog-titlebar {
-  padding: 15px;
+  border: 0;
   border-radius: 0;
-  border: none;
+  padding: 15px;
 }

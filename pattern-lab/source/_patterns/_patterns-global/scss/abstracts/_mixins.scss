@@ -88,6 +88,9 @@
     font-size: 42px;
     line-height: 46px;
   }
+  font-family: $bold-font;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 %h2 {
@@ -108,6 +111,9 @@
     font-size: 26px;
     line-height: 30px;
   }
+  font-family: $bold-font;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 %h3 {
@@ -116,9 +122,9 @@
   line-height: 20px;
 }
 
-/* CSS Transition
-	Usage: @include transition(width,0.3s,ease-out);
- */
+//  CSS Transition
+// Usage: @include transition(width,0.3s,ease-out);
+
 @mixin transition($transition-property, $transition-time, $method) {
   -moz-transition: $transition-property $transition-time $method;
   -ms-transition: $transition-property $transition-time $method;
@@ -127,9 +133,9 @@
   transition: $transition-property $transition-time $method;
 }
 
-/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
-	Usage: @include font-size(1, large);
-*/
+//  Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+// Usage: @include font-size(1, large);
+
 @mixin font-size($decimal-size, $keyword: null) {
   @if $keyword {
     font-size: $keyword;

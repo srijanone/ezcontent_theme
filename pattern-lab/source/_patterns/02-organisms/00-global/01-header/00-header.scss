@@ -1,25 +1,30 @@
 @import '../../../_patterns-global/scss/abstracts/variables';
 @import '../../../_patterns-global/scss/abstracts/mixins';
+
 header {
   .navbar-collapse {
     justify-content: flex-end;
+
     .menu--main {
       padding: 0 15px;
     }
+
     .form-inline {
       & > div {
         display: flex;
+
         .block-ez-tmp-segment {
           padding-left: 10px;
         }
       }
     }
   }
+
   .ezcontent-header {
-    z-index: 99;
     background: $color-white;
     border-bottom: 1px solid $color-grey-light-2;
     padding: 10px;
+    z-index: 99;
   }
 }
 
@@ -32,21 +37,25 @@ header {
     &.toolbar-tray-open .ezcontent-header {
       top: 79px;
     }
+
     .ezcontent-header {
       top: 39px;
     }
   }
+
   &.gin--vertical-toolbar {
     .ezcontent-header {
-      top: 0;
       left: 80px;
+      top: 0;
     }
-    &[data-toolbar-menu="open"] {
+
+    &[data-toolbar-menu='open'] {
       .ezcontent-header {
         left: 240px;
       }
     }
   }
+
   .ezcontent-header {
     top: 54px;
   }

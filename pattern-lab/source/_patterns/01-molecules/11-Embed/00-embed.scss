@@ -2,21 +2,23 @@
 @import '../../_patterns-global/scss/abstracts/mixins';
 
 .embed-block {
-  margin: 0 0 20px;
   @include respond(tab) {
     margin: 0 0 40px;
   }
+  margin: 0 0 20px;
+
   #embedded-container {
     & > div {
       margin: 0 auto;
     }
+
     iframe {
-      max-width: 100%;
-      @include clearfix;
-      height: 300px;
       @include respond(tab) {
         height: 400px;
       }
+      @include clearfix;
+      height: 300px;
+      max-width: 100%;
     }
   }
 

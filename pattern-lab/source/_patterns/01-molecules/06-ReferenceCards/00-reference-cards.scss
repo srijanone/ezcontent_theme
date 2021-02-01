@@ -4,66 +4,75 @@
 .referenced-card,
 .block--type-referenced-cards {
   margin-bottom: 30px;
+
   .field--name-field-article {
     @include respond(tab) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
     > .field__item {
-      margin-bottom: 20px;
-      flex: 0 0 100%;
       @include respond(tab) {
         margin-bottom: 30px;
       }
+      @include respond(desktop) {
+        margin: 0 20px;
+      }
+      flex: 0 0 100%;
+      margin-bottom: 20px;
 
       &:nth-child(3n + 2) {
         @include respond(tab) {
           margin: 0 18px;
-        }
-        @include respond(desktop) {
-          margin: 0 20px;
         }
       }
 
       @include respond(tab) {
         max-width: calc(33% - 10px);
       }
+
       @include respond(desktop) {
         max-width: calc(33% - 20px);
       }
     }
   }
+
   .field--type-image {
-    height: 300px;
     @include respond(desktop) {
       height: 400px;
     }
+    height: 300px;
+    margin-bottom: 30px;
+
     img {
-      max-width: 100%;
       height: 100%;
+      max-width: 100%;
       object-fit: cover;
     }
-    margin-bottom: 30px;
   }
+
   .block-field {
     &-blocknodearticletitle {
       margin-bottom: 25px;
+
       a {
-        font-family: $bold-font;
-        color: $color-dark-blue;
-        font-size: 24px;
-        line-height: 30px;
         @include respond(tab) {
           font-size: 30px;
           line-height: 36px;
         }
+        color: $color-dark-blue;
+        font-family: $bold-font;
+        font-size: 24px;
+        line-height: 30px;
+
         &:hover {
           text-decoration: none;
         }
       }
     }
   }
+
   .referenced-summary {
     margin-bottom: 0;
   }

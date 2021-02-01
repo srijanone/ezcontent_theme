@@ -10,9 +10,9 @@
   .field {
     &--name-field-title {
       @include title;
-      margin-top: 20px;
       font-family: $heading-font;
       margin-bottom: 10px;
+      margin-top: 20px;
     }
 
     &--name-field-body {
@@ -21,12 +21,12 @@
     }
 
     &--name-field-media-items {
+      align-items: center;
+      background-color: $color-bg-grey;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
       justify-content: center;
       width: 100%;
-      background-color: $color-bg-grey;
 
       > .field__item {
         display: inline-block;
@@ -41,11 +41,11 @@
       overflow: hidden;
 
       img {
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
         -webkit-transform: scale(1.15);
-        transform: scale(1.15);
+        -webkit-transition: opacity .35s, -webkit-transform .35s;
         height: auto;
+        transform: scale(1.15);
+        transition: opacity .35s, transform .35s;
       }
     }
   }

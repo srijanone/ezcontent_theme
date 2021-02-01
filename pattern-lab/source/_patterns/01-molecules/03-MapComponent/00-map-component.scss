@@ -13,21 +13,22 @@
     }
 
     &--name-field-short-title {
+      font-family: $bold-font;
       font-size: 18px;
       padding: 10px 0;
-      font-family: $bold-font;
     }
 
     &--name-field-body,
     &--name-body {
-      font-size: 20px;
-      line-height: 26px;
-      color: $color-dark-blue;
-      font-family: $bold-font;
-      padding: 20px 0;
       @include respond(tab) {
         padding: 30px 0;
       }
+      color: $color-dark-blue;
+      font-family: $bold-font;
+      font-size: 20px;
+      line-height: 26px;
+      padding: 20px 0;
+
       p {
         margin-bottom: 0;
       }
@@ -37,28 +38,32 @@
       text-align: right;
 
       a {
-        font-size: 18px;
-        line-height: 22px;
         color: $color-dark-blue;
         font-family: $bold-font;
+        font-size: 18px;
+        line-height: 22px;
+
         &:hover {
           text-decoration: none;
         }
       }
     }
   }
+
   iframe {
-    border: none;
+    border: 0;
   }
 }
+
 .map-component {
   h2.block-title {
     @include title;
     color: $color-dark-blue;
   }
+
   h4.block-title {
+    font-family: $bold-font;
     font-size: 18px;
     padding: 10px 0;
-    font-family: $bold-font;
   }
 }

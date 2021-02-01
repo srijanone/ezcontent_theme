@@ -5,68 +5,77 @@
   margin-bottom: 50px;
   padding: 0;
   .card {
-    margin-bottom: 10px;
     background-color: none;
-    border: none;
+    border: 0;
     border-bottom: 1px solid $color-border-line;
+    margin-bottom: 10px;
   }
+
   .card-header {
-    padding: 15px 15px;
     background-color: $color-white;
-    border-bottom: none;
+    border-bottom: 0;
     cursor: pointer;
+    padding: 15px 15px;
     @include respond(tab) {
       padding: 30px 15px;
     }
+
     &:before {
-      content: '\e259';
-      font-family: 'Glyphicons Halflings' !important;
-      display: block;
-      font-size: 14px;
       color: $color-border-line;
+      content: '\e259';
+      display: block;
+      font-family: 'Glyphicons Halflings' !important;
+      font-size: 14px;
       position: absolute;
       right: 14px;
       @include respond(tab) {
         font-size: 22px;
       }
     }
+
     h4 {
       font-family: $primary-font;
     }
+
     &[aria-expanded='true'] {
-      border-bottom: none;
+      border-bottom: 0;
       &:before {
         content: '\e259';
         transform: rotate(180deg);
       }
     }
   }
+
   .card-body {
     background-color: $color-white;
-    border-bottom: none;
-    padding: 0px 15px 15px;
+    border-bottom: 0;
+    padding: 0 15px 15px;
     @include respond(tab) {
-      padding: 0px 15px 30px;
+      padding: 0 15px 30px;
     }
+
     p {
       margin-bottom: 0;
     }
   }
 }
+
 .faq-btn {
-  border-style: none;
   background-color: transparent;
+  border-style: none;
   color: $color-text;
-  font-size: 20px;
   font-family: $heading-font;
+  font-size: 20px;
 }
+
 .faq-card {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  
   img {
     height: 16px;
-    width: 16px;
     transition: all 0.5s;
+    width: 16px;
   }
 }

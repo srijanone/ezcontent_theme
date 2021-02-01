@@ -2,12 +2,13 @@
 @import '../../_patterns-global/scss/abstracts/mixins';
 
 .alert-banner-content {
-  padding: 20px;
-  margin-bottom: 20px;
   @include respond(tab) {
-    padding: 30px;
     margin-bottom: 30px;
+    padding: 30px;
   }
+  margin-bottom: 20px;
+  padding: 20px;
+
   p {
     &:last-child {
       margin-bottom: 0;

@@ -1,58 +1,70 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
+
 .card--list {
   margin-bottom: 60px;
 }
+
 .cards-grid {
   .card--grid,
   .card--list {
     position: relative;
+
     .row {
       margin-left: -10px;
       margin-right: -10px;
+
       > .field--item {
         padding: 0 10px;
       }
     }
+
     .card-media {
       .layout--twocol-section {
         flex-direction: column;
+
         > .layout--region--first,
         > .layout--region--second {
           flex: 0 1 100%;
           padding: 0;
         }
       }
+
       .layout--region {
-        padding: 0;
         margin-bottom: 0;
+        padding: 0;
+
         .card-text-content {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          padding: 10px;
-          color: $color-white;
           @include respond(desktop) {
             padding: 10px;
           }
+
           @include respond(desktop) {
             padding: 40px;
           }
+          color: $color-white;
+          padding: 10px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
 
           .field--name-field-link {
             a {
               color: $color-white;
             }
           }
+
           .field--name-field-summary {
-            margin: 14px 0;
             @include respond(tab) {
               margin: 18px 0;
             }
+
             @include respond(desktop) {
               margin: 30px 0 40px;
             }
+            margin: 14px 0;
           }
+
           .field--name-field-short-title,
           .field--name-field-subhead,
           .field--name-field-summary,
@@ -60,23 +72,27 @@
             display: none;
           }
         }
+
         .field--name-field-media-image {
-          height: 300px;
           @include respond(tab) {
             height: 400px;
           }
+
           @include respond(desktop) {
             height: 500px;
           }
+          height: 300px;
         }
       }
+
       &::before {
-        width: 100%;
-        height: 100%;
-        position: absolute;
         background-color: rgba(38, 76, 123, 0.57);
         content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%;
       }
+
       &:hover {
         .card-text-content {
           .field--name-field-short-title,
@@ -86,6 +102,7 @@
             display: block;
           }
         }
+
         &::before {
           background-color: rgba(0, 0, 0, 0.57);
         }
@@ -96,6 +113,7 @@
 
 .paragraph--view-mode--default {
   margin-bottom: 0;
+
   .card--list {
     margin-bottom: 0;
   }
@@ -103,6 +121,7 @@
 
 .col-md-4.cards-grid {
   padding: 1px;
+
   .paragraph {
     margin-bottom: 0;
   }

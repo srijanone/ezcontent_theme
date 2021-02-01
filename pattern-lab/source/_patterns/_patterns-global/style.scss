@@ -6,37 +6,37 @@
 @import 'scss/abstracts/typography';
 @import 'scss/abstracts/glyphicons';
 
-@import 'scss/admin/layout_builder_modal.scss';
-@import 'scss/admin/liveblog.scss';
-@import 'scss/admin/moderation_dashboard.scss';
+@import 'scss/admin/layout_builder_modal';
+@import 'scss/admin/liveblog';
+@import 'scss/admin/moderation_dashboard';
 
-@import '../00-atoms/05-forms/00-form.scss';
-@import '../00-atoms/06-buttons/00-button.scss';
-@import '../00-atoms/09-instagram/00-instagram.scss';
-@import '../00-atoms/10-twitter/00-twitter.scss';
+@import '../00-atoms/05-forms/00-form';
+@import '../00-atoms/06-buttons/00-button';
+@import '../00-atoms/09-instagram/00-instagram';
+@import '../00-atoms/10-twitter/00-twitter';
 
-@import '../01-molecules/00-Menus/00-header-nav.scss';
-@import '../01-molecules/12-FooterTop/00-footer-top.scss';
-@import '../01-molecules/13-FooterBottom/00-footer-bottom.scss';
-@import '../01-molecules/11-Embed/00-embed.scss';
-@import '../01-molecules/01-Card/00-card.scss';
+@import '../01-molecules/00-Menus/00-header-nav';
+@import '../01-molecules/12-FooterTop/00-footer-top';
+@import '../01-molecules/13-FooterBottom/00-footer-bottom';
+@import '../01-molecules/11-Embed/00-embed';
+@import '../01-molecules/01-Card/00-card';
 
-@import '../02-organisms/00-global/00-global.scss';
-@import '../02-organisms/00-global/01-header/00-header.scss';
-@import '../02-organisms/00-global/02-footer/00-footer.scss';
-@import '../02-organisms/01-cards/00-card-grid.scss';
+@import '../02-organisms/00-global/00-global';
+@import '../02-organisms/00-global/01-header/00-header';
+@import '../02-organisms/00-global/02-footer/00-footer';
+@import '../02-organisms/01-cards/00-card-grid';
 
-@import '../01-molecules/02-QuoteComponent/00-quote-component.scss';
-@import '../01-molecules/03-MapComponent/00-map-component.scss';
-@import '../01-molecules/05-HeroComponent/00-hero-component.scss';
-@import '../01-molecules/05-HeroComponent/01-hero-carousel.scss';
-@import '../01-molecules/06-ReferenceCards/00-reference-cards.scss';
-@import '../01-molecules/08-GalleryComponent/00-gallery-component.scss';
-@import '../01-molecules/09-GalleryCarousel/00-gallery-carousel.scss';
-@import '../01-molecules/07-FAQ&QnAComponent/00-faq-list.scss';
-@import '../01-molecules/07-FAQ&QnAComponent/01-qna-list.scss';
-@import '../01-molecules/04-SocialMedia/00-social-media.scss';
-@import '../01-molecules/10-ParagraphAsset/00-paragraph-asset.scss';
-@import '../01-molecules/14-AlertBanner/00-alert.scss';
-@import'../01-molecules/15-ContentListing/00-content-listing.scss';
-@import '../04-pages/00-home-page.scss';
+@import '../01-molecules/02-QuoteComponent/00-quote-component';
+@import '../01-molecules/03-MapComponent/00-map-component';
+@import '../01-molecules/05-HeroComponent/00-hero-component';
+@import '../01-molecules/05-HeroComponent/01-hero-carousel';
+@import '../01-molecules/06-ReferenceCards/00-reference-cards';
+@import '../01-molecules/08-GalleryComponent/00-gallery-component';
+@import '../01-molecules/09-GalleryCarousel/00-gallery-carousel';
+@import '../01-molecules/07-FAQ&QnAComponent/00-faq-list';
+@import '../01-molecules/07-FAQ&QnAComponent/01-qna-list';
+@import '../01-molecules/04-SocialMedia/00-social-media';
+@import '../01-molecules/10-ParagraphAsset/00-paragraph-asset';
+@import '../01-molecules/14-AlertBanner/00-alert';
+@import'../01-molecules/15-ContentListing/00-content-listing';
+@import '../04-pages/00-home-page';

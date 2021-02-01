@@ -2,35 +2,38 @@
 @import '../../_patterns-global/scss/abstracts/mixins';
 
 .quote-component {
-  padding: 24px 40px 30px;
-  margin-bottom: 40px;
-  position: relative;
-  border-top: 1px solid $color-border-line;
-  border-bottom: 1px solid $color-border-line;
   @include respond(tab) {
     padding: 24px 60px 50px;
   }
+  border-bottom: 1px solid $color-border-line;
+  border-top: 1px solid $color-border-line;
+  margin-bottom: 40px;
+  padding: 24px 40px 30px;
+  position: relative;
+
   .field--name-field-quote {
+    color: $color-grey-light-3;
     display: block;
     font-family: $heading-font;
-    color: $color-grey-light-3;
     font-size: 30px;
-    line-height: 51px;
     font-style: italic;
-    position: relative;
+    line-height: 51px;
     padding-top: 40px;
+    position: relative;
+
     &::before {
       color: $color-primary;
       content: open-quote;
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 64px;
       font-weight: bold;
-      line-height: 34px;
       left: 30%;
-      top: 12px;
+      line-height: 34px;
       position: absolute;
+      top: 12px;
     }
   }
+
   .field--name-field-source {
     .field__label,
     .field__item {

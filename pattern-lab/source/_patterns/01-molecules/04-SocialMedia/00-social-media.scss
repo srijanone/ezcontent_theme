@@ -1,9 +1,13 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
-.social-media {
-  @include respond(tab) {
-    margin-bottom: 40px;
+.paragraph--type--social-media,
+.block--type-social-media {
+  padding-bottom: 36px;
+  .field--name-embed-code {
+    .twitter-tweet {
+      margin: 0 auto;
+    }
   }
   margin-bottom: 20px;
 }

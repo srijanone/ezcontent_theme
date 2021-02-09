@@ -1,10 +1,6 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
-.card--list {
-  margin-bottom: 60px;
-}
-
 .cards-grid {
   .card--grid,
   .card--list {
@@ -124,5 +120,11 @@
 
   .paragraph {
     margin-bottom: 0;
+  }
+}
+
+.block--type-cards {
+  & + section.block--type-embed-block {
+    margin-top: 36px;
   }
 }

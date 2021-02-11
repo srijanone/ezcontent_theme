@@ -258,7 +258,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     .button {
       background-color: #0444c4;
       color: #fff;
-
+      padding: 7px;
       &:hover,
       &:focus,
       &:active {
@@ -425,13 +425,10 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     
     .card--list {
       margin-bottom: 20px;
-
-      .card_media {
+      .card-media {
         .layout {
-          display: block;
-
-          .layout__region {
-            .card_text_content {
+          .layout--region {
+            .card-text-content {
               padding: 20px;
             }
           }

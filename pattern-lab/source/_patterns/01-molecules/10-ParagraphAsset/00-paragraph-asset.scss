@@ -1,8 +1,20 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
 .paragraph--type--assets {
   margin-bottom: 50px;
   padding: 0;
 
   .field--name-field-media-image img {
+    @include respond(desktop) {
+      height: 570px;
+    }
+    @include respond(tab) {
+      height: 400px;
+    }
     margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
   }
 }

@@ -3,22 +3,43 @@
 
 .node--type-article {
   .block-page-title-block {
+    @include respond(desktop) {
+      padding-left: 40px;
+    }
     margin: 0 auto;
     max-width: $component-xxl;
+
     h1 {
       color: $color-dark-blue;
-      font-family: $primary-font;
+      font-family: $heading-font;
       font-size: 48px;
+      line-height: 65px;
     }
   }
 
   .block-social-sharing-block {
-    border-bottom: solid 1px $color-border-line;
     margin: 0 auto;
     margin-bottom: 40px;
     margin-top: 40px;
     max-width: $component-xxl;
-    padding-bottom: 15px;
+
+    .social-media-sharing {
+      @include respond(desktop) {
+        margin-left: 40px;
+      }
+      border-bottom: solid 1px $color-border-line;
+      padding: 0 0 20px;
+
+      li {
+        margin-right: 7px;
+
+        .share {
+          img {
+            width: 32px;
+          }
+        }
+      }
+    }
   }
 
   .field--name-field-content {
@@ -32,13 +53,16 @@
   .paragraph--type--faq,
   .paragraph--type--map,
   .paragraph--type--card-list,
-  .paragraph--type--card {
-    margin: 0 auto;
-    max-width: 100%;
-    width: 100%;
+  .paragraph--type--card,
+  .paragraph--type--assets,
+  .paragraph--type--social-media,
+  .paragraph--type--embed {
     @include respond(desktop) {
       max-width: $component-sm;
     }
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
   }
 
   .paragraph--type--card-list {
@@ -58,19 +82,24 @@
       }
     }
 
-    .card_media {
+    .card-media {
       .layout {
-        .layout__region {
-          .card_text_content {
+        .layout--region {
+          .card-text-content {
             max-height: 500px;
             padding: 60px 40px 0;
+
+            .field--name-field-summary {
+              max-height: 240px;
+              overflow: hidden;
+            }
           }
         }
       }
     }
 
     .paragraph--type--card {
-      .card_text_content {
+      .card-text-content {
         max-height: 600px;
         overflow: hidden;
       }
@@ -90,37 +119,7 @@
     }
   }
 
-  .paragraph--type--assets {
-    margin: 0 auto;
-    max-width: 100%;
-    @include respond(desktop) {
-      left: -23px;
-      max-width: $component-xs;
-    }
-    margin: 0 auto;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .paragraph--type--embed {
-    margin: 0 auto;
-    max-width: 100%;
-    @include respond(desktop) {
-      max-width: $component-lg;
-    }
-
-    #embedded-container {
-      & > div {
-        margin: 0 auto;
-      }
-    }
-    margin: 0 auto;
-    max-width: 100%;
-  }
-
   .paragraph--type--gallery {
-    margin: 0 auto;
-    max-width: 100%;
     @include respond(desktop) {
       max-width: $component-md;
     }
@@ -128,6 +127,8 @@
     @include respond(large-desktop) {
       max-width: $component-xl;
     }
+    margin: 0 auto;
+    max-width: 100%;
 
     .gallery-component {
       @include respond(desktop) {
@@ -197,7 +198,12 @@
       }
 
       .field--name-field-body {
+        @include respond(desktop) {
+          max-width: $component-sm;
+        }
         padding-top: 20px;
+        max-width: 100%;
+        
       }
 
       a.link {

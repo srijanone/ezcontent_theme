@@ -5,13 +5,17 @@
         padding-top: 42px;
       }
 
-      nav.tabs {
-        position: absolute;
-        top: 0;
+      nav {
+        &.tabs {
+          position: absolute;
+          top: 0;
+        }
       }
 
-      article.contextual-region {
-        position: static;
+      article {
+        &.contextual-region {
+          position: static;
+        }
       }
     }
   }

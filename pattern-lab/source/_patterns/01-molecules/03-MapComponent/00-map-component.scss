@@ -55,14 +55,18 @@
 }
 
 .map-component {
-  h2.block-title {
-    @include title;
-    color: $color-dark-blue;
+  h2 {
+    &.block-title {
+      @include title;
+      color: $color-dark-blue;
+    }
   }
 
-  h4.block-title {
-    font-family: $bold-font;
-    font-size: 18px;
-    padding: 10px 0;
+  h4 {
+    &.block-title {
+      font-family: $bold-font;
+      font-size: 18px;
+      padding: 10px 0;
+    }
   }
 }

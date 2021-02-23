@@ -128,7 +128,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       right: 20px;
       top: 50%;
       transform: translateY(-50%);
-      
+
       &:before {
         color: #fff;
         content: '\e014';
@@ -422,9 +422,10 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
   .paragraph--type--card {
     padding-top: 30px !important;
-    
+
     .card--list {
       margin-bottom: 20px;
+      
       .card-media {
         .layout {
           .layout--region {
@@ -440,11 +441,13 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
 .node--type-landing-page .ui-dialog table td,
 .node--type-landing-page .ui-dialog table th {
-  border-color: #333;
+  border-color: $color-bg-table-rows;
 }
 
-.node--type-landing-page .ui-dialog .ui-dialog-titlebar {
-  border: 0;
-  border-radius: 0;
-  padding: 15px;
+.node--type-landing-page {
+  .ui-dialog .ui-dialog-titlebar {
+    border: 0;
+    border-radius: 0;
+    padding: 15px;
+  }
 }

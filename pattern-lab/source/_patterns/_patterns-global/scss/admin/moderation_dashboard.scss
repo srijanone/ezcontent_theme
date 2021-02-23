@@ -1,6 +1,6 @@
 @import '../abstracts/variables';
 
-section[class*="block-views-blockcontent-moderation-view-blocks-"] {
+section[class*='block-views-blockcontent-moderation-view-blocks-'] {
   border: 1px solid $color-grey-light-2;
   border-radius: 10px;
   margin-top: 30px;
@@ -10,7 +10,7 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
     border-bottom: 1px solid $color-grey-light-2;
     border-radius: 10px 10px 0 0;
     color: $color-dark-blue;
-    padding: 15px 10px 15px;
+    padding: 15px 10px;
     text-align: left;
   }
 
@@ -85,7 +85,7 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
     }
 
     .view-footer {
-      background: #219fad;
+      background: $color-shortcut-block-btn;
       border-radius: 5px;
       float: right;
       margin: 15px;
@@ -102,7 +102,6 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
   }
 }
 
-
 .block-ezcontent-user-shortcut-block {
   border: 1px solid $color-grey-light-2;
   border-radius: 10px;
@@ -113,24 +112,24 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
     border-bottom: 1px solid $color-grey-light-2;
     border-radius: 10px 10px 0 0;
     color: $color-dark-blue;
-    padding: 15px 10px 15px;
+    padding: 15px 10px;
     text-align: left;
   }
 
   .user-shortcuts-block-wrapper {
-    background: none !important;
+    background: none;
     padding: 10px 15px 15px;
 
     .shorcut-operation {
       .btn {
-        background-color: #d4d4d8 !important;
-        border: 1px solid #a9a9a9;
+        background-color: $color-shortcut-btn;
+        border: 1px solid $color-shortcut-btn-border;
         border-radius: 5px;
         margin-right: 5px;
-        padding: 0 10px !important;
+        padding: 0 10px;
 
         &:hover {
-          background-color: #c2c3ca !important;
+          background-color: $color-shortcut-btn-hover;
         }
 
         a {
@@ -145,7 +144,7 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
 
     .user-shortcut-block {
       .btn {
-        background: #219fad !important;
+        background: $color-shortcut-block-btn;
         border-radius: 5px;
         margin: 0 5px 5px 0 !important;
         padding: 10px 15px;
@@ -163,11 +162,12 @@ section[class*="block-views-blockcontent-moderation-view-blocks-"] {
   }
 }
 
-
 .layout__region {
-  section.block-views {
-    &:last-child {
-      margin-bottom: 30px;
+  section {
+    &.block-views {
+      &:last-child {
+        margin-bottom: 30px;
+      }
     }
   }
 }

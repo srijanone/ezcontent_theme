@@ -15,25 +15,22 @@
     > .field__item {
       @include respond(tab) {
         margin-bottom: 30px;
+        max-width: calc(33% - 10px);
       }
       @include respond(desktop) {
-        margin: 0 20px;
+        max-width: calc(33% - 20px);
       }
       flex: 0 0 100%;
       margin-bottom: 20px;
-
-      &:nth-child(3n + 2) {
+      
+      &:nth-of-type(3n+2) {
+        
         @include respond(tab) {
           margin: 0 18px;
         }
-      }
-
-      @include respond(tab) {
-        max-width: calc(33% - 10px);
-      }
-
-      @include respond(desktop) {
-        max-width: calc(33% - 20px);
+        @include respond(desktop) {
+          margin: 0 20px;
+        }
       }
     }
   }

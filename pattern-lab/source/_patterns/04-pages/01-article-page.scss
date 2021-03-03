@@ -56,7 +56,8 @@
   .paragraph--type--card,
   .paragraph--type--assets,
   .paragraph--type--social-media,
-  .paragraph--type--embed {
+  .paragraph--type--embed,
+  .paragraph--type--referenced-card {
     @include respond(desktop) {
       max-width: $component-sm;
     }

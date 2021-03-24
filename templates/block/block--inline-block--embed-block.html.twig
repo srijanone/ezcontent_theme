@@ -56,9 +56,15 @@
   ]
 %}
 
+{% if content['#block_content'] %}
+  {% set content = content['#block_content'] %}
+{% else %}
+  {% set content = content.content['#block_content'] %}
+{% endif %}
+
 {% set data = {
-  embed:{
-    src: content['#block_content'].field_script.0.value
+  embed: {
+    src: content.field_script.0.value
   }
 } %}
 

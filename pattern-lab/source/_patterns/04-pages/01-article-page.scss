@@ -117,17 +117,35 @@
 
     .row {
       margin: 0;
+<<<<<<< HEAD
+=======
+    }
+    
+    &.paragraph--view-mode--cards-grid {
+      .col-12,
+      .col-sm-12 {
+        padding: 1px;
+      }
+>>>>>>> 7cee7ecd8906fd625027364287de95e585dc8ced
     }
   }
 
   .paragraph--type--gallery {
     @include respond(desktop) {
       max-width: $component-md;
+<<<<<<< HEAD
     }
 
     @include respond(large-desktop) {
       max-width: $component-xl;
     }
+=======
+    }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+>>>>>>> 7cee7ecd8906fd625027364287de95e585dc8ced
     margin: 0 auto;
     max-width: 100%;
 
@@ -204,7 +222,10 @@
         }
         padding-top: 20px;
         max-width: 100%;
+<<<<<<< HEAD
         
+=======
+>>>>>>> 7cee7ecd8906fd625027364287de95e585dc8ced
       }
 
       a.link {

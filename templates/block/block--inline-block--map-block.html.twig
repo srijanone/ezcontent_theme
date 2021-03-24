@@ -56,14 +56,21 @@
   ]
 %}
 
+
+{% if content['#block_content'] %}
+  {% set content = content['#block_content'] %}
+{% else %}
+  {% set content = content.content['#block_content'] %}
+{% endif %}
+
 {% set data = {
   map:{
-    subTitle:content['#block_content'].field_short_title.value,
-    url:content['#block_content'].field_map.0.value,
-    body:content['#block_content'].body.processed,
+    subTitle:content.field_short_title.value,
+    url:content.field_map.0.value,
+    body:content.body.processed,
     links:{
-      url: content['#block_content'].field_link.value[0].uri,
-      title: content['#block_content'].field_link.value[0].title
+      url: content.field_link.value[0].uri,
+      title: content.field_link.value[0].title
     }
   }
 } %}

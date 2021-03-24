@@ -128,7 +128,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       right: 20px;
       top: 50%;
       transform: translateY(-50%);
-      
+
       &:before {
         color: #fff;
         content: '\e014';
@@ -423,7 +423,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
   .paragraph--type--card {
     padding-top: 30px !important;
-    
+
     .card--list {
       margin-bottom: 20px;
       .card-media {
@@ -449,4 +449,17 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   border: 0;
   border-radius: 0;
   padding: 15px;
+}
+
+.layout-builder-discard-changes {
+  margin: 36px 0 16px;
+  .form-actions {
+    margin-top: 16px;
+    input {
+      margin-right: 5px;
+    }
+    .button {
+      margin-right: 5px;
+    }
+  }
 }

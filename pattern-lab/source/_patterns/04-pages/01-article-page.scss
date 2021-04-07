@@ -3,6 +3,7 @@
 
 .node--type-article {
   font-family: $article-font-regular;
+
   .block-page-title-block {
     @include respond(desktop) {
       padding-left: 40px;
@@ -85,21 +86,21 @@
       }
     }
   }  
+
   .paragraph--type--card-list {
     & > .field--name-field-title {
-      font-family: $article-font-semi-bold;
-      font-size: 22px;
-      line-height: 26px;
-      padding-bottom: 20px;
       @include respond(tab) {
         font-size: 22px;
         line-height: 26px;
       }
-
       @include respond(desktop) {
         font-size: 24px;
         line-height: 32px;
       }
+      font-family: $article-font-semi-bold;
+      font-size: 22px;
+      line-height: 26px;
+      padding-bottom: 20px;
     }
 
     .card-media {
@@ -167,10 +168,6 @@
       }
 
       .gc--field--name-field-title {
-        font-family: $article-font-semi-bold;
-        font-size: 22px;
-        line-height: 26px;
-        padding-bottom: 20px;
         @include respond(tab) {
           font-size: 22px;
           line-height: 26px;
@@ -202,9 +199,6 @@
 
           .field--name-field-media-image {
             img {
-              height: 250px;
-              object-fit: cover;
-              width: 300px;
               @include respond(tab) {
                 width: 215px;
               }
@@ -228,8 +222,8 @@
         @include respond(desktop) {
           max-width: $component-sm;
         }
-        padding-top: 20px;
         max-width: 100%;
+        padding-top: 20px;
       }
 
       a.link {
@@ -307,16 +301,16 @@
 
   .paragraph--type--hero-media {
     .hero-media-component {
-      .hero_banner-body {
+      .hero-banner-body {
         padding: 20px 40px;
       }
     }
   }
 
   .paragraph {
-    margin-bottom: 30px;
     @include respond(desktop) {
       margin-bottom: 50px;
     }
+    margin-bottom: 30px;
   }
 }

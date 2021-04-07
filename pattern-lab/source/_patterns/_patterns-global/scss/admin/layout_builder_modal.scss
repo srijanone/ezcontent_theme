@@ -78,14 +78,14 @@
 
   .btn-primary {
     box-shadow: none;
-    color: #0069d9;
+    color: $color-navy-blue;
 
     &:hover,
     &:active,
     &:focus,
     &:disabled {
-      background: #0069d9;
-      color: #ffffff;
+      background: $color-navy-blue;
+      color: $color-white;
     }
   }
 
@@ -103,10 +103,10 @@
 }
 
 ul.paragraphs-add-dialog-list input.field-add-more-submit {
-  background-color: #d4d4d8;
+  background-color: $color-shortcut-btn;
   background-size: auto calc(100% - 20px);
   border: 0;
-  color: #222330;
+  color: $color-grayish-blue;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -130,7 +130,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       transform: translateY(-50%);
 
       &:before {
-        color: #fff;
+        color: $color-white;
         content: '\e014';
         display: block;
         font-family: 'Glyphicons Halflings' !important;
@@ -143,7 +143,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       &:hover {
         background-color: transparent;
         background-image: none;
-        border: 2px solid #fff;
+        border: 2px solid $color-white;
       }
     }
   }
@@ -163,22 +163,22 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     }
 
     .form-submit {
-      background-color: #0444c4;
-      color: #fff;
+      background-color: $color-cyan-blue;
+      color: $color-white;
       margin-top: 20px;
 
       &:hover,
       &:focus,
       &:active {
         background-color: transparent;
-        color: #0444c4;
+        color: $color-cyan-blue;
       }
     }
   }
 
   form {
     > .form-wrapper {
-      background: #3a3a3a;
+      background: $color-eclipse;
       color: $color-white;
       margin-bottom: 20px;
       padding: 20px;
@@ -210,8 +210,8 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     .shortcut-set-form {
       .tabledrag-toggle-weight-wrapper {
         .tabledrag-toggle-weight {
-          background: #0069d9;
-          color: #fff;
+          background: $color-navy-blue;
+          color: $color-white;
           margin-bottom: 20px;
           padding: 10px;
         }
@@ -220,7 +220,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       table {
         thead {
           th {
-            color: #fff;
+            color: $color-white;
             font-size: 16px;
             font-weight: 700;
 
@@ -240,10 +240,10 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
             &:hover {
               td.tabledrag-hide {
-                background: #222;
+                background: $color-dark-gray;
 
                 div {
-                  background: #222;
+                  background: $color-dark-gray;
                 }
               }
             }
@@ -256,15 +256,16 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   #layout-builder-add-block,
   #layout-builder-update-block {
     .button {
-      background-color: #0444c4;
-      color: #fff;
+      background-color: $color-cyan-blue;
+      color: $color-white;
       padding: 5px;
       width: 110px;
+
       &:hover,
       &:focus,
       &:active {
         background-color: transparent;
-        color: #0444c4;
+        color: $color-cyan-blue;
       }
     }
   }
@@ -305,7 +306,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 }
 
 .node--type-landing-page .ui-dialog {
-  background-color: #333;
+  background-color: $color-bg-table-rows;
   border-radius: 0;
   height: 100vh !important;
   left: auto !important;
@@ -323,8 +324,8 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 }
 
 .node--type-landing-page .ui-dialog .ui-widget-content.ui-dialog-content {
-  background-color: #333;
-  color: #fff;
+  background-color: $color-bg-table-rows;
+  color: $color-white;
   height: 100vh !important;
   max-height: 92% !important;
   padding-left: 15px;
@@ -347,7 +348,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   margin-top: 20px;
   thead {
     background: rgba(0, 0, 0, 0.51);
-    color: #fff;
+    color: $color-white;
 
     tr th.field-label {
       .label {
@@ -364,9 +365,9 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 }
 
 .node--type-landing-page .ui-dialog table tbody tr.paragraph-type--card {
-  background: #4a4a4a;
-  border-bottom: 10px solid #3a3a3a;
-  color: #fff;
+  background: $color-grey-light-3;
+  border-bottom: 10px solid $color-eclipse;
+  color: $color-white;
   margin-bottom: 0;
 
   .form-wrapper {
@@ -378,15 +379,15 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       input.remove-button,
       input.edit-button,
       input.entity-browser-processed {
-        background-color: #0444c4;
-        color: #fff;
+        background-color: $color-cyan-blue;
+        color: $color-white;
         width: 120px;
 
         &:hover,
         &:focus,
         &:active {
           background-color: transparent;
-          color: #0444c4;
+          color: $color-cyan-blue;
         }
       }
 
@@ -401,8 +402,8 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
         }
 
         .form-submit {
-          background-color: #0444c4;
-          color: #fff;
+          background-color: $color-cyan-blue;
+          color: $color-white;
           margin-top: 0;
           width: 110px;
 
@@ -410,14 +411,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
           &:focus,
           &:active {
             background-color: transparent;
-            color: #0444c4;
+            color: $color-cyan-blue;
           }
         }
       }
     }
 
     label {
-      color: #fff;
+      color: $color-white;
     }
   }
 
@@ -426,12 +427,13 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
     .card--list {
       margin-bottom: 20px;
+
       .card-media {
         .layout {
           .layout--region {
             .card-text-content {
-              padding: 20px;
               color: $color-white;
+              padding: 20px;
             }
           }
         }
@@ -442,7 +444,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
 .node--type-landing-page .ui-dialog table td,
 .node--type-landing-page .ui-dialog table th {
-  border-color: #333;
+  border-color: $color-bg-table-rows;
 }
 
 .node--type-landing-page .ui-dialog .ui-dialog-titlebar {
@@ -453,11 +455,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
 .layout-builder-discard-changes {
   margin: 36px 0 16px;
+
   .form-actions {
     margin-top: 16px;
+
     input {
       margin-right: 5px;
     }
+
     .button {
       margin-right: 5px;
     }

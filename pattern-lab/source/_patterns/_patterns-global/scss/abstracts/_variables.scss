@@ -22,18 +22,25 @@ $color-bg-grey: #f1f1f1;
 $color-primary-btn: #003cc5;
 $color-primary-btn-hover: #0036b1;
 $color-cta-button: #1a73e8;
-$color-copy-right-bg: #1B2638;
+$color-copy-right-bg: #1b2638;
 
 // FONT SIZE
 $default-font-size: 16px;
 
 // fonts
-$primary-font: "ProximaNova-Regular", sans-serif;
-$secondary-font: "ProximaNova-Regular", sans-serif;
-$heading-font: "ProximaNovaT-Thin", sans-serif;
-$bold-font: "ProximaNova-Bold", sans-serif;
+$primary-font: 'ProximaNova-Regular', sans-serif;
+$secondary-font: 'ProximaNova-Regular', sans-serif;
+$heading-font: 'ProximaNovaT-Thin', sans-serif;
+$bold-font: 'ProximaNova-Bold', sans-serif;
+$article-font-regular: 'open-sansregular';
+$article-font-light: 'open-sanslight';
+$article-font-semi-bold: 'open-sanssemibold';
 
-$greadient: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+$greadient: radial-gradient(
+  circle,
+  rgba(238, 174, 202, 1) 0%,
+  rgba(148, 187, 233, 1) 100%
+);
 
 //screen width
 $screen-sm: 700px;

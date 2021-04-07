@@ -2,6 +2,7 @@
 @import '../_patterns-global/scss/abstracts/mixins';
 
 .node--type-article {
+  font-family: $article-font-regular;
   .block-page-title-block {
     @include respond(desktop) {
       padding-left: 40px;
@@ -11,7 +12,7 @@
 
     h1 {
       color: $color-dark-blue;
-      font-family: $heading-font;
+      font-family: $article-font-light;
       font-size: 48px;
       line-height: 65px;
     }
@@ -57,7 +58,8 @@
   .paragraph--type--assets,
   .paragraph--type--social-media,
   .paragraph--type--embed,
-  .paragraph--type--referenced-card {
+  .paragraph--type--referenced-card,
+  .field--name-field-author {
     @include respond(desktop) {
       max-width: $component-sm;
     }
@@ -66,9 +68,26 @@
     width: 100%;
   }
 
+  .paragraph--type--faq {
+    .faq-wrapper {
+      .card-header {
+        h4 {
+          font-family: $article-font-semi-bold;
+        }
+      }
+    }
+  }
+
+  .paragraph--type--quote {
+    .quote-component {
+      .field--name-field-quote {
+        font-family: $article-font-regular;
+      }
+    }
+  }  
   .paragraph--type--card-list {
     & > .field--name-field-title {
-      font-family: $bold-font;
+      font-family: $article-font-semi-bold;
       font-size: 22px;
       line-height: 26px;
       padding-bottom: 20px;
@@ -118,7 +137,7 @@
     .row {
       margin: 0;
     }
-    
+
     &.paragraph--view-mode--cards-grid {
       .col-12,
       .col-sm-12 {
@@ -148,7 +167,7 @@
       }
 
       .gc--field--name-field-title {
-        font-family: $bold-font;
+        font-family: $article-font-semi-bold;
         font-size: 22px;
         line-height: 26px;
         padding-bottom: 20px;
@@ -161,7 +180,7 @@
           font-size: 24px;
           line-height: 32px;
         }
-        font-family: $bold-font;
+        font-family: $article-font-semi-bold;
         font-size: 22px;
         line-height: 26px;
         padding-bottom: 20px;
@@ -216,7 +235,7 @@
       a.link {
         color: $color-black;
         display: block;
-        font-family: $bold-font;
+        font-family: $article-font-semi-bold;
         font-size: 18px;
         line-height: 22px;
         padding-top: 20px;
@@ -243,7 +262,7 @@
             font-size: 24px;
             line-height: 32px;
           }
-          font-family: $bold-font;
+          font-family: $article-font-semi-bold;
           font-size: 22px;
           line-height: 26px;
         }
@@ -273,7 +292,7 @@
         a.link {
           color: $color-black;
           display: block;
-          font-family: $bold-font;
+          font-family: $article-font-semi-bold;
           font-size: 18px;
           line-height: 22px;
           padding-top: 20px;

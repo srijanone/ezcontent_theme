@@ -40,13 +40,13 @@
   }
 }
 
-.hero_banner_wrapper {
+.hero-banner-wrapper {
   @include clearfix;
   @include respond(tab) {
     height: 580px !important;
     min-height: 540px;
   }
-  background-color: #fff;
+  background-color: $color-white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% !important;
@@ -62,28 +62,29 @@
   }
 
   div {
-    color: #fff;
+    color: $color-white;
   }
 }
 
-.hero_banner-body {
+.hero-banner-body {
   bottom: 0;
   cursor: grab;
   font-family: $bold-font;
   height: auto;
   left: 0;
-  padding: 20px 70px 20px 70px !important;
+  padding: 20px 70px !important;
 
   &.center {
     text-align: center;
   }
-  .hero_banner-body {
-    font-family: $bold-font;
-    cursor: grab;
-    left: 0;
+
+  .hero-banner-body {
     bottom: 0;
+    cursor: grab;
+    font-family: $bold-font;
     height: auto;
-    padding: 20px 70px 20px 70px;
+    left: 0;
+    padding: 20px 70px;
 
     &.center {
       text-align: center;
@@ -99,13 +100,13 @@
   }
 }
 
-.hero_banner_title {
+.hero-banner-title {
   h1 {
     @include respond(desktop) {
       font-size: 72px;
       line-height: 87px;
     }
-    color: #ffffff;
+    color: $color-white;
     font-family: $bold-font;
     font-size: 25px;
     letter-spacing: 1px;
@@ -116,7 +117,7 @@
   }
 }
 
-.hero_banner_short_title {
+.hero-banner-short-title {
   h4 {
     @include respond(tab) {
       display: block;
@@ -134,7 +135,7 @@
   }
 }
 
-.hero_banner_subhead {
+.hero-banner-subhead {
   @include respond(tab) {
     display: block;
   }
@@ -149,7 +150,7 @@
   line-height: 30px;
 }
 
-.hero_banner_text_desc {
+.hero-banner-text-desc {
   @include respond(tab) {
     display: block;
   }
@@ -166,7 +167,7 @@
   margin-bottom: 0;
 }
 
-.hero_banner_btn_wrapper {
+.hero-banner-btn-wrapper {
   @include respond(tab) {
     display: block;
   }

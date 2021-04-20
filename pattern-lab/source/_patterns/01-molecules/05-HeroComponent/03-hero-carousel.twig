@@ -2,7 +2,7 @@
   aria-label="hero carousel">
   <div class="carousel">
     {% for key, assets in heroCarousel.heroAssets %}
-      <div class="hero_banner_wrapper">
+      <div class="hero-banner-wrapper">
         {% include "@molecules/05-HeroComponent/00-image-content.twig" %}
         <div class="{{ assets.detail_class }}"
           style="background-color:{{ assets.bgColor }}">

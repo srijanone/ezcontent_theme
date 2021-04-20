@@ -41,8 +41,6 @@
       overflow: hidden;
 
       img {
-        -webkit-transform: scale(1.15);
-        -webkit-transition: opacity .35s, -webkit-transform .35s;
         height: auto;
         transform: scale(1.15);
         transition: opacity .35s, transform .35s;

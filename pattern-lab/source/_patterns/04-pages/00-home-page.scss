@@ -19,6 +19,9 @@
         .field--name-field-card {
           > .field--item {
             padding: 0;
+            &.col-md-4.cards-grid{
+              padding: 1px;
+             }
           }
         }
       }

@@ -22,9 +22,9 @@
       }
       flex: 0 0 100%;
       margin-bottom: 20px;
-      
+
       &:nth-of-type(3n+2) {
-        
+
         @include respond(tab) {
           margin: 0 18px;
         }

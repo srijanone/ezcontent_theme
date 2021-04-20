@@ -81,9 +81,6 @@
 
 // placeholder
 %h1 {
-  font-family: $bold-font;
-  font-size: 36px;
-  line-height: 40px;
   @include respond(phone-min) {
     font-size: 42px;
     line-height: 46px;
@@ -94,19 +91,16 @@
 }
 
 %h2 {
-  font-family: $bold-font;
-  font-size: 20px;
-  line-height: 24px;
   @include respond(phone-min) {
     font-size: 26px;
     line-height: 30px;
   }
-}
-
-@mixin title {
   font-family: $bold-font;
   font-size: 20px;
   line-height: 24px;
+}
+
+@mixin title {
   @include respond(phone-min) {
     font-size: 26px;
     line-height: 30px;
@@ -126,10 +120,6 @@
 // Usage: @include transition(width,0.3s,ease-out);
 
 @mixin transition($transition-property, $transition-time, $method) {
-  -moz-transition: $transition-property $transition-time $method;
-  -ms-transition: $transition-property $transition-time $method;
-  -o-transition: $transition-property $transition-time $method;
-  -webkit-transition: $transition-property $transition-time $method;
   transition: $transition-property $transition-time $method;
 }
 

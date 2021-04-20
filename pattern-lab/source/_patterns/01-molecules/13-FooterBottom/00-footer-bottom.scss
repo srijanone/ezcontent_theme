@@ -43,10 +43,26 @@
   .copyright {
     background-color: $color-copy-right-bg;
     padding: 20px 30px;
+    position: relative;
 
+    &::after,
+    &::before {
+      position: absolute;
+      background: $color-copy-right-bg;
+      height: 100%;
+      content: '';
+      top: 0;
+      visibility: visible;
+    }
+    &::before {
+      left: -100%;
+    width: auto;
+    right: -100%;
+    }
     p {
       margin-bottom: 0;
       text-align: center;
+      position: inherit;
     }
   }
 }

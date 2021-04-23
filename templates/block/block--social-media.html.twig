@@ -56,33 +56,33 @@
   ]
 %}
 
-
 {% if content['#block_content'] %}
-  {% set content = content['#block_content'] %}
+  {% set block_content = content['#block_content'] %}
 {% else %}
-  {% set content = content.content['#block_content'] %}
+  {% set block_content = content.content['#block_content'] %}
+  {% set actions = content.actions %}
 {% endif %}
 
 {% set data = {
-  map:{
-    subTitle:content.field_short_title.value,
-    url:content.field_map.0.value,
-    body:content.body.processed,
-    links:{
-      url: content.field_link.value[0].uri,
-      title: content.field_link.value[0].title
-    }
+  "socialMedia":{
+    "type":block_content.field_social_media.entity.bundle(),
+    "url":block_content.field_social_media.entity.embed_code.value,
+    "tweetUrl":block_content.field_social_media.entity.embed_code.value
   }
 } %}
 
-<section{{ attributes.addClass(classes) }}>
+<section{{attributes.addClass(classes)}}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+    <h2{{title_attributes.addClass('block-title')}}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
 
   {% block content %}
-    {% include "@molecules/03-MapComponent/00-map-component.twig" with data %}
+    {% if actions %}
+      {{ actions }}
+    {% endif %}
+
+    {% include "@molecules/04-SocialMedia/00-social-media.twig" with data %}
   {% endblock %}
 </section>

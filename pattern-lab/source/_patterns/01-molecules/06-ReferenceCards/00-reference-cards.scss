@@ -50,6 +50,14 @@
     }
   }
 
+  .referenced-date {
+    color: $color-nobel-gray;
+    font-family: $bold-font;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+
   .block-field {
     &-blocknodearticletitle {
       margin-bottom: 25px;

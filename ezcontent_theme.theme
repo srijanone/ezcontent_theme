@@ -8,6 +8,7 @@
 
 use Drupal\node\NodeInterface;
 use Drupal\Core\Link;
+use Drupal\block_content\BlockContentInterface;
 
  /**
  * Implements hook_theme_suggestions_HOOK_alter().
@@ -66,4 +67,17 @@ function ezcontent_theme_preprocess_menu_local_action(&$variables) {
     '#options' => $link['localized_options'],
     '#url' => $link['url'],
   ];
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ezcontent_theme_theme_suggestions_block_alter(&$suggestions, $variables) {
+  $content = $variables['elements']['content'];
+  $content_layout = isset($variables['elements']['content']['content']) ? $variables['elements']['content']['content'] : [];
+  if (isset($content['#block_content']) && $content['#block_content'] instanceof BlockContentInterface) {
+    $suggestions[] = 'block__' . $content['#block_content']->bundle();
+  }elseif(isset($content_layout['#block_content']) && $content_layout['#block_content'] instanceof BlockContentInterface){
+    $suggestions[] = 'block__' . $content_layout['#block_content']->bundle();
+  }
 }

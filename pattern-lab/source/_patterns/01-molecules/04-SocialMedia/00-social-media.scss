@@ -1,11 +1,9 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
-.paragraph--type--social-media,
-.block--type-social-media {
-  .field--name-embed-code {
-    .twitter-tweet {
-      margin: 0 auto;
-    }
+.social-media {
+  .twitter-tweet,
+  .instagram-media {
+    margin: 0 auto;
   }
 }

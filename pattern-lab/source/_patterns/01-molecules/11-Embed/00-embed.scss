@@ -8,10 +8,6 @@
   margin: 0 0 20px;
 
   #embedded-container {
-    & > div {
-      margin: 0 auto;
-    }
-
     iframe {
       @include respond(tab) {
         height: 400px;
@@ -22,8 +18,9 @@
       width: 100%;
     }
   }
-
-  #embedded-container {
-    text-align: center;
+  
+  .instagram-media,
+  .twitter-tweet {
+    margin: 0 auto;
   }
 }

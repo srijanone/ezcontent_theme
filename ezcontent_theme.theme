@@ -67,3 +67,20 @@ function ezcontent_theme_preprocess_menu_local_action(&$variables) {
     '#url' => $link['url'],
   ];
 }
+
+function ezcontent_theme_preprocess_block(&$variables) {
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function ezcontent_theme_theme_suggestions_block_alter(&$suggestions, $variables) {
+  $content = $variables['elements']['content'];
+  $content_layout = $variables['elements']['content']['content'];
+  if (isset($content['#block_content']) && $content['#block_content'] instanceof \Drupal\block_content\BlockContentInterface) {
+    $suggestions[] = 'block__' . $content['#block_content']->bundle();
+  }elseif(isset($content_layout['#block_content']) && $content_layout['#block_content'] instanceof \Drupal\block_content\BlockContentInterface){
+    $suggestions[] = 'block__' . $content_layout['#block_content']->bundle();
+  }
+}

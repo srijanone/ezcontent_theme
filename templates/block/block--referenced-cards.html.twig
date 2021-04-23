@@ -57,20 +57,21 @@
 %}
 
 {% if content['#block_content'] %}
-  {% set content = content['#block_content'].field_article %}
+  {% set block_content = content['#block_content'].field_article %}
 {% else %}
-  {% set content = content.content['#block_content'].field_article %}
+  {% set block_content = content.content['#block_content'].field_article %}
+  {% set actions = content.actions %}
 {% endif %}
 
 {% set cardArray = [] %}
-{% for key , item in content %}
-  {% set imgUrl =  file_url(content[key].entity.field_thumbnail.0.entity.field_media_image.0.entity.uri.value) %}
-  {% set pathUrl = path('entity.node.canonical', {'node':content[key].entity.nid.0.value}) %}
+{% for key , item in block_content %}
+  {% set imgUrl =  file_url(block_content[key].entity.field_thumbnail.0.entity.field_media_image.0.entity.uri.value) %}
+  {% set pathUrl = path('entity.node.canonical', {'node':block_content[key].entity.nid.0.value}) %}
   {% set cardArray = cardArray|merge([{
     'image' : imgUrl,
-    'title': content[key].entity.title(),
+    'title': block_content[key].entity.title(),
     'path': pathUrl,
-    'summary': content[key].entity.field_summary.value
+    'summary': block_content[key].entity.field_summary.value
   }])
   %}
 {% endfor %}
@@ -84,13 +85,18 @@
   "title_attributes": title_attributes
 } %}
 
-<section{{ attributes.addClass(classes) }}>
+<section{{attributes.addClass(classes)}}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
+    <h2{{title_attributes}}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
+
   {% block content %}
+    {% if actions %}
+      {{ actions }}
+    {% endif %}
+
     {% include "@molecules/06-ReferenceCards/00-reference-cards.twig" with data %}
   {% endblock %}
 </section>

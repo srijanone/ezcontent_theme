@@ -57,25 +57,32 @@
 %}
 
 {% if content['#block_content'] %}
-  {% set content = content['#block_content'] %}
+  {% set block_content = content['#block_content'] %}
 {% else %}
-  {% set content = content.content['#block_content'] %}
+  {% set block_content = content.content['#block_content'] %}
+  {% set actions = content.actions %}
 {% endif %}
 
 {% set data = {
-  embed: {
-    src: content.field_script.0.value
+  "socialMedia":{
+    "type":block_content.field_social_media.entity.bundle(),
+    "url":block_content.field_social_media.entity.embed_code.value,
+    "tweetUrl":block_content.field_social_media.entity.embed_code.value
   }
 } %}
 
-<section{{ attributes.addClass(classes) }}>
+<section{{attributes.addClass(classes)}}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+    <h2{{title_attributes.addClass('block-title')}}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
 
   {% block content %}
-    {% include "@molecules/11-Embed/00-embed.twig" with data %}
+    {% if actions %}
+      {{ actions }}
+    {% endif %}
+
+    {% include "@molecules/04-SocialMedia/00-social-media.twig" with data %}
   {% endblock %}
 </section>

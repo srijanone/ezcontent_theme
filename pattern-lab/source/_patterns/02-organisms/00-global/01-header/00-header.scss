@@ -25,6 +25,13 @@ header {
     border-bottom: 1px solid $color-grey-light-2;
     padding: 10px;
     z-index: 99;
+
+    .block-system-branding-block {
+      margin-bottom: 0;
+      .logo {
+        height: 40px;
+      }
+    }
   }
 }
 

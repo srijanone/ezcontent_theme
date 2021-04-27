@@ -1,0 +1,53 @@
+{
+  "pager": {
+    "pager__items":{
+      "pager__item": [
+        {
+          "href": "",
+          "text": "first",
+          "class": "pager__item pager__item--first"
+        },
+        {
+          "href": "",
+          "text": "previous",
+          "class": "pager__item pager__item--previous"
+        },
+        {
+          "href": "",
+          "text": "1",
+          "class": "pager__item"
+        },
+        {
+          "href": "",
+          "text": "2",
+          "class": "pager__item"
+        },
+        {
+          "href": "",
+          "text": "3",
+          "class": "pager__item pager__item is-active"
+        },
+        {
+          "href": "",
+          "text": "4",
+          "class": "pager__item"
+        },
+        {
+          "href": "",
+          "text": "5",
+          "class": "pager__item"
+        },	
+        {
+          "href": "",
+          "text": "next",
+          "class": "pager__item pager__item--next"
+        },
+        { 
+          "href": "",
+          "text": "last",
+          "class": "pager__item pager__item--last"
+        }]
+      }
+   }
+}
+

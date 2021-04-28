@@ -9,12 +9,14 @@
     background-color: none;
     border: 0;
     border-bottom: 1px solid $color-border-line;
-    margin-bottom: 10px;
   }
 
   .card-header {
     @include respond(tab) {
       padding: 30px 15px;
+    }
+    @include respond(desktop) {
+      padding: 50px 15px;
     }
     background-color: $color-white;
     border-bottom: 0;
@@ -23,15 +25,27 @@
 
     &:before {
       @include respond(tab) {
-        font-size: 22px;
+        width: 18px;
+        height: 18px;
+        top: 30px;
       }
-      color: $color-border-line;
-      content: '\e259';
-      display: block;
-      font-family: 'Glyphicons Halflings';
-      font-size: 14px;
+      @include respond(desktop) {
+        width: 20px;
+        height: 20px;
+        top: 48px;
+      }
+      content: '';
       position: absolute;
-      right: 14px;
+      top: 17px;
+      right: 10px;
+      width: 15px;
+      height: 15px;
+      margin-left: -12px;
+      border-left: 2px solid #979797;
+      border-bottom: 2px solid #979797;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-sizing: border-box;
     }
 
     h4 {
@@ -42,8 +56,14 @@
       border-bottom: 0;
 
       &:before {
-        content: '\e259';
-        transform: rotate(180deg);
+        @include respond(tab) {
+          top: 40px;
+        }
+        @include respond(desktop) {
+          top: 60px;
+        }
+        transform: rotate(135deg);
+        top: 25px;
       }
     }
   }
@@ -51,6 +71,9 @@
   .card-body {
     @include respond(tab) {
       padding: 0 15px 30px;
+    }
+    @include respond(desktop) {
+      padding: 0 15px 60px;
     }
     background-color: $color-white;
     border-bottom: 0;

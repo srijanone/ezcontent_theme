@@ -43,14 +43,17 @@
 .hero-banner-wrapper {
   @include clearfix;
   @include respond(tab) {
-    height: 580px !important;
+    height: 580px;
     min-height: 540px;
+  }
+  @include respond(desktop) {
+    height: 588px;
   }
   background-color: $color-white;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% !important;
-  height: auto !important;
+  background-size: 100%;
+  height: auto;
   min-height: auto;
   position: relative;
   width: 100%;

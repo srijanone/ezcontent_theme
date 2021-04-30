@@ -1,4 +1,4 @@
-<div class="hero_banner_title field--name-field-title mr-0 text-black pt-0 pb-0 pr-2 pl-2 w-100">
+<div class="hero-banner-title field--name-field-title mr-0 text-black pt-0 pb-0 pr-2 pl-2 w-100">
   {% if assets.title %}
     {% include '@atoms/02-text/00-headings.twig' with {
       heading_level: 1,
@@ -12,7 +12,7 @@
   {% endif %}
 </div>
 
-<div class="hero_banner_short_title pt-1 pl-2 pr-2 pb-0">
+<div class="hero-banner-short-title pt-1 pl-2 pr-2 pb-0">
   {% if assets.field_short_title %}
     {% include '@atoms/02-text/00-headings.twig' with {
       heading_level: 4,
@@ -29,16 +29,16 @@
 {% if assets.field_subhead %}
   {% include '@atoms/02-text/08-field.twig' with {
     field_content: assets.field_subhead,
-    class: 'hero_banner_subhead field--name-field-subhead pt-1 pl-2 pb-0'
+    class: 'hero-banner-subhead field--name-field-subhead pt-1 pl-2 pb-0'
   } %}
 {% else %}
   {% include '@atoms/02-text/08-field.twig' with {
     field_content: heroComponent.heroAsset.field_subhead,
-    class: 'hero_banner_subhead field--name-field-subhead pt-1 pl-2 pb-0'
+    class: 'hero-banner-subhead field--name-field-subhead pt-1 pl-2 pb-0'
   } %}
 {% endif %}
 
-<div class="hero_banner_text_desc mt-1 mb-1 mr-0 pl-2 text-black">
+<div class="hero-banner-text-desc mt-1 mb-1 mr-0 pl-2 text-black">
   {% if assets.description %}
     {% include '@atoms/02-text/01-paragraph.twig' with {
       paragraph_content: assets.description
@@ -50,7 +50,7 @@
   {% endif %}
 </div>
 
-<div class="hero_banner_btn_wrapper">
+<div class="hero-banner-btn-wrapper">
   {% if assets.url %}
     {% for key, value in assets.url %}
       {% include '@atoms/12-links/00-links.twig' with {

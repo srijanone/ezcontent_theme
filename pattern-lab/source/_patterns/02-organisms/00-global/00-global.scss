@@ -25,3 +25,15 @@ section {
 .main-content {
   min-height: calc(100vh - 420px);
 }
+
+// dropdown genric for header
+.header{
+  select{	
+    border: 1px solid $color-border-line;
+    border-radius: 4px;
+    padding: 4px;
+    width: 90px!important;
+    margin-left: 5px;
+    font-size: $min-font-size;
+  }
+}

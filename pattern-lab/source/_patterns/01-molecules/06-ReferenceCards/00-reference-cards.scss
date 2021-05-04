@@ -9,7 +9,8 @@
     @include respond(tab) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      align-items: stretch;
+      justify-content: start;
     }
 
     > .field__item {
@@ -26,10 +27,10 @@
       &:nth-of-type(3n+2) {
 
         @include respond(tab) {
-          margin: 0 18px;
+          margin: 0 18px 30px 18px;
         }
         @include respond(desktop) {
-          margin: 0 20px;
+          margin: 0 20px 30px 20px;
         }
       }
     }

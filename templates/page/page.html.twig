@@ -68,6 +68,18 @@
  */
 #}
 
+{% set date = "now"|date('Y') %}
+{% set sitename = site_name %}
+{% set text = 'Ltd. All rights reserved.'|t %}
+
+{% set data1 = {
+    "copy_right": {
+    'date': date,
+    'sitename': sitename,
+    'text': text
+  }
+} %}
+
 <div id="page-wrapper">
   <div id="page">
     {% include "@ezcontent_theme/includes/header.html.twig" %}
@@ -145,6 +157,11 @@
               {{ page.footer_fifth }}
             </div>
           {% endif %}
+        </div>
+        <div class="footer-copyright">
+          <section class="copyright">
+            {% include '@molecules/13-FooterBottom/03-copyright.twig' with data1 %}
+          </section>
         </div>
       {% endblock %}
     </footer>

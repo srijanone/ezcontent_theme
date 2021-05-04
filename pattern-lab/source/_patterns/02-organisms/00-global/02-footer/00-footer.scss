@@ -15,4 +15,20 @@
   .container {
     padding: 0;
   }
+
+.footer-copyright{
+  position: relative;
+  background-color: $color-copy-right-bg;
+  padding: 20px 30px;
+    .copyright {
+      margin: 0 auto;
+      max-width: 1366px;
+      width: 100%;
+      p {
+        margin-bottom: 0;
+        text-align: center;
+        position: inherit;
+      }
+    }
+  }
 }

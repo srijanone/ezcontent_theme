@@ -5,11 +5,9 @@
   .edge-footer {
     font-size: 12px;
   }
-
   .row {
     padding: 10px 0;
   }
-
   .block-system-menu-blockprivacy-policy {
     @include respond(tab) {
       display: inline-block;
@@ -37,32 +35,6 @@
         display: block;
         padding: 20px 0 0 10px;
       }
-    }
-  }
-
-  .copyright {
-    background-color: $color-copy-right-bg;
-    padding: 20px 30px;
-    position: relative;
-
-    &::after,
-    &::before {
-      position: absolute;
-      background: $color-copy-right-bg;
-      height: 100%;
-      content: '';
-      top: 0;
-      visibility: visible;
-    }
-    &::before {
-      left: -100%;
-    width: auto;
-    right: -100%;
-    }
-    p {
-      margin-bottom: 0;
-      text-align: center;
-      position: inherit;
     }
   }
 }

@@ -67,30 +67,14 @@
   %}
 {% endfor %}
 
-{% set date = "now"|date('Y') %}
-{% set sitename = site_name %}
-{% set text = 'Ltd. All rights reserved.'|t %}
-
 {% set data = {
   "menu":{
     "footerBottom": menuArray,
   }
 } %}
 
-{% set data1 = {
-    "copy_right": {
-      'date': date,
-      'sitename': sitename,
-      'text': text
-    }
-} %}
-
 <section{{attributes.addClass(classes)}}>
-	{% block content %}
-		{% include '@molecules/13-FooterBottom/02-footer-bottom-menu.twig' with data %}
-	{% endblock %}
-</section>
-
-<section class="copyright">
-	{% include '@molecules/13-FooterBottom/03-copyright.twig' with data1 %}
+  {% block content %}
+    {% include '@molecules/13-FooterBottom/02-footer-bottom-menu.twig' with data %}
+  {% endblock %}
 </section>

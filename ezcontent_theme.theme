@@ -67,7 +67,3 @@ function ezcontent_theme_preprocess_menu_local_action(&$variables) {
     '#url' => $link['url'],
   ];
 }
-
-function ezcontent_theme_preprocess_block(&$variables) {
-  $variables['site_name'] = \Drupal::config('system.site')->get('name');
-}

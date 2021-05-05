@@ -1,0 +1,65 @@
+<div class="pager" role="navigation" aria-labelledby="{{ heading_id }}">
+  <ul class="pager__items js-pager__items">
+  {# Print first item if we are not on the first page. #}
+  {% if items.first %}
+    <li class="pager__item pager__item--first">
+      {% include "@atoms/12-links/00-links.twig" with {
+        url: items.first.href,
+        text: items.first.text|default('« First'|t),
+        title: 'Go to first page'|t 
+      } %}
+    </li>
+  {% endif %}
+  
+  {# Print previous item if we are not on the first page. #}
+  {% if items.previous %}
+    <li class="pager__item pager__item--previous">
+    {% include "@atoms/12-links/00-links.twig" with {
+       url: items.previous.href,
+       text: items.previous.text|default('« First'|t),
+       title: 'Go to previous page'|t 
+       } %}
+    </li>
+   {% endif %}
+
+  {# Now generate the actual pager piece. #}
+   {% for key, item in items.pages %}
+     <li class="pager__item{{ current == key ? ' is-active' : '' }}">
+       {% if current == key %}
+         {% set title = 'Current page'|t %}
+       {% else %}
+       {% set title = 'Go to page @key'|t({'@key': key}) %}
+       {% endif %}
+       {% include "@atoms/12-links/00-links.twig" with {
+         url: item.href,
+         title: title,
+         text: key
+         }  
+       %}
+     </li>
+  {% endfor %}
+
+  {# Print next item if we are not on the last page. #}
+  {% if items.next %}
+    <li class="pager__item pager__item--next">
+      {% include "@atoms/12-links/00-links.twig" with {
+        url: items.next.href,
+        text: items.next.text|default('« First'|t),
+        title: 'Go to next page'|t 
+      } %}
+    </li>
+  {% endif %}
+
+  {# Print last item if we are not on the last page. #}
+  {% if items.last %}
+    <li class="pager__item pager__item--last">
+      {% include "@atoms/12-links/00-links.twig" with {
+        url: items.last.href,
+        text: items.last.text|default('« First'|t),
+        title: 'Go to last page'|t 
+      } %}
+    </li>
+  {% endif %}
+ </ul>
+</div>
+

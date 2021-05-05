@@ -1,0 +1,39 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.pager{
+  margin: 10px auto;
+    .pager__items{
+      justify-content: center;
+      display: flex;
+        .pager__item{
+          list-style: none;
+          background-color: $color-white;
+          font-size: $default-font-size;
+          font-family: $article-font-regular;
+          border: 1px solid $color-shortcut-btn-border;
+          display: inline-flex;
+          border-radius:  3px;
+          margin-right: 2px;
+          &:hover{
+            border: 1px solid $color-dark-blue;
+          }
+          a{
+            color: $color-shortcut-btn-border;
+            padding: 5px 12px;
+          &:hover{
+	        background-color: $color-dark-blue;
+	        color: $color-white;
+	        text-decoration: none;
+           }
+        }
+        &.is-active{
+          background-color: $color-dark-blue;
+          border: 1px solid $color-dark-blue;
+          a{
+	        color: $color-white;
+          }
+        }
+     }
+  }
+}

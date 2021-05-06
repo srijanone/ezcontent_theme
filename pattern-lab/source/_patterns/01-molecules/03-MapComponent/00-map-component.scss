@@ -7,14 +7,21 @@
 
   .field {
     &--name-field-title {
+      @include respond(tab) {
+        margin-bottom: 20px;
+      }
       @include title;
       color: $color-dark-blue;
+      margin-bottom: 10px;
     }
 
     &--name-field-short-title {
+      @include respond(tab) {
+        margin-bottom: 20px;
+      }
       font-family: $bold-font;
       font-size: 18px;
-      padding: 10px 0;
+      margin-bottom: 10px;
     }
 
     &--name-field-body,
@@ -50,19 +57,31 @@
   }
 
   iframe {
+    @include respond(desktop) {
+      height: 600px;
+    }
     border: 0;
+    height: 400px;
   }
 }
 
 .map-component {
   h2.block-title {
+    @include respond(tab) {
+      margin-bottom: 20px;
+    }
     @include title;
     color: $color-dark-blue;
+    margin-bottom: 10px;
   }
 
   h4.block-title {
+    @include respond(tab) {
+      margin-bottom: 20px;
+    }
     font-family: $bold-font;
     font-size: 18px;
     padding: 10px 0;
+    margin-bottom: 10px;
   }
 }

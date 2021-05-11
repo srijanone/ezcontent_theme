@@ -134,3 +134,16 @@
   }
   font-size: $decimal-size * 1rem;
 }
+
+// text ellipsis
+@mixin text-ellipsis($clamp) {
+  -webkit-line-clamp: $clamp;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+//shadow box
+@mixin shadow-box {
+ box-shadow: -8px -8px 40px rgba(245, 245, 245, 0.8), 20px 20px 40px rgba(226, 229, 236, 0.98), -6px -6px 16px rgba(0, 0, 0, 0.2);
+}

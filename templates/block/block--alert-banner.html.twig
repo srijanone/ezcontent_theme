@@ -56,11 +56,18 @@
   ]
 %}
 
+{% if content['#block_content'] %}
+  {% set block_content = content['#block_content'] %}
+{% else %}
+  {% set block_content = content.content['#block_content'] %}
+  {% set actions = content.actions %}
+{% endif %}
+
 {%
   set data = {
     "alert": {
-      "bgColor": content['#block_content'].field_background_color.0.color,
-      "content": content['#block_content'].body.0.value
+      "bgColor": block_content.field_background_color.0.color,
+      "content": block_content.body.0.value
     }
   }
 %}

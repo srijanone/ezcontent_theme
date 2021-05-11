@@ -89,6 +89,14 @@
   }  
 
   .paragraph--type--card-list {
+    @include respond(desktop) {
+      max-width: $component-md;
+    }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+
     & > .field--name-field-title {
       @include respond(tab) {
         font-size: 22px;
@@ -134,6 +142,20 @@
     .col-12,
     .col-sm-12 {
       padding: 0;
+      &.cards-grid {
+        .card-media {
+          &:hover {
+            .field--name-field-title, .field--name-field-subhead, .field--name-field-short-title{
+              @include text-ellipsis(2);
+            }
+            .field--name-field-summary {
+              p {
+                @include text-ellipsis(3);
+              }
+            }
+          }
+        }
+      }
     }
 
     .row {
@@ -313,5 +335,16 @@
       margin-bottom: 50px;
     }
     margin-bottom: 30px;
+  }
+
+  .field--name-field-author {
+    background-color: $color-white-light;
+    padding: 25px;
+    margin-bottom: 20px;
+    @include shadow-box;
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
   }
 }

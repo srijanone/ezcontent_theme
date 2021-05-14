@@ -30,7 +30,7 @@
           margin: 0 18px 30px 18px;
         }
         @include respond(desktop) {
-          margin: 0 20px 30px 20px;
+          margin: 0 30px 30px 30px;
         }
       }
     }
@@ -42,9 +42,9 @@
     }
     height: 300px;
     margin-bottom: 30px;
+    overflow: hidden;
 
     img {
-      height: 100%;
       max-width: 100%;
       object-fit: cover;
     }

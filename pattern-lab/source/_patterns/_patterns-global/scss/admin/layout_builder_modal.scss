@@ -434,6 +434,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
             .card-text-content {
               color: $color-white;
               padding: 20px;
+              a {
+                color: $color-white;
+              }
+              .field--name-field-link{
+                a {
+                 color: $color-white;
+                }
+              }
             }
           }
         }

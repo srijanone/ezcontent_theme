@@ -1,1 +1,0 @@
-{"version":3,"sources":["01-molecules/07-FAQ&QnAComponent/01-qna-list.scss","01-qna-list.css"],"names":[],"mappings":"AAAA,aACE,kBAAmB,CACpB;;ACAD,sVAAsV","file":"01-qna-list.css","sourcesContent":[".qna-wrapper {\n  margin-bottom: 50px;\n}\n"]}

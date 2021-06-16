@@ -1,4 +1,4 @@
-<button {% if class %}class = "{{ class }}" {% endif %} {% if type %} type={{ type }} {% endif %} >
+<button {% if class %} class = "{{ class }}" {% endif %} {% if type %} type={{ type }} {% endif %} >
   {% block button_content %}
     {{ button_content }}
   {% endblock %}

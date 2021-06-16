@@ -24,11 +24,36 @@
       margin: 0 auto;
       max-width: 1366px;
       width: 100%;
-      p {
+      p.copyright-info {
         margin-bottom: 0;
         text-align: center;
         position: inherit;
       }
     }
+    .copyright-info {
+      margin-bottom: 0;
+      text-align: center;
+      position: inherit;
+    }
   }
+}
+
+
+//patternlab
+.footer-top-menu  {
+    display: inline-block;
+    padding-left: 30px;
+    width: 33%;
+  
+    ul {
+     li {
+        list-style: none;
+      }
+    }
+}
+
+.footer-top-menu-list {
+    display: inline-block;
+    padding-left: 30px;
+    width: 33%;
 }

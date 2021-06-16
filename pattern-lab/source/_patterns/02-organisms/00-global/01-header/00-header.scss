@@ -20,7 +20,7 @@ header {
     }
   }
 
-  .ezcontent-header {
+  .ezcontent-header, &.ezcontent-header {
     background: $color-white;
     border-bottom: 1px solid $color-grey-light-2;
     padding: 10px;
@@ -35,7 +35,7 @@ header {
   }
 }
 
-.ezcontent-main-wrapper {
+.ezcontent-main-wrapper, .page--content {
   margin-top: 6em;
 }
 

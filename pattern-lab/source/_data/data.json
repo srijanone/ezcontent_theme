@@ -26,6 +26,14 @@
     "src": "../../images/fpo_4x3.png",
     "alt": "4x3 Image"
   },
+  "logo": "../../images/logo.svg",
+  "content_list": {
+    "label": "Content Listing Component",
+    "url": "../../../images/srijanhero.jpg",
+    "author": "Author",
+    "tag": "tag",
+    "content": "Content Listing is a useful component, which allows the editor to list the teaser display of your article by mentioning the author's name or tags related to an article. Articles will be filtered automatically and displayed as a teaser."
+  },
   "headline": {
     "short": "Lorem ipsum dolor sit (37 characters)",
     "medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
@@ -93,10 +101,9 @@
     {}
   ],
   "quote": {
-    "quote": "Welcom to drupal 9",
-    "author": "Doodler Droopler",
-    "jobTitle": "Writer",
-    "field__label": "field__label"
+    "quote": "The rebase command basically integrates changes from one branch into another. It is an alternative to the “merge” command. The difference between rebase and merge is that rebase rewrites the commit history and creates a linear succession of commits, while merging adds a new commit to the destination branch. The image bellow perfectly shows a visual representation of both processes.",
+    "field__label": "Ajanta Mendies",
+    "field__item": "field item"
   },
   "map": {
     "title": "Taj Mahal: The symbol of love",
@@ -194,16 +201,25 @@
   "referenceCard": {
     "data": [
       {
-        "image": "../../images/drupal_8.png",
+        "image": "../../images/ref1.png",
         "title": "Future of Drupal: 7, 8 or just Drupal 9? testtt",
         "path": "this is path",
+        "date": "12/05/1991",
         "summary": "With Drupal’s commitment to reinventing itself to enable ambitious digital experiences, the community is getting ready for the launch of Drupal 9, and end-of-life for Drupal 7 and Drupal 8."
       },
       {
-        "image": "../../images/drupal_8.png",
+        "image": "../../images/ref1.png",
         "title": "Should Your Enterprise Go For a Headless Commerce Architecture?",
         "path": "this is path",
+        "date": "13/05/1991",
         "summary": "E-commerce enterprises looking to deliver seamless user experiences, often wonder how to do so. Is there a way that does not require them to invent their own IoT device or build back-end solutions from scratch?"
+      },
+      {
+        "image": "../../images/ref1.png",
+        "title": "Headless Commerce Architecture?",
+        "path": "this is path",
+        "date": "14/05/1991",
+        "summary": "Is there a way that does not require them to invent their own IoT device or build back-end solutions from scratch?"
       }
     ]
   },
@@ -226,7 +242,7 @@
   "qna": {
     "question": "Drupal 2020 - What Do You Need to Expect?",
     "answer": "<p>Remember how 2015 was filled with anticipation in the run up to the release of Drupal 8? Well,
-    2020 is all set to be a repeat of that - the same rush, excitement, innovative work will be happening around Drupal 9. But that’s not the only thing to look forward to for Drupalers in 2020.
+2020 is all set to be a repeat of that - the same rush, excitement, innovative work will be happening around Drupal 9. But that’s not the only thing to look forward to for Drupalers in 2020.
     
     From charting new growth paths, to ensuring an enhanced experience and easier adoption of Drupal for beginners, to creating closer integration with other technology frameworks - 2020 has a lot in store for Drupal. And here are the ones we are most excited about.</p>"
   },
@@ -433,36 +449,53 @@
       }
     ]
   },
-  "footermenu": {
-      "footerBottom": [
-        {
-          "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
-          "text": "Privacy Policy",
-          "class": "nav-link"
-        },
-        {
-          "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
-          "text": "Terms of Service",
-          "class": "nav-link"
-        }
-      ],
-      "copy_right": "&copy; 2020 Copyright"
-    },
-    "footermenutop": {
-      "footerTop": [
-        {
-          "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
-          "text": "About Us",
-          "class": "nav-link"
-        },
-        {
-          "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
-          "text": "Career",
-          "class": "nav-link"
-        }
-      ],
-      "copy_right": "&copy; 2020 Copyright"
-    },
+ "footermenu": {
+    "footerBottom": [
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Privacy Policy",
+        "class": "nav-link"
+      },
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Terms of Service",
+        "class": "nav-link"
+      }
+    ],
+    "copy_right": {
+      "date": "2020",
+      "sitename": "Ezcontent",
+      "text": "Ltd. All rights reserved."
+    }
+  },
+   "footermenutop": {
+    "footerTop": [
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "About Us",
+        "class": "nav-link"
+      },
+      {
+        "url": "https://www.instagram.com/p/B95IVBBgruR/embed/captioned/",
+        "text": "Career",
+        "class": "nav-link"
+      }
+    ]
+  },
+  "socialmedia": {
+    "medialinks": [
+      {
+        "id": "github",
+        "url": "#",
+        "markup": "<span class=\"fa fa-github fa-2x\"></span>"
+      },
+      {
+        "id": "twitter",
+        "url": "#",
+        "markup": "<span class=\"fa fa-twitter fa-2x\"></span>"
+      }
+    ]
+  },
   "list": {
     "listitems": [
       {
@@ -498,5 +531,13 @@
     "link_text": "CTA Link",
     "img_url": "../../images/create_content.png",
     "img_alt": "image"
+  },
+  "address": "Srijan Technologies <br>7E Vandana Building <br>Tolstoy Rd, Atul Grove Road, <br>Janpath, Connaught Place, <br>New Delhi, Delhi 110001",
+  "data1": {
+    "copy_right": {
+      "date": "2020",
+      "sitename":"Ezcontent",
+      "text":"Ltd. All rights reserved."
+    }
   }
 }

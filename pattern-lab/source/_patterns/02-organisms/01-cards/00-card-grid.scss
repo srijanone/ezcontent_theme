@@ -129,3 +129,114 @@
     margin-right: 0;
   }
 }
+
+//patternlab
+.pl {
+
+ // card 
+  .card--grid{
+    position: relative;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    margin: 10px auto;
+
+    .row {
+      margin-left: -10px;
+      margin-right: -10px;
+
+      > .field--item {
+        padding: 0 10px;
+      }
+    }
+
+    .card-media {
+      .layout--twocol-section {
+        flex-direction: column;
+
+        > .layout--region--first,
+        > .layout--region--second {
+          flex: 0 1 100%;
+          padding: 0;
+        }
+      }
+
+      .layout--region {
+        margin-bottom: 0;
+        padding: 0;
+
+        .card-text-content {
+          @include respond(desktop) {
+            padding: 10px;
+          }
+
+          @include respond(desktop) {
+            padding: 40px;
+          }
+          color: $color-white;
+          padding: 10px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+
+          .field--name-field-link {
+            a {
+              color: $color-white;
+            }
+          }
+
+          .field--name-field-summary {
+            @include respond(tab) {
+              margin: 18px 0;
+            }
+
+            @include respond(desktop) {
+              margin: 30px 0 40px;
+            }
+            margin: 14px 0;
+          }
+
+          .field--name-field-short-title,
+          .field--name-field-subhead,
+          .field--name-field-summary,
+          .field--name-field-link {
+            display: none;
+          }
+        }
+
+        .field--name-field-media-image {
+          @include respond(tab) {
+            height: 400px;
+          }
+
+          @include respond(desktop) {
+            height: 500px;
+          }
+          height: 300px;
+        }
+      }
+
+      &::before {
+        background-color: rgba(38, 76, 123, 0.57);
+        content: '';
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+
+      &:hover {
+        .card-text-content {
+          .field--name-field-short-title,
+          .field--name-field-subhead,
+          .field--name-field-summary,
+          .field--name-field-link {
+            display: block;
+          }
+        }
+
+        &::before {
+          background-color: rgba(0, 0, 0, 0.57);
+        }
+      }
+    }
+  }
+}

@@ -22,8 +22,10 @@
     }
     display: block;
     width: 100%;
+    
+  }
 
-    .menu--footer-menu {
+  .menu--footer-menu {
       @include respond(tab) {
         padding-bottom: 0;
       }
@@ -50,5 +52,4 @@
         }
       }
     }
-  }
 }

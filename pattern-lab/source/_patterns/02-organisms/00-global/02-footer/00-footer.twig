@@ -1,6 +1,12 @@
 <footer class="page-footer footer region-footer" style="width: 100%;">
   <div class="container">
-    {% include '@molecules/12-FooterTop/03-footer-top-menu.twig' %}
+    <div class="region-footer">
+    <div class="footer-top-menu">{% include '@molecules/12-FooterTop/03-footer-top-menu.twig' %}</div>
+    <div class="footer-top-menu-list">{% include '@molecules/12-FooterTop/01-footer-top-menu-list.twig' %}</div>
     {% include '@molecules/13-FooterBottom/02-footer-bottom-menu.twig' %}
+   </div>
+  </div>
+  <div class="footer-copyright">
+    {% include '@molecules/13-FooterBottom/03-copyright.twig' %}  
   </div>
 </footer>

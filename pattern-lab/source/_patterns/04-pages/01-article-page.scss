@@ -348,3 +348,146 @@
     }
   }
 }
+
+
+//pattern-lab
+.article {
+  h1 {
+    color: $color-dark-blue;
+    font-family: $article-font-light;
+    font-size: 48px;
+    line-height: 65px;
+    padding-top: 3px;
+    margin-bottom: 30px;
+  }
+  ol, ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .text-content,
+  .gallery-carousel,
+  .faq-wrapper,
+  .referenced-card,
+  .quote-component,
+  .map-component, 
+  iframe {
+    @include respond(desktop) {
+      max-width: $component-sm;
+    }
+    margin: 20px auto;
+    max-width: 100%;
+    display: block;
+  }
+  .text-content {
+    img {
+      margin: 10px 0;
+    }
+  }
+
+  .referenced-card { 
+    .field--name-field-article{
+        .field--type-image {
+          height: auto;
+        }
+    }
+  }
+
+  .gallery-component {
+    @include respond(desktop) {
+      right: -18px;
+    }
+
+    @include respond(large-desktop) {
+      right: -115px;
+    }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+
+    @include respond(large-desktop) {
+      max-width: $component-xl;
+    }
+    margin: 20px auto;
+    max-width: 100%;
+
+
+    .gc--field--name-field-title {
+      @include respond(tab) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      @include respond(desktop) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      font-family: $article-font-semi-bold;
+      font-size: 22px;
+      line-height: 26px;
+      padding-bottom: 20px;
+    }
+
+    .field--name-field-media-items{
+      @include respond(tab) {
+        padding: 20px 15px;
+      }
+
+      @include respond(desktop) {
+        padding: 30px 20px;
+      }
+
+      > .field--item {
+        @include respond(desktop) {
+          padding: 15px;
+          height: 250px;
+          object-fit: cover;
+          width: 300px;
+          min-width: 300px;
+        }
+
+        .field--name-field-media-image{
+          img {
+            @include respond(tab) {
+              width: 215px;
+            }
+
+            @include respond(desktop) {
+              width: 260px;
+            }
+
+            @include respond(large-desktop) {
+              // width: 300px;
+            }
+            height: 250px;
+            object-fit: cover;
+            // width: 300px;
+          }
+        }
+      }
+    }
+
+    .field--name-field-body {
+      @include respond(desktop) {
+        max-width: $component-sm;
+      }
+      max-width: 100%;
+      padding-top: 20px;
+    }
+
+    a.link {
+      color: $color-black;
+      display: block;
+      font-family: $article-font-semi-bold;
+      font-size: 18px;
+      line-height: 22px;
+      padding-top: 20px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+}

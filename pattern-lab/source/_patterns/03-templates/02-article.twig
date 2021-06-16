@@ -1,20 +1,18 @@
 {% extends '@templates/00-layouts/01-page-1col.twig' %}
 {% block main %}
-  <article class="article">
+  <div class="article">
 		{% include '@atoms/02-text/00-headings.twig' with {
   		heading_level: 1,
-  		heading: "Drupal 9"
+  		heading: "Should Your Enterprise Go For a Headless architecture"
 		} %}
-
-    {% include '@molecules/05-HeroComponent/02-hero-component.twig' %}
-    {% include '@organisms/01-cards/00-card-list.twig' %}
-    {% include '@organisms/01-cards/01-card-list-grid.twig' %}
-    {% include '@molecules/03-MapComponent/00-map-component.twig' %}
     {% include '@molecules/06-ReferenceCards/00-reference-cards.twig' %}
-    {% include '@molecules/07-FAQ&QnAComponent/02-faq-list.twig' %}
-    {% include '@molecules/07-FAQ&QnAComponent/03-qna-list.twig' %}
-    {% include '@molecules/08-GalleryComponent/00-gallery-component.twig' %}
-    {# {% include '@molecules/02-QuoteComponent/00-quote-component.twig' %} #}
+    {% include '@molecules/08-GalleryComponent/01-gallery-component.twig' %}
+    {% include '@molecules/02-QuoteComponent/00-quote-component.twig' %}
     {% include '@molecules/09-GalleryCarousel/00-gallery-carousel.twig' %}
-  </article>
+    {% include '@atoms/14-iframe/00-iframe.twig' %}
+    {% include '@molecules/07-FAQ&QnAComponent/02-faq-list.twig' %} 
+    {% include '@atoms/11-html/00-html.twig' %}
+  
+    
+  </div>
 {% endblock %}

@@ -3,7 +3,10 @@
 
 .social-media {
   .twitter-tweet,
-  .instagram-media {
+  .instagram {
     margin: 0 auto;
+    iframe {
+      height: 100%;
+    }
   }
 }

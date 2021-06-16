@@ -1,0 +1,37 @@
+
+<!--DO NOT REMOVE-->
+
+{{ patternLabFoot | raw }}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+{# carousel #}
+<link rel="stylesheet" type="text/css" href="../../css/slick.css" />
+<link rel="stylesheet" type="text/css" href="../../css/slick-theme.css" />
+<script type="text/javascript" src="../../js/slick.min.js"></script>
+
+{# gallery #}
+<link rel="stylesheet" type="text/css" href="../../css/colorbox.css" />
+<script type="text/javascript" src="../../js/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+    //carousel
+		$(document).ready(function () {
+			$('.carousel').slick({
+					slidesToShow: 1,
+					dots: true,
+			});
+		});
+
+    //gallery
+    $(".gallery-item").colorbox({
+      rel:'gallery-item', 
+      maxWidth: "100%",
+      maxHeight: "100%"
+    });
+  
+</script>
+
+</body>
+</html>

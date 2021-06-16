@@ -88,3 +88,49 @@
     }
   }
 }
+
+//patterlab
+.content-listing-component { 
+  display: flex;
+  justify-content: space-between;
+
+  .field--name-field-image {
+    height: 320px;
+    width: 400px;
+    min-width: 400px;
+    padding-right: 30px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .field--text-wrapper {
+    .author-details {
+      padding-bottom: 15px;
+      .author{
+        color: $color-dark-blue;
+        display: inline-flex;
+      }
+      .tag{
+        color: $color-dark-blue;
+        display: inline-flex;
+      }
+
+    }
+
+    .field--name-field-title {
+      font-size: 28px;
+      line-height: 32px;
+      color: $color-dark-blue;
+    }
+
+    .field--name-field-summary {
+      .field--name-field-body {
+        font-size: 16px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
 	"alert": {
-		"bgColor": "#0433FF",
+		"bgColor": "#baf5b6",
 		"content": "Alert banner can be used to communicate important site-wide messages, warnings, or emergency information. It is recommended to place the global alert banner at the top of the page"
 	}
 }

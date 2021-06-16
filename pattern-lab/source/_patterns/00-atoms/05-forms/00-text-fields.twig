@@ -1,4 +1,4 @@
-{% import '@macros/forms.twig' as forms %}
+{# {% import "@macros/forms.twig" as forms %} #}
 <fieldset>
   {{ forms.input('Text Input') }}
   {{ forms.input('Password', 'password') }}
@@ -6,8 +6,38 @@
   {{ forms.input('Email', 'email') }}
   {{ forms.input('Search', 'search') }}
   {{ forms.input('Number', 'number') }}
-  {{ forms.input('Number', 'number') }}
   {{ forms.textarea('Textarea', 'Enter your message here') }}
   {{ forms.input('Error Input', 'text', 'error') }}
   {{ forms.input('Valid Input', 'text', 'valid') }}
 </fieldset>
+
+
+ <div class="field-container">
+    <label for="ir">Text Input</label> 
+    <input type="Text"  id="ir" placeholder="Text" />
+  </div>
+
+ <div class="field-container">
+    <label for="ir">Password</label> 
+    <input type="Password"  id="ir" placeholder="Password" />
+  </div>
+
+  <div class="field-container">
+    <label for="ir">Number</label> 
+    <input type="Number"  id="ir" placeholder="Number" />
+  </div>
+
+ <div class="field-container">
+    <label for="ir">Email</label> 
+    <input type="Email"  id="ir" placeholder="Email" />
+  </div>
+
+ <div class="field-container">
+    <label for="ir">Search</label> 
+    <input type="Search"  id="ir" placeholder="Search" />
+  </div>
+
+ <div class="field-container">
+    <label for="ir">Textarea</label> 
+    <input type="Textarea"  id="ir" placeholder="Enter your message here" />
+  </div>

@@ -22,34 +22,30 @@
     }
     display: block;
     width: 100%;
-    
   }
 
   .menu--footer-menu {
+    @include respond(tab) {
+      padding-bottom: 0;
+    }
+    padding-bottom: 20px;
+    li {
       @include respond(tab) {
-        padding-bottom: 0;
+        padding: 0 10px;
+        width: 25%;
       }
-      padding-bottom: 20px;
-
-      li {
-        @include respond(tab) {
-          padding: 0 10px;
-          width: 25%;
-        }
-        display: inline-block;
-        list-style: none;
+      display: inline-block;
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      a {
+        color: $color-white;
         padding: 0;
-        width: 100%;
-
-        a {
-          color: $color-white;
-          padding: 0;
-
-          &:hover,
-          &:focus {
-            background: transparent;
-          }
+        &:hover,
+        &:focus {
+          background: transparent;
         }
       }
     }
+  }
 }

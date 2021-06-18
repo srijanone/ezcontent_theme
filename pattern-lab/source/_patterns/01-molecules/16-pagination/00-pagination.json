@@ -3,51 +3,50 @@
     "pager__items":{
       "pager__item": [
         {
-          "href": "",
+          "url": "#",
           "text": "first",
-          "class": "pager__item pager__item--first"
+          "class": "pager__item--first"
         },
         {
-          "href": "",
+          "url": "#",
           "text": "previous",
-          "class": "pager__item pager__item--previous"
+          "class": " pager__item--previous"
         },
         {
-          "href": "",
+          "url": "#",
           "text": "1",
-          "class": "pager__item"
+          "class": ""
         },
         {
-          "href": "",
+          "url": "#",
           "text": "2",
-          "class": "pager__item"
+          "class": ""
         },
         {
-          "href": "",
+          "url": "#",
           "text": "3",
-          "class": "pager__item pager__item is-active"
+          "class": "is-active"
         },
         {
-          "href": "",
+          "url": "#",
           "text": "4",
-          "class": "pager__item"
+          "class": ""
         },
         {
-          "href": "",
+          "url": "#",
           "text": "5",
-          "class": "pager__item"
+          "class": ""
         },	
         {
-          "href": "",
+          "url": "#",
           "text": "next",
-          "class": "pager__item pager__item--next"
+          "class": " pager__item--next"
         },
         { 
-          "href": "",
+          "url": "#",
           "text": "last",
-          "class": "pager__item pager__item--last"
+          "class": " pager__item--last"
         }]
       }
    }
 }
-

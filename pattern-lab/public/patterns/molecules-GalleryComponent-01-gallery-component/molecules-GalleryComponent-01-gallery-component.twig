@@ -1,0 +1,37 @@
+<div class="gallery-component">
+  {% if galleryComponent.field_title %}
+    {% include '@atoms/02-text/00-headings.twig' with {
+      heading_level: 1,
+      heading: galleryComponent.field_title,
+      class: 'gc--field--name-field-title'
+    } %}
+  {% endif %}
+
+  {% if galleryComponent.media_items %}
+    <div class="field--name-field-media-items field--items">
+      {{ galleryComponent.media_items }}
+    </div>
+  {% else %}
+    <div class="row mt-2 text-center text-lg-left field--name-field-media-items">
+      {% for key,value in galleryComponent.items %}
+        {% include '@molecules/08-GalleryComponent/00-gallery-field.twig' %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+
+  {% if galleryComponent.field_body %}
+    {% include '@atoms/02-text/01-paragraph.twig' with {
+      paragraph_content: galleryComponent.field_body,
+      class: 'field--name-field-body'
+    } %}
+  {% endif %}
+
+  {% if galleryComponent.field_link.url %}
+    {% include '@atoms/12-links/00-links.twig' with {
+      url: galleryComponent.field_link.url,
+      text: galleryComponent.field_link.title,
+      class: 'link'
+    } %}
+  {% endif %}
+</div>

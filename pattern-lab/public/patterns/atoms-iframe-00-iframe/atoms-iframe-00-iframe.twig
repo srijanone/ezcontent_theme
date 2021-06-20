@@ -1,0 +1,17 @@
+{% if src %}
+  <iframe
+	{% if class %} class= "{{ class }}" {% endif %}
+	{% if src %} src={{ src }} {% endif %}
+	{% if frameBorder %} frameBorder={{ frameBorder }} {% endif %}
+	{% if height %} height={{ height }} {% endif %}
+	{% if width %} width={{ width }} {% endif %}
+	{% if allow %}  allow="{{ allow }}" {% endif %}>
+  {% if text %}  {{ text }} {% endif %}
+  </iframe>
+
+	{% else %}
+	<iframe class="w-100" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameBorder="0" height="410">
+    Map
+	</iframe>
+{% endif %}
+

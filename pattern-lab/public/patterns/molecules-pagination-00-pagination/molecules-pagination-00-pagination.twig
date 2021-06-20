@@ -1,0 +1,13 @@
+<div class="pager">
+  <ul class="pager__items js-pager__items">
+    {% for key,value in pager.pager__items.pager__item %}
+      <li class= "pager__item">
+        {% include '@atoms/12-links/00-links.twig' with {
+          text: value.text,
+          class: value.class,
+          url: value.url
+        } %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

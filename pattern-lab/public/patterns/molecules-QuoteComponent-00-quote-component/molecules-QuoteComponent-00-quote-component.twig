@@ -1,0 +1,14 @@
+<div class="quote-component">
+  <div class="field--name-field-quote">
+    {% include '@atoms/02-text/02-blockquote.twig' with {
+      quote: quote.quote
+    } %}
+  </div>
+
+  <div class="field--name-field-source">
+    {% include '@atoms/02-text/08-field.twig' with {
+      field_content: quote.field__label,
+      class: 'field__label'
+    } %}
+  </div>
+</div>

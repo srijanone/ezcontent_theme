@@ -1,0 +1,14 @@
+<section class="mt-4 pb-2 block--type-hero-media-block"
+  aria-label="hero carousel">
+  <div class="carousel">
+    {% for key, assets in heroCarousel.heroAssets %}
+      <div class="hero-banner-wrapper">
+        {% include "@molecules/05-HeroComponent/00-image-content.twig" %}
+        <div class="{{ assets.detail_class }}"
+          style="background-color:{{ assets.bgColor }}">
+          {% include "@molecules/05-HeroComponent/01-text-content.twig" %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

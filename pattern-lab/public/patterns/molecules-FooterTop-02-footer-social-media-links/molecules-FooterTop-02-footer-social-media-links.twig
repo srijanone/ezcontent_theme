@@ -1,0 +1,9 @@
+<ul class="social-media-links--platforms platforms inline horizontal">
+  {% for key,value in socialmedia.medialinks %}
+    <li>
+      <a class="social-media-link-icon--{{ value.id }}" href="{{ value.url }}">
+        {{ value.markup|raw }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

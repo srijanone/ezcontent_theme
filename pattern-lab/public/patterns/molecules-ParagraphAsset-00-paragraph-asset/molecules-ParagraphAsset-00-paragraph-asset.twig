@@ -1,0 +1,22 @@
+<div class="paragraph-assets" aria-label="paragraph assets">
+  {% for key, value in paragraphAssets.assets %}
+    {% if value.videolinks is defined and value.videolinks is not null %}
+      {% include '@atoms/14-iframe/00-iframe.twig' with {
+        src: value.videolinks,
+        class: 'border-0 embed-responsive-item',
+        height: '315',
+        width: '560'
+      } %}
+    {% else %}
+      <div class="text-center mt-3 mb-3" key="{{ d_id }}">
+        {% if value.imagePath is defined and value.imagePath is not null %}
+          {% include '@atoms/04-images/01-image.twig' with {
+            src: value.imagePath,
+            alt: 'image',
+            class: 'mw-100'
+          } %}
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

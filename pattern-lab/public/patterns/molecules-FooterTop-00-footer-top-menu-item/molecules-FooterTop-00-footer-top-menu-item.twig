@@ -1,0 +1,9 @@
+{% for key,value in footermenutop.footerTop %}
+  <li class="col-sm-4" {{ value.attributes }}>
+    {% include '@atoms/12-links/00-links.twig' with {
+      text: value.text,
+      class: value.class,
+      url: value.url
+    } %}
+  </li>
+{% endfor %}

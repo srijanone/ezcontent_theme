@@ -1,0 +1,13 @@
+{% if value.question %}
+  {% include '@atoms/02-text/00-headings.twig' with {
+    heading_level: 4,
+    heading: value.question,
+    class: 'mb-0'
+  } %}
+{% else %}
+  {% include '@atoms/02-text/00-headings.twig' with {
+    heading_level: 4,
+    heading: qna.question,
+    class: 'mb-0'
+  } %}
+{% endif %}

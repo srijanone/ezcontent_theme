@@ -1,0 +1,9 @@
+{% for key, value in menuData.menuitems %}
+  <li class="nav-item">
+    {% include '@atoms/12-links/00-links.twig' with {
+      text: value.text,
+      class: value.class,
+      url: value.url
+    } %}
+  </li>
+{% endfor %}

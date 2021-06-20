@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="pl">
+  <head>
+    <title>Pattern Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="../../css/style.css" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+
+  </head>
+  <body class="body"><div class="map-component">
+  
+<h2   class="field--name-field-title" >
+      Taj Mahal: The symbol of love
+  </h2>
+
+  
+<h4   class="field--name-field-short-title" >
+       India Taj Mahal is an exceptional beauty
+  </h4>
+
+  
+    <iframe
+	 class= "w-100" 	 src=https://maps.google.com/maps?hl=en&q=https://maps.google.com/maps?hl=en&q=Agra&t=m&z=14&output=embed&t=m&z=14&output=embed 		 height=410 		>
+    map   </iframe>
+
+	
+
+  
+<div  class= "field--name-field-body" >
+      We are a digital transformation company helping enterprises build and modernize their digital systems
+  </div>
+
+
+      <div class="w-100 text-right field--name-field-link">
+      
+<a href="http://www.google.com"  class="rounded-0"      title="Pattern Lab"  >
+Click Me
+</a>
+    </div>
+  </div><!--DO NOT REMOVE-->
+
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-headings","lineagePath":"../../patterns/atoms-text-00-headings/atoms-text-00-headings.rendered.html"},{"lineagePattern":"atoms-iframe","lineagePath":"../../patterns/atoms-iframe-00-iframe/atoms-iframe-00-iframe.rendered.html"},{"lineagePattern":"atoms-paragraph","lineagePath":"../../patterns/atoms-text-01-paragraph/atoms-text-01-paragraph.rendered.html"},{"lineagePattern":"atoms-links","lineagePath":"../../patterns/atoms-links-00-links/atoms-links-00-links.rendered.html"}],"lineage":[{"lineagePattern":"atoms-headings","lineagePath":"../../patterns/atoms-text-00-headings/atoms-text-00-headings.rendered.html"},{"lineagePattern":"atoms-iframe","lineagePath":"../../patterns/atoms-iframe-00-iframe/atoms-iframe-00-iframe.rendered.html"},{"lineagePattern":"atoms-paragraph","lineagePath":"../../patterns/atoms-text-01-paragraph/atoms-text-01-paragraph.rendered.html"},{"lineagePattern":"atoms-links","lineagePath":"../../patterns/atoms-links-00-links/atoms-links-00-links.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/templates-01-homepage/templates-01-homepage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/templates-01-homepage/templates-01-homepage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"molecules","patternSubgroup":"MapComponent"},"patternExtension":"twig","patternName":"Map Component","patternPartial":"molecules-map-component","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-headings","lineagePath":"../../patterns/atoms-text-00-headings/atoms-text-00-headings.rendered.html"},{"lineagePattern":"atoms-iframe","lineagePath":"../../patterns/atoms-iframe-00-iframe/atoms-iframe-00-iframe.rendered.html"},{"lineagePattern":"atoms-paragraph","lineagePath":"../../patterns/atoms-text-01-paragraph/atoms-text-01-paragraph.rendered.html"},{"lineagePattern":"atoms-links","lineagePath":"../../patterns/atoms-links-00-links/atoms-links-00-links.rendered.html"}],"lineage":[{"lineagePattern":"atoms-headings","lineagePath":"../../patterns/atoms-text-00-headings/atoms-text-00-headings.rendered.html"},{"lineagePattern":"atoms-iframe","lineagePath":"../../patterns/atoms-iframe-00-iframe/atoms-iframe-00-iframe.rendered.html"},{"lineagePattern":"atoms-paragraph","lineagePath":"../../patterns/atoms-text-01-paragraph/atoms-text-01-paragraph.rendered.html"},{"lineagePattern":"atoms-links","lineagePath":"../../patterns/atoms-links-00-links/atoms-links-00-links.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/templates-01-homepage/templates-01-homepage.rendered.html"}],"lineageR":[{"lineagePattern":"templates-homepage","lineagePath":"../../patterns/templates-01-homepage/templates-01-homepage.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"molecules","patternSubgroup":"MapComponent"},"patternExtension":"twig","patternName":"Map Component","patternPartial":"molecules-map-component","patternState":"","patternEngineName":"twig-php","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1623853239667">
+  (function() {
+    if (self != top) {
+      var cb = '1623853239667';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1623853239667" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../css/slick.css" />
+<link rel="stylesheet" type="text/css" href="../../css/slick-theme.css" />
+<script type="text/javascript" src="../../js/slick.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../css/colorbox.css" />
+<script type="text/javascript" src="../../js/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+    //carousel
+		$(document).ready(function () {
+			$('.carousel').slick({
+					slidesToShow: 1,
+					dots: true,
+			});
+		});
+
+    //gallery
+    $(".gallery-item").colorbox({
+      rel:'gallery-item', 
+      maxWidth: "100%",
+      maxHeight: "100%"
+    });
+  
+</script>
+
+</body>
+</html>

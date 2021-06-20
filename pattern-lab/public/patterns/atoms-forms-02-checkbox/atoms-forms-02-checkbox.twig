@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Theme override for a 'checkboxes' #type form element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The rendered checkboxes.
+ *
+ * @see template_preprocess_checkboxes()
+ */
+ @todo: remove this file once https://www.drupal.org/node/1819284 is resolved.
+ This is identical to core/modules/system/templates/container.html.twig
+#}
+
+{% if attributes %}
+  <input {{ attributes }} />{{ children }}
+{% else %}
+  <form action="#">
+    <fieldset class="options">
+      <legend>
+        Checkbox <abbr title="Required">*</abbr>
+      </legend>
+      <ul>
+        <li>
+          <label for="checkbox1">
+            <input id="checkbox1"
+              name="checkbox"
+              type="checkbox"
+              checked="checked" />Choice A
+          </label>
+        </li>
+        <li>
+          <label for="checkbox2">
+            <input id="checkbox2" name="checkbox" type="checkbox" />Choice B
+          </label>
+        </li>
+        <li>
+          <label for="checkbox3">
+            <input id="checkbox3" name="checkbox" type="checkbox" />Choice C
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+{% endif %}

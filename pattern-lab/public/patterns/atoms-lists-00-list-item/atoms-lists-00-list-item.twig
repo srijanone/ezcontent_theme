@@ -1,0 +1,8 @@
+
+{% for key,value in list.listitems %}
+	<li class= "{{ value.class }}">
+		{% block list_item %}
+			{{ value.list_item }}
+		{% endblock %}
+	</li>
+{% endfor %}

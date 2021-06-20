@@ -1,0 +1,38 @@
+<div class="map-component">
+  {% include '@atoms/02-text/00-headings.twig' with {
+    heading_level: 2,
+    heading: map.title,
+    class: 'field--name-field-title'
+  } %}
+
+  {% include '@atoms/02-text/00-headings.twig' with {
+    heading_level: 4,
+    heading: map.subTitle,
+    class: 'field--name-field-short-title'
+  } %}
+
+  {% set mapUrl= "https://maps.google.com/maps?hl=en&q=#{map.url}&t=m&z=14&output=embed"|replace({' ': '+', ',': ''}) %}
+
+  {% include "@atoms/14-iframe/00-iframe.twig" with {
+    src: mapUrl,
+    class: 'w-100',
+    frameBorder: '0',
+    height: '410',
+    text: 'map'
+  } %}
+
+  {% include '@atoms/02-text/01-paragraph.twig' with {
+    paragraph_content: map.body,
+    class: 'field--name-field-body'
+  } %}
+
+  {% if map.links is defined and map.links is not null %}
+    <div class="w-100 text-right field--name-field-link">
+      {% include '@atoms/12-links/00-links.twig' with {
+        text: map.links.title ? map.links.title : map.links.url,
+        url: map.links.url,
+        class: 'rounded-0'
+      } %}
+    </div>
+  {% endif %}
+</div>

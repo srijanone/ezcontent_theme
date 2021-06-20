@@ -1,0 +1,13 @@
+{% extends '@templates/00-layouts/01-page-1col.twig' %}
+{% block main %}
+  <main class="page-wrapper">
+    {% include '@molecules/05-HeroComponent/03-hero-carousel.twig' %}
+    {% include '@organisms/01-cards/00-card-list.twig' %}
+    {% include '@organisms/01-cards/01-card-grid.twig' %}
+    {% include '@molecules/15-ContentListing/00-content-listing.twig' %}
+    {% include '@molecules/02-QuoteComponent/00-quote-component.twig' %}
+    {% include '@molecules/03-MapComponent/00-map-component.twig' %}
+    {% include '@molecules/04-SocialMedia/00-social-media.twig' %}
+    {% include '@molecules/06-ReferenceCards/00-reference-cards.twig' %}
+  </main>
+{% endblock %}

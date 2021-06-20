@@ -1,0 +1,9 @@
+{% if assets.image %}
+	{% include '@atoms/04-images/01-image.twig' with {
+		src: assets.image
+	} %}
+{% else %}
+	{% include '@atoms/04-images/01-image.twig' with {
+		src: heroComponent.heroAsset.image
+	} %}
+{% endif %}

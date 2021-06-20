@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="pl">
+  <head>
+    <title>Pattern Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="../../css/style.css" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?" media="all" />
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  </head>
+  <body class="body"><section class="hero-media-component mt-4 pb-2 block--type-hero-media-block" aria-label="hero">
+    <div class="hero-banner-wrapper paragraph--view-mode--hero-media position-relative w-100">
+      	<img
+   src=../../images/hero-banner.jpg 			/>
+      <div class="hero-banner-body hero-media-content w-100 position-absolute right"
+          style="background-color:rgba(0, 249, 0, 0.37)">
+        <div class="hero-banner-title field--name-field-title mr-0 text-black pt-0 pb-0 pr-2 pl-2 w-100">
+      
+<h1  >
+      Title 3
+  </h1>
+  </div>
+
+<div class="hero-banner-short-title pt-1 pl-2 pr-2 pb-0">
+      
+<h4  >
+      Short Title 3
+  </h4>
+  </div>
+
+  <div class= "hero-banner-subhead field--name-field-subhead pt-1 pl-2 pb-0"  >
+	Subhead 3
+</div>
+
+<div class="hero-banner-text-desc mt-1 mb-1 mr-0 pl-2 text-black">
+      
+<div >
+      Maecenas faucibus mollis interdum.
+  </div>
+
+  </div>
+
+<div class="hero-banner-btn-wrapper">
+            
+<a href=""  class="rounded-0"   key=1     title="Pattern Lab"  >
+Link Text 3
+</a>
+      </div>
+      </div>
+    </div>
+</section><!--DO NOT REMOVE-->
+
+<script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-image-content","lineagePath":"../../patterns/molecules-HeroComponent-00-image-content/molecules-HeroComponent-00-image-content.rendered.html"},{"lineagePattern":"molecules-text-content","lineagePath":"../../patterns/molecules-HeroComponent-01-text-content/molecules-HeroComponent-01-text-content.rendered.html"}],"lineage":[{"lineagePattern":"molecules-image-content","lineagePath":"../../patterns/molecules-HeroComponent-00-image-content/molecules-HeroComponent-00-image-content.rendered.html"},{"lineagePattern":"molecules-text-content","lineagePath":"../../patterns/molecules-HeroComponent-01-text-content/molecules-HeroComponent-01-text-content.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"molecules","patternSubgroup":"HeroComponent"},"patternExtension":"twig","patternName":"Hero Component","patternPartial":"molecules-hero-component","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+</script>
+
+<script>
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"molecules-image-content","lineagePath":"../../patterns/molecules-HeroComponent-00-image-content/molecules-HeroComponent-00-image-content.rendered.html"},{"lineagePattern":"molecules-text-content","lineagePath":"../../patterns/molecules-HeroComponent-01-text-content/molecules-HeroComponent-01-text-content.rendered.html"}],"lineage":[{"lineagePattern":"molecules-image-content","lineagePath":"../../patterns/molecules-HeroComponent-00-image-content/molecules-HeroComponent-00-image-content.rendered.html"},{"lineagePattern":"molecules-text-content","lineagePath":"../../patterns/molecules-HeroComponent-01-text-content/molecules-HeroComponent-01-text-content.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternGroup":"molecules","patternSubgroup":"HeroComponent"},"patternExtension":"twig","patternName":"Hero Component","patternPartial":"molecules-hero-component","patternState":"","patternEngineName":"twig-php","extraOutput":{}};
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1624278363809">
+  (function() {
+    if (self != top) {
+      var cb = '1624278363809';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+
+<script type="module">
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  import('../../styleguide/js/patternlab-pattern.modern.js');
+</script>
+
+<script id="pl-js-insert-1624278363809" nomodule>
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  // always load Pattern-specific JS so UI like accordions, etc can continue to work even when viewed as a standalone HTML page
+  loadJS('../../styleguide/js/patternlab-pattern.js');
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/slick.css" />
+<link rel="stylesheet" type="text/css" href="../../css/slick-theme.css" />
+<script type="text/javascript" src="../../js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/colorbox.css" />
+<script type="text/javascript" src="../../js/jquery.colorbox.js"></script>
+<script type="text/javascript">
+//carousel
+$(document).ready(function () {
+  $('.carousel').slick({
+    slidesToShow: 1,
+      dots: true,
+  });
+});
+//gallery
+$(".gallery-item").colorbox({
+  rel:'gallery-item', 
+  maxWidth: "100%",
+  maxHeight: "100%"
+});
+</script>
+</body>
+</html>

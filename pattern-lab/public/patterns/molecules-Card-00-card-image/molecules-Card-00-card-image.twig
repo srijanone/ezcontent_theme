@@ -1,0 +1,8 @@
+{% block card__img %}
+  <div class="field--name-field-media-image">
+    {% include '@atoms/04-images/01-image.twig' with {
+      src: card.img_url,
+      alt: card.img_alt
+    } %}
+  </div>
+{% endblock %}

@@ -54,6 +54,7 @@
       display: inline-flex;
       margin-right: 2px;
       vertical-align: baseline;
+      visibility: hidden;
       h2 {
         a {
           color: $color-white;
@@ -66,10 +67,14 @@
           margin-bottom: 7px;
           text-decoration: none;
           box-shadow: 0 0.12em 0.126em #3367d6;
+          visibility: visible;
           &:hover {
 	        background-color: $color-primary-hover;
 	        cursor: pointer;
 	        text-decoration: none;
+          }
+          .field--name-name {
+            visibility: visible;
           }
         }
       }
@@ -85,4 +90,3 @@
      max-width: $component-sm;;
    }
 }
-

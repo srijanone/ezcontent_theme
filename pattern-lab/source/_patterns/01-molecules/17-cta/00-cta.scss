@@ -1,0 +1,60 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.cta_wrapper{
+  @include respond(tab) {
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  margin-bottom: 20px;
+  padding: 20px;
+
+  .cta__content {
+    width: 100%;
+    @include respond(tab) {
+      width: 70%;
+    }
+    .cta__title {
+      h2 {
+        color: $color-white;
+        margin-bottom: 10px;
+      }
+    }
+    .cta__sub--title {
+      color: $color-white;
+      margin-bottom: 10px;
+      @include respond(tab) {
+       margin-bottom: 0;
+      }
+    }
+  }
+
+  .cta__action {
+    button {
+      background: $color-primary;
+      border: 0;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-bottom: 0;
+      a {
+        padding: 7px 15px;
+        color: $color-white;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        color: $color-white;
+      }
+      &:hover,
+      &:focus {
+        background: $color-primary-hover;
+        color: $color-white;
+      }
+    }
+  }
+}

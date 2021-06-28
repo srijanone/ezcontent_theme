@@ -1,7 +1,7 @@
 @import '../../_patterns-global/scss/abstracts/variables';
 @import '../../_patterns-global/scss/abstracts/mixins';
 
-.block--type-content-listing-component {
+.block--type-content-listing-component, .block-inline-blockcontent-listing-component {
   .content-listing-component {
     display: block;
     .view-content {

@@ -1,0 +1,48 @@
+{ "timeline": 
+  { "data": 
+    {  "2021":[ 
+        {
+          "image": "../../images/star.svg",
+          "summary": "Render dynamic articles and landing page using Drupal's front end template engine or using a Javascript framework of your choice (De-coupled CMS).",
+          "position": "left-side_timeline"
+        },
+        {
+         "image": "../../images/star.svg",
+          "summary": "Lets editors create visual layouts for displaying content without dependency on the developer.the community is getting ready.",
+          "position": "right-side_timeline"
+        },
+        {
+          "image": "../../images/star.svg",
+          "summary": "Render dynamic articles and landing page using Drupal's front end template engine or using a Javascript framework of your choice (De-coupled CMS).",
+          "position": "right-side_timeline"
+        },
+        {
+         "image": "../../images/star.svg",
+          "summary": "Lets editors create visual layouts for displaying content without dependency on the developer.the community is getting ready for the launch of Drupal 9, and end-of-life for drupal 8 ",
+          "position": "left-side_timeline"
+        }
+      ],
+      "2020":[ 
+        {
+          "image": "../../images/star.svg",
+          "summary": "Having more than 100,000 Drupal enthusiasts actively contributing to the community with more than 2,000 commits per week, look no further. Our expertise can help you transform your users’ digital experience. Take your site up a notch! ",
+          "position": "right-side_timeline"
+        }
+      ],
+      "2019":[
+         {
+          "image": "../../images/star.svg",
+          "summary": "the community is getting ready for the launch of Drupal 9, and end-of-life for ",
+          "position": "left-side_timeline"
+        }
+      ],
+      "2018":[
+        {
+          "image": "../../images/star.svg",
+          "summary": "the community is getting ready for the launch of Drupal 9, and end-of-life for ",
+          "position": "right-side_timeline"
+        }
+      ]
+    }
+  }
+}

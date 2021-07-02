@@ -1,0 +1,38 @@
+<section class="timeline">
+  <div class="timeline-margin">
+    <div class="timeline-start" >Timeline</div>
+      <div class="center-line"></div>
+      <div class="timeline-content">
+        {% for key, value in timeline.data %}
+          <div class="timeline-article" key={{key}}>
+            {# timeline data #}
+          {% for keyinner, valueinner in value %}
+            <div class="content-left-container {{ valueinner.position }}" >
+              <div class="content-left" >
+                {% include "@atoms/02-text/01-paragraph.twig" with {
+                  paragraph_content: valueinner.summary,
+                  class: 'timeline-summary'
+                } %}
+              </div>
+
+              <span class="timeline-icon">
+                {% include "@atoms/04-images/01-image.twig" with {
+                  src: valueinner.image,
+                  alt: valueinner.alt
+                } %}
+              </span>
+            </div>
+          {% endfor %}
+
+          {# year #}
+          <div class="meta-date " >
+            {% include "@atoms/02-text/01-paragraph.twig" with {
+              paragraph_content: key,
+              class: 'year'
+            } %}
+          </div>
+        </div>
+      {% endfor %}       
+      </div>
+   </div>
+</section>

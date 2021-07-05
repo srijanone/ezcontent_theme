@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="455.112" height="273.207" viewBox="0 0 455.112 273.207">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="455.113" height="273.207" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="social" clip-path="url(#clip-path)">
+    <g id="social-2" data-name="social" transform="translate(-0.9 -82.293)">
+      <path id="Path_15565" data-name="Path 15565" d="M342.3,355.5H118.5c-10.1-38.3,7.4-84.5,41.4-110.2,37.8-28.5,87.9-31.3,129.1-7.2C329,261.6,349.6,306.1,342.3,355.5Z" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_15566" data-name="Path 15566" d="M169.3,140.8a58.2,58.2,0,1,1,116.4-.1c-.1,33-26.3,59.1-59,58.8C195.3,199.1,169.4,172.8,169.3,140.8Z" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_15567" data-name="Path 15567" d="M327.4,226.2c71.6-18.3,138.5,52.3,127.4,128.5H385.2C385.7,304.4,393.1,250.9,327.4,226.2Z" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_15568" data-name="Path 15568" d="M55.3,184V129.3H80.9v53.4h55.5v26H82.3v55.2H56.2V210.3H.9V184.1C17.8,184,35.3,184,55.3,184Z" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_15569" data-name="Path 15569" d="M296.4,190.6c35.7-40,35.8-58.6.4-99.5,23.4-14.9,51.7-9.9,70.5,12.3,18,21.5,18,53.8-.1,75.1C348.2,200.8,320.2,205.6,296.4,190.6Z" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -81,3 +81,20 @@ function ezcontent_theme_theme_suggestions_block_alter(&$suggestions, $variables
     $suggestions[] = 'block__' . $content_layout['#block_content']->bundle();
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for paragraph--gallery.html.twig.
+ */
+
+function ezcontent_theme_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  if($paragraph->bundle() == 'masonry') {
+	  $item_selector = '.item_get';
+  	$container = '.field--name-field-media-items';
+    $options = ['layoutColumnWidth' => '50', 'isLayoutResizable' => 1, 'layoutColumnWidthUnit' => '%', 'isLayoutFitsWidth' => 1];
+
+   \Drupal::service('masonry.service')
+    ->applyMasonryDisplay($variables, $container, $item_selector, $options);  
+  }
+}
+ 

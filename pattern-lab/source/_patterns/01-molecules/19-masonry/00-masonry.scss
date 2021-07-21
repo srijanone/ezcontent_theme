@@ -1,0 +1,63 @@
+@import '../../_patterns-global/scss/abstracts/variables';
+@import '../../_patterns-global/scss/abstracts/mixins';
+
+.masonry{
+  position: relative;
+
+  .grid__wrapper{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+    grid-auto-rows: 198px;
+    grid-auto-flow: dense;
+
+    .grid__item {
+      display: flex;
+      justify-content: center;
+    
+      &.col-75 {
+       grid-column: span 4;
+       grid-row: span 2;
+      }
+      &.col-50 {
+       grid-column: span 2;
+       grid-row: span 2;
+      }
+      &.col-25 {
+       grid-column: span 1;
+       grid-row: span 1;
+      }
+
+      .item {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          display: none;
+        }
+        img[src*="."] {
+           display: block;
+        }
+        .item_text--wrapper {
+          .title {
+            color: $color-white;
+            font-size: 22px;
+            line-height: 32px;
+            text-align: center;
+            font-family: $article-font-regular;
+          }
+          .subtitle {
+            color: $color-white;
+            font-size: $min-font-size;
+            line-height: 18px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

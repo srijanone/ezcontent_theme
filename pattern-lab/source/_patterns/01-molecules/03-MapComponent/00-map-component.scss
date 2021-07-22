@@ -3,6 +3,10 @@
 
 .map-component,
 .block--type-map-block {
+  padding: 0 10px;
+  @include respond(tab-bg) {
+    padding: 0;
+  }
   @include clearfix;
 
   .field {

@@ -33,8 +33,13 @@ section {
     border-radius: 4px;
     padding: 4px;
     width: 90px!important;
-    margin-left: 5px;
+    margin-left: 0;
+    margin-bottom: 5px;
     font-size: $min-font-size;
+    @include respond(tab-bg) {
+      margin-left: 5px;
+      margin-bottom: 0;
+    }
   }
   section.block{
     margin-bottom: 0;

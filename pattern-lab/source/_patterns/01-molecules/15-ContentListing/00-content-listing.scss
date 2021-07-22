@@ -22,7 +22,10 @@
 
           .field--name-field-media-image {
             height: 320px;
-            width: 400px;
+            width: 100%;
+            @include respond(tab) {
+             width: 400px;
+            }
 
             img {
               height: 100%;
@@ -83,6 +86,7 @@
       .pager__items{
         justify-content: center;
         display: flex;
+        flex-wrap: wrap;
           .pager__item{
             list-style: none;
             background-color: $color-white;
@@ -92,6 +96,10 @@
             display: inline-flex;
             border-radius:  3px;
             margin-right: 2px;
+            margin-bottom: 10px;
+            @include respond(tab) {
+              margin-bottom: 0;
+            }
             &:hover{
               border: 1px solid $color-dark-blue;
             }

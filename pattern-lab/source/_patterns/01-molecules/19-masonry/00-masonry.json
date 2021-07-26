@@ -1,0 +1,34 @@
+{
+  "masonry": {
+    "data": [
+      {
+        "image": "../../../images/decoupled-new.png",
+        "setwidth": "col-50"
+      },
+      {
+        "title": "A great Title 2",
+        "subtitle": "A great Title subtitle",
+        "Bgcolor": "#a43acb",
+        "setwidth": "col-25"
+      },
+      {
+        "title": "A great Title 3",
+        "subtitle": "A great Title subtitle",
+        "Bgcolor": "#ebeaeb",
+        "setwidth": "col-25"
+      },
+      {
+        "title": "A great Title",
+        "subtitle": "A great Title subtitle",
+        "Bgcolor": "#ebeaeb",
+        "setwidth": "col-25"
+      },
+      {
+        "title": "A great Title",
+        "subtitle": "A great Title subtitle",
+        "Bgcolor": "#4718f6",
+        "setwidth": "col-25"
+      }
+    ]
+  }
+}

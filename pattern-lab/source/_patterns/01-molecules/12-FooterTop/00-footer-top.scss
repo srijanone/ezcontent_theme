@@ -48,4 +48,29 @@
       }
     }
   }
+  .social-media-links--platforms {
+    @include respond(tab) {
+      padding-bottom: 0;
+    }
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    li {
+      @include respond(tab) {
+        padding: 0 10px 0 0;
+        width: auto
+      }
+      display: inline-block;
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      a {
+        color: $color-white;
+        padding: 0;
+        &:hover,
+        &:focus {
+          background: transparent;
+        }
+      }
+    }
+  }
 }

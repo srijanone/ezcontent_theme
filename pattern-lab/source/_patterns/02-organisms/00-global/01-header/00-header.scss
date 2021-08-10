@@ -4,17 +4,26 @@
 header {
   .navbar-collapse {
     justify-content: flex-end;
-
+    margin: 10px 0;
+    @include respond(tab-bg) {
+      margin: 10px 0;
+    }
     .menu--main {
       padding: 0 15px;
     }
-
+    .navbar-form.float-right {
+      float: left!important;
+    }
     .form-inline {
       & > div {
-        display: flex;
-
+        @include respond(tab-bg) {
+           display: flex;
+        }
         .block-ez-tmp-segment {
-          padding-left: 10px;
+          padding-left: 0;
+          @include respond(tab-bg) {
+            padding-left: 10px;
+          }
         }
       }
     }

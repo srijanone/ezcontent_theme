@@ -66,6 +66,12 @@
     } //tab
   }
 
+  @if $breakpoint == tab-bg {
+    @media only screen and (min-width: $screen-tb) {
+      @content;
+    } //tab big
+  }
+
   @if $breakpoint == desktop {
     @media only screen and (min-width: $screen-md) {
       @content;
@@ -75,7 +81,7 @@
   @if $breakpoint == large-desktop {
     @media only screen and (min-width: $screen-lg) {
       @content;
-    } //desktop
+    } //large desktop
   }
 }
 

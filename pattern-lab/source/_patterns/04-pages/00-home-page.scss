@@ -4,16 +4,16 @@
 .path-frontpage {
   .ezcontent-header {
     .container {
-      @include respond(desktop) {
+      @include respond(tab-bg) {
         padding: 0 60px;
       }
-      padding: 0 20px;
+      padding: 0 0;
     }
   }
 
   .container {
     .main-content {
-      padding: 0;
+      padding: 0 10px;
 
       .block--type-cards {
         .field--name-field-card {
@@ -30,19 +30,22 @@
         @include respond(tab) {
           padding: 0 30px;
         }
-        padding: 0 10px;
+        padding: 0;
       }
 
       .block--type-embed-block {
         background: $color-bg-grey;
-        padding: 36px 0;
+        padding: 36px 10px;
+          @include respond(tab) {
+          padding: 36px 5%;
+        }
       }
     }
   }
 
   footer {
     .container {
-      padding: 0;
+      padding: 0 10px;
     }
   }
 }

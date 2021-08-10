@@ -89,6 +89,11 @@
   }  
 
   .paragraph--type--card-list {
+    padding: 0 10px;
+    @include respond(tab-bg) {
+      padding: 0;
+    }
+
     @include respond(desktop) {
       max-width: $component-md;
     }

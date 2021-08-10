@@ -486,13 +486,13 @@
     "medialinks": [
       {
         "id": "github",
-        "url": "#",
-        "markup": "<span class=\"fa fa-github fa-2x\"></span>"
+        "url": "https://github.com/",
+        "markup": "<span class=\"fa fa-github fa-3x\"></span>"
       },
       {
         "id": "twitter",
-        "url": "#",
-        "markup": "<span class=\"fa fa-twitter fa-2x\"></span>"
+        "url": "https://twitter.com/",
+        "markup": "<span class=\"fa fa-twitter fa-3x\"></span>"
       }
     ]
   },

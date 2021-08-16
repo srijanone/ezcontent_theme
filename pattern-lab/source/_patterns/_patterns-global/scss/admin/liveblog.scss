@@ -2,7 +2,10 @@
   &.node--type-liveblog {
     .main-content {
       .section {
-        padding-top: 42px;
+        padding-top: 0px;
+        @include respond(desktop) {
+          padding-top: 42px;
+        }
       }
 
       nav.tabs {

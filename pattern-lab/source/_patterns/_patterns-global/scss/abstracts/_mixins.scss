@@ -147,3 +147,18 @@
 @mixin shadow-box {
  box-shadow: -8px -8px 40px rgba(245, 245, 245, 0.8), 20px 20px 40px rgba(226, 229, 236, 0.98), -6px -6px 16px rgba(0, 0, 0, 0.2);
 }
+
+//live button animation
+@mixin live {
+  animation:live-animation 2s ease-in infinite;
+  -webkit-animation:live-animation 1s ease-in infinite;
+  -moz-animation:live-animation 2s ease-in infinite; 
+  -ms-animation:live-animation 2s ease-in infinite;
+  -o-animation:live-animation 2s ease-in infinite; 
+}
+
+@keyframes live-animation {
+  0%{ background:$color-yellow;}  
+  50%{ background:$color-yellow-lite;}
+  100%{ background:$color-yellow;}
+}

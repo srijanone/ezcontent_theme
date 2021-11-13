@@ -1,0 +1,1 @@
+{"version":3,"sources":["00-atoms/09-instagram/00-instagram.scss","00-atoms/09-instagram/00-instagram.css"],"names":[],"mappings":"AAAA,WCCE,YAAa,CDDf,kBCGI,WAAY;;AADhB,iYAAiY","file":"00-instagram.css","sourcesContent":[".instagram {\n  height: 100vh;\n  iframe {\n    height: 100%;\n  }\n}\n"]}

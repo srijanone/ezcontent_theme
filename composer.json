@@ -5,7 +5,7 @@
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "require": {
-        "drupal/components": "^2.0-beta"
+        "drupal/components": "^3.0@beta"
     },
     "repositories": {
         "drupal": {

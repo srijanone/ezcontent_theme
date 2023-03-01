@@ -43,9 +43,9 @@ components:
       - pattern-lab/source/_patterns/00-atoms
     molecules:
       - pattern-lab/source/_patterns/01-molecules
-  organisms:
+    organisms:
       - pattern-lab/source/_patterns/02-organisms
-  templates:
+    templates:
       - pattern-lab/source/_patterns/03-templates
-  pages:
+    pages:
       - pattern-lab/source/_patterns/04-pages

@@ -75,10 +75,10 @@
 } %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
-    {{ content.contextual_links }}
-    {% block content %}
-      {% include "@molecules/05-HeroComponent/02-hero-component.twig" with data %}
-    {% endblock %}
-  </div>
+	<div{{attributes.addClass(classes)}}>
+		{{ content.contextual_links }}
+		{% block content %}
+			{% include "@molecules/05-HeroComponent/02-hero-component.twig" with data %}
+		{% endblock %}
+	</div>
 {% endblock paragraph %}

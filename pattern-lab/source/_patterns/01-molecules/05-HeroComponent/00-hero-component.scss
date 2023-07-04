@@ -47,7 +47,7 @@
     min-height: 540px;
   }
   @include respond(desktop) {
-    height: 588px;
+    height: auto;
   }
   background-color: $color-white;
   background-position: center;
@@ -69,7 +69,8 @@
   }
 }
 
-.hero-banner-body, .hero_banner-body {
+.hero-banner-body,
+.hero_banner-body {
   bottom: 0;
   cursor: grab;
   font-family: $bold-font;
@@ -174,9 +175,17 @@
     line-height: 22px;
     line-height: 24px;
     padding: 8px 17px;
+    display: inline-block;
 
     &:hover {
       text-decoration: none;
     }
+  }
+}
+
+// Hero wrapper class
+.hero-banner-outer-section {
+  & > .block-title {
+    padding: 20px 0;
   }
 }

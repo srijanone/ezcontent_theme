@@ -1,7 +1,7 @@
 @import '../abstracts/variables';
 
 #layout-builder-modal {
-  a{
+  a {
     color: $color-primary;
   }
   .field--name-field-card {
@@ -109,7 +109,7 @@
     }
   }
 
-  select{
+  select {
     height: 34px;
     padding: 7px;
     margin-top: 4px;
@@ -117,12 +117,12 @@
   }
 }
 
-#drupal-off-canvas { 
+#drupal-off-canvas {
   background: $color-dark-gray-extra;
 
-  * , *:not(div) {
-    background-color: transparent;  
-  }
+  // * , *:not(div) {
+  //   background-color: transparent;
+  // }
 
   .layout-builder-configure-section {
     background: $color-dark-gray-extra-dk;
@@ -133,16 +133,16 @@
     label {
       font-size: $default-font-size;
     }
-    input[type=text] {
+    input[type='text'] {
       height: 44px;
       border-radius: 4px;
-      padding: 10px; 
+      padding: 10px;
       border: 1px solid $color-dark-gray-extra;
     }
 
-    input[type="submit"] {
+    input[type='submit'] {
       &.button {
-        background-color: $color-primary!important;
+        background-color: $color-primary !important;
         color: $color-white;
         padding: 5px;
         min-width: 110px;
@@ -156,16 +156,15 @@
         &:hover,
         &:focus,
         &:active {
-          background-color: $color-primary-hover; 
+          background-color: $color-primary-hover;
         }
-        &:not(:focus){
-          border: 1px solid $color-primary-hover!important;
+        &:not(:focus) {
+          border: 1px solid $color-primary-hover !important;
         }
       }
     }
   }
 }
-
 
 ul.paragraphs-add-dialog-list input.field-add-more-submit {
   background-color: $color-shortcut-btn;
@@ -220,19 +219,20 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       input.form-text,
       textarea {
         width: 100%;
-        visibility: visible!important;
+        visibility: visible !important;
       }
-      
-      input[type=text]{
+
+      input[type='text'] {
         height: 44px;
         border-radius: 4px;
-        padding: 10px; 
+        padding: 10px;
         border: 1px solid $color-dark-gray-extra;
       }
 
       .form-managed-file--image {
         .file--image {
-          a, .file__size {
+          a,
+          .file__size {
             color: $color-white;
           }
         }
@@ -249,16 +249,16 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
           &:hover,
           &:focus,
           &:active {
-            background-color: $color-primary-hover; 
+            background-color: $color-primary-hover;
           }
-          &:not(:focus){
+          &:not(:focus) {
             border: 1px solid $color-primary;
           }
         }
       }
 
       .form-item__label {
-        color: $color-white!important;
+        color: $color-white !important;
       }
       .vertical-tabs {
         margin-bottom: 0;
@@ -286,7 +286,8 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
     .image-data__crop-wrapper {
       .claro-details__summary {
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: $color-white;
         }
       }
@@ -306,21 +307,21 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
         background-color: $color-primary-hover;
         color: $color-cyan-blue;
       }
-      .paragraphs-label{
+      .paragraphs-label {
         color: $color-white;
         font-weight: 600;
       }
-      .paragraphs-description{
+      .paragraphs-description {
         color: $color-white;
       }
     }
 
-    .button:not(:focus){
-      border: 2px solid $color-primary!important;
+    .button:not(:focus) {
+      border: 2px solid $color-primary !important;
       cursor: pointer;
       &:hover {
         background-color: $color-primary-hover;
-        border: 2px solid $color-primary-hover!important;
+        border: 2px solid $color-primary-hover !important;
       }
     }
   }
@@ -418,9 +419,9 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       &:hover,
       &:focus,
       &:active {
-        background-color: $color-primary-hover; 
+        background-color: $color-primary-hover;
       }
-      &:not(:focus){
+      &:not(:focus) {
         border: 1px solid $color-primary;
       }
     }
@@ -430,7 +431,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     background-color: $color-dark-gray-extra;
     border-top: 0;
     padding-top: 0;
-    .button  {
+    .button {
       display: block;
       box-shadow: none;
       background-color: $color-primary;
@@ -444,9 +445,9 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       &:hover,
       &:focus,
       &:active {
-        background-color: $color-primary-hover; 
+        background-color: $color-primary-hover;
       }
-      &:not(:focus){
+      &:not(:focus) {
         border: 1px solid $color-primary;
       }
     }
@@ -529,19 +530,20 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     font-size: $default-font-size;
   }
 
-  .dialog-header{
-    input[type=search]{
-    height: 44px;
-    border-radius: 4px;
-    padding: 10px; 
-    border: 1px solid $color-dark-gray-extra;
+  .dialog-header {
+    input[type='search'] {
+      height: 44px;
+      border-radius: 4px;
+      padding: 10px;
+      border: 1px solid $color-dark-gray-extra;
     }
-    .display-toggle.style-tiles, .display-toggle.style-list {
+    .display-toggle.style-tiles,
+    .display-toggle.style-list {
       background-color: $color-white;
       border: 0;
     }
-  } 
-  .category-title{
+  }
+  .category-title {
     color: $color-white;
   }
 }
@@ -551,7 +553,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   border: 0;
 }
 
-.node--type-landing-page .ui-dialog .tabledrag-toggle-weight{
+.node--type-landing-page .ui-dialog .tabledrag-toggle-weight {
   background-color: $color-primary;
   color: $color-white;
   padding: 5px 10px;
@@ -566,7 +568,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   &:focus,
   &:active {
     color: $color-white;
-    background-color: $color-primary-hover; 
+    background-color: $color-primary-hover;
   }
 }
 
@@ -580,8 +582,8 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
     tr th.field-label {
       .label {
-      display: inline-block;
-      padding-top: 5px;
+        display: inline-block;
+        padding-top: 5px;
       }
 
       .paragraphs-actions {
@@ -674,9 +676,9 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
               a {
                 color: $color-white;
               }
-              .field--name-field-link{
+              .field--name-field-link {
                 a {
-                 color: $color-white;
+                  color: $color-white;
                 }
               }
             }
@@ -715,7 +717,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 }
 
 // layout builder page
-.node-layout-builder-form {  
+.node-layout-builder-form {
   margin: 15px auto;
   .button {
     font-family: $article-font-regular;
@@ -730,21 +732,21 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     padding: 6px 12px;
     border: 0;
     margin: 0 5px 7px 0;
-    &:hover{
+    &:hover {
       background-color: $color-primary-hover;
       cursor: pointer;
     }
   }
-  #edit-preview-toggle{
+  #edit-preview-toggle {
     margin: 10px 0;
   }
   .vertical-tabs__panes {
     padding: 7px;
   }
-  .js-form-type-select{
+  .js-form-type-select {
     margin: 7px 0;
   }
-  select{
+  select {
     border: 1px solid $color-border-line;
     border-radius: 4px;
     padding: 4px;
@@ -753,20 +755,20 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   }
 }
 
-// layout-builder 
-.layout-builder{
-  .layout-builder__add-section{
+// layout-builder
+.layout-builder {
+  .layout-builder__add-section {
     border-radius: 5px;
     font-family: $article-font-regular;
     border: 2px dashed $color-green-lt-hover;
     font-size: $min-font-size;
-    a{
-    &:hover {
-      background-color: $color-green-lt;
+    a {
+      &:hover {
+        background-color: $color-green-lt;
       }
     }
   }
-  .layout-builder__add-block{
+  .layout-builder__add-block {
     border-radius: 5px;
     border: 2px dashed $color-primary;
     font-family: $article-font-regular;
@@ -774,4 +776,3 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     font-size: $min-font-size;
   }
 }
-

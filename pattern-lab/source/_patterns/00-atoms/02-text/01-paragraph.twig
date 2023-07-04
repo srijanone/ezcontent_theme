@@ -11,7 +11,7 @@
  *   for example: A formatted text field in Drupal
  */
 #}
-{% if paragraph_content %}
+{% if paragraph_content or hideDummyText %}
 {% set paragraph_base_class = paragraph_base_class|default('paragraph') %}
 
 <div {% if class %} class= "{{ class }}" {% endif %}>

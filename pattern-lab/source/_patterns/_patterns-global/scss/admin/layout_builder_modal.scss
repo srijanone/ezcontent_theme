@@ -776,3 +776,24 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     font-size: $min-font-size;
   }
 }
+
+.layout-builder__section {
+  .background-image-section {
+    &.layout--twocol-section {
+      .hero-banner-wrapper {
+        @media screen and (max-width: 1390px) {
+          height: 580px;
+        }
+        @media screen and (max-width: 575px) {
+          height: auto;
+        }
+        .hero-banner-body,
+        .hero_banner-body {
+          @media screen and (max-width: 575px) {
+            position: static !important;
+          }
+        }
+      }
+    }
+  }
+}

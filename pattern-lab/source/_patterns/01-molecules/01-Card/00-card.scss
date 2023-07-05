@@ -160,8 +160,11 @@
 }
 
 // layout with background image
-.background-image-section {
+.background-image-section.layout--twocol-section {
   .layout-builder-block {
     background-color: transparent;
+  }
+  .layout__region {
+    padding: 0;
   }
 }

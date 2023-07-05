@@ -66,14 +66,26 @@
     } //tab
   }
 
+  @if $breakpoint == tabMax {
+    @media only screen and (max-width: $screen-sm) {
+      @content;
+    } //tab
+  }
+
   @if $breakpoint == desktop {
     @media only screen and (min-width: $screen-md) {
       @content;
     } //desktop
   }
 
-  @if $breakpoint == large-desktop {
-    @media only screen and (min-width: $screen-lg) {
+  @if $breakpoint == desktopMax {
+    @media only screen and (max-width: $screen-md) {
+      @content;
+    } //desktop
+  }
+
+  @if $breakpoint == large-desktopMax {
+    @media only screen and (max-width: $screen-lg) {
       @content;
     } //desktop
   }
@@ -145,5 +157,6 @@
 
 //shadow box
 @mixin shadow-box {
- box-shadow: -8px -8px 40px rgba(245, 245, 245, 0.8), 20px 20px 40px rgba(226, 229, 236, 0.98), -6px -6px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: -8px -8px 40px rgba(245, 245, 245, 0.8),
+    20px 20px 40px rgba(226, 229, 236, 0.98), -6px -6px 16px rgba(0, 0, 0, 0.2);
 }

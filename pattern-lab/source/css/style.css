@@ -1889,6 +1889,13 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   font-size: 13px;
 }
 
+.layout-builder__section .background-image-section.layout--twocol-section .slick__slide {
+  pointer-events: all;
+}
+.layout-builder__section .background-image-section.layout--twocol-section .hero-banner-wrapper {
+  max-height: 270px;
+  overflow-y: scroll;
+}
 @media screen and (max-width: 1390px) {
   .layout-builder__section .background-image-section.layout--twocol-section .hero-banner-wrapper {
     height: 580px;
@@ -2368,6 +2375,11 @@ section[class*=block-views-blockcontent-moderation-view-blocks-] .view-content-m
 
 .background-image-section.layout--twocol-section .layout-builder-block {
   background-color: transparent;
+}
+.background-image-section.layout--twocol-section .layout-builder-block.is-layout-builder-highlighted .hero-banner-body {
+  top: 20px;
+  bottom: auto;
+  padding: 20px;
 }
 .background-image-section.layout--twocol-section .layout__region {
   padding: 0;

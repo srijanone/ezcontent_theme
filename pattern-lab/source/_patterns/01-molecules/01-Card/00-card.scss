@@ -163,5 +163,12 @@
 .background-image-section {
   .layout-builder-block {
     background-color: transparent;
+    &.is-layout-builder-highlighted {
+      .hero-banner-body {
+        top: 20px;
+        bottom: auto;
+        padding: 20px;
+      }
+    }
   }
 }

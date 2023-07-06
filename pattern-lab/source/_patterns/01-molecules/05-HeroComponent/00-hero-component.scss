@@ -77,6 +77,9 @@
   height: auto;
   left: 0;
   padding: 20px 70px;
+  @include respond(desktopMax) {
+    padding: 20px 30px;
+  }
 
   &.center {
     text-align: center;
@@ -118,7 +121,7 @@
       font-size: 30px;
       line-height: 36px;
     }
-    display: none;
+    //display: none;
     font-family: $bold-font;
     font-size: 24px;
     line-height: 30px;
@@ -136,7 +139,7 @@
     line-height: 36px;
   }
   border-color: transparent;
-  display: none;
+  //display: none;
   font-size: 24px;
   line-height: 30px;
 }
@@ -152,7 +155,7 @@
     padding: 5px 10px;
   }
   border-color: transparent;
-  display: none;
+  //display: none;
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 0;
@@ -162,7 +165,7 @@
   @include respond(tab) {
     display: block;
   }
-  display: none;
+  //display: none;
   padding: 0 10px;
 
   a {
@@ -187,5 +190,8 @@
 .hero-banner-outer-section {
   & > .block-title {
     padding: 20px 0;
+    @include respond(desktopMax) {
+      padding: 16px 0;
+    }
   }
 }

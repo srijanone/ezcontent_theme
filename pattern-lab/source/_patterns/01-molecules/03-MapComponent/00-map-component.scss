@@ -92,5 +92,8 @@
 .map-component-outer-section {
   & > .block-title {
     padding: 20px 0;
+    @include respond(desktopMax) {
+      padding: 16px 0;
+    }
   }
 }

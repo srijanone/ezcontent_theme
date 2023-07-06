@@ -780,7 +780,12 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 .layout-builder__section {
   .background-image-section {
     &.layout--twocol-section {
+      .slick__slide {
+        pointer-events: all;
+      }
       .hero-banner-wrapper {
+        max-height: 270px;
+        overflow-y: scroll;
         @media screen and (max-width: 1390px) {
           height: 580px;
         }

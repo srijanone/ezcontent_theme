@@ -52,24 +52,28 @@
   {% endif %}
 </div>
 
-<div class="hero-banner-btn-wrapper">
-  {% if assets.url %}
-    {% for key, value in assets.url %}
-      {% include '@atoms/12-links/00-links.twig' with {
+{% if assets.url %}
+	<div class="hero-banner-btn-wrapper">
+		{% for key, value in assets.url %}
+			{% include '@atoms/12-links/00-links.twig' with {
         key: loop.index,
         url: value.link,
         text: value.title,
         class: 'rounded-0'
       } %}
-    {% endfor %}
-  {% else %}
-    {% for key, value in heroComponent.heroAsset.url %}
-      {% include '@atoms/12-links/00-links.twig' with {
+		{% endfor %}
+	</div>
+{% else %}
+	{% if heroComponent.heroAsset.url[0].link and heroComponent.heroAsset.url[0].title %}
+		<div class="hero-banner-btn-wrapper">
+			{% for key, value in heroComponent.heroAsset.url %}
+				{% include '@atoms/12-links/00-links.twig' with {
         key: loop.index,
         url: value.link,
         text: value.title,
         class: 'rounded-0'
       } %}
-    {% endfor %}
-  {% endif %}
-</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+{% endif %}

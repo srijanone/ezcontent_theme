@@ -4,7 +4,7 @@ framework:
       css/_patterns-global/style.css: {}
       css/00-atoms/05-forms/00-form.css: {}
       css/01-molecules/05-HeroComponent/00-hero-component.css: {}
-      css/01-molecules/05-HeroComponent/00-hero-carousel.css: {}
+      css/01-molecules/05-HeroComponent/01-hero-carousel.css: {}
       css/01-molecules/03-MapComponent/00-map-component.css: {}
       css/01-molecules/11-Embed/00-embed.css: {}
       css/01-molecules/04-SocialMedia/00-social-media.css: {}

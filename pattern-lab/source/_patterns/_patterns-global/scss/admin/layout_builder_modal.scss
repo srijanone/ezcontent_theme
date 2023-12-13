@@ -488,7 +488,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   width: 1.25rem;
 }
 
-.node--type-landing-page .ui-dialog {
+.node--type-landing-page #drupal-off-canvas-wrapper .ui-dialog {
   background-color: $color-bg-table-rows;
   border-radius: 0;
   height: 100vh !important;
@@ -505,6 +505,81 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     width: 85% !important;
   }
 }
+
+.node--type-landing-page #drupal-off-canvas-wrapper {
+  padding: 0 6px;
+  min-width: 450px !important;
+  #drupal-off-canvas {
+    padding: 0 10px;
+    .layout-builder-add-block {
+      .form-wrapper {
+        .field-multiple-table {
+          // width: 100%;
+          // all: inherit;
+          // thead,tbody,tr,td,th {
+          //   width: 100%;
+          //   all: inherit;
+          // }
+          tbody {
+            .form-wrapper {
+              .form-wrapper {
+                .form-wrapper {
+                  img {
+                    display: block;
+                    margin: 0 auto;
+                  }
+                }
+              }
+            }
+            td {
+              .paragraphs-actions {
+                position: static;
+                margin-top: 10px;
+                input {
+                  width: auto;
+                }
+                .paragraphs-dropdown-toggle {
+                  all: inherit;
+                }
+              }
+              .field--name-field-media {
+                .form-wrapper {
+                  .form-wrapper {
+                    input[value="Select image(s)"] {
+                      margin: 10px 0;
+                    }
+                  }
+                }
+              }
+            }
+            .paragraph-type--card {
+              &:hover {
+                background-color: transparent;
+              }
+            }
+          }
+          thead {
+            tr {
+              padding: 0;
+              th {
+                padding: 0;
+                h4 {
+                  margin: 0;
+                  line-height: normal;
+                }
+              }
+            }
+          }
+        }
+      }
+      &* {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+
 
 .node--type-landing-page .ui-dialog:not(.ui-dialog-off-canvas) {
   background-color: $color-dark-gray-extra;
@@ -800,5 +875,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
         }
       }
     }
+  }
+}
+
+
+#layout-builder-modal details.form-wrapper  {
+  .layout-builder-browser-block-item {
+    max-width: 33.3%;
+    display: inline-block;
+    padding: 0 5px;
   }
 }

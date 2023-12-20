@@ -9,7 +9,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^7.0.0",
     "gulp-pixrem": "^1.0.0",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sass-glob": "^1.0.8",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",

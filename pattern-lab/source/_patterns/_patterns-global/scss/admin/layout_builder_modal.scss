@@ -878,11 +878,35 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   }
 }
 
+#layout-builder-modal {
+  height: 100vh !important;
+  min-height: 94.8125px !important;
+  max-height: 625.812px !important;
+  background-color: #333e50;
+  color: #fff;
 
-#layout-builder-modal details.form-wrapper  {
-  .layout-builder-browser-block-item {
-    max-width: 33.3%;
-    display: inline-block;
-    padding: 0 5px;
+  .form-item-settings-admin-label {
+    display: none !important;
+  }
+
+  details.form-wrapper {
+    background-color: white;
+
+    .layout-builder-browser-block-item {
+      max-width: 33.3%;
+      display: inline-block;
+      padding: 0 5px;
+    }
+
+    summary {
+      color: white;
+      background-color: #333e50;
+    }
+  }
+
+  a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
   }
 }

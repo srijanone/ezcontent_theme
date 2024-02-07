@@ -4,6 +4,7 @@
   a {
     color: $color-primary;
   }
+
   .field--name-field-card {
     padding: 0;
 
@@ -54,10 +55,10 @@
   }
 
   [id^='edit-block-form'] {
-    > .col-auto {
+    >.col-auto {
       padding: 0;
 
-      > .col-auto {
+      >.col-auto {
         padding: 0;
       }
     }
@@ -133,6 +134,7 @@
     label {
       font-size: $default-font-size;
     }
+
     input[type='text'] {
       height: 44px;
       border-radius: 4px;
@@ -158,6 +160,7 @@
         &:active {
           background-color: $color-primary-hover;
         }
+
         &:not(:focus) {
           border: 1px solid $color-primary-hover !important;
         }
@@ -231,11 +234,13 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
       .form-managed-file--image {
         .file--image {
+
           a,
           .file__size {
             color: $color-white;
           }
         }
+
         .button {
           background-color: $color-primary;
           color: $color-white;
@@ -251,6 +256,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
           &:active {
             background-color: $color-primary-hover;
           }
+
           &:not(:focus) {
             border: 1px solid $color-primary;
           }
@@ -260,8 +266,10 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       .form-item__label {
         color: $color-white !important;
       }
+
       .vertical-tabs {
         margin-bottom: 0;
+
         .vertical-tabs__item.vertical-tabs__pane {
           padding: 10px;
 
@@ -286,6 +294,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 
     .image-data__crop-wrapper {
       .claro-details__summary {
+
         &:hover,
         &:focus {
           color: $color-white;
@@ -307,10 +316,12 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
         background-color: $color-primary-hover;
         color: $color-cyan-blue;
       }
+
       .paragraphs-label {
         color: $color-white;
         font-weight: 600;
       }
+
       .paragraphs-description {
         color: $color-white;
       }
@@ -319,6 +330,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     .button:not(:focus) {
       border: 2px solid $color-primary !important;
       cursor: pointer;
+
       &:hover {
         background-color: $color-primary-hover;
         border: 2px solid $color-primary-hover !important;
@@ -327,16 +339,20 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
   }
 
   form {
-    > .form-wrapper {
+    >.form-wrapper {
       background: $color-dark-gray-extra-dk;
       color: $color-white;
       margin-bottom: 20px;
       padding: 20px;
       border-radius: 4px;
+
+      .ck-editor__main {
+        color: $color-black;
+      }
     }
 
     &.shortcut-form {
-      > .form-wrapper {
+      >.form-wrapper {
         margin-bottom: 0;
         padding: 0 20px;
       }
@@ -421,6 +437,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       &:active {
         background-color: $color-primary-hover;
       }
+
       &:not(:focus) {
         border: 1px solid $color-primary;
       }
@@ -431,6 +448,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     background-color: $color-dark-gray-extra;
     border-top: 0;
     padding-top: 0;
+
     .button {
       display: block;
       box-shadow: none;
@@ -442,11 +460,13 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       cursor: pointer;
       font-family: $article-font-semi-bold;
       font-size: $min-font-size;
+
       &:hover,
       &:focus,
       &:active {
         background-color: $color-primary-hover;
       }
+
       &:not(:focus) {
         border: 1px solid $color-primary;
       }
@@ -509,11 +529,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 .node--type-landing-page #drupal-off-canvas-wrapper {
   padding: 0 6px;
   min-width: 450px !important;
+
   #drupal-off-canvas {
     padding: 0 10px;
+
     .layout-builder-add-block {
       .form-wrapper {
         .field-multiple-table {
+
           // width: 100%;
           // all: inherit;
           // thead,tbody,tr,td,th {
@@ -531,17 +554,21 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
                 }
               }
             }
+
             td {
               .paragraphs-actions {
                 position: static;
                 margin-top: 10px;
+
                 input {
                   width: auto;
                 }
+
                 .paragraphs-dropdown-toggle {
                   all: inherit;
                 }
               }
+
               .field--name-field-media {
                 .form-wrapper {
                   .form-wrapper {
@@ -552,17 +579,21 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
                 }
               }
             }
+
             .paragraph-type--card {
               &:hover {
                 background-color: transparent;
               }
             }
           }
+
           thead {
             tr {
               padding: 0;
+
               th {
                 padding: 0;
+
                 h4 {
                   margin: 0;
                   line-height: normal;
@@ -572,6 +603,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
           }
         }
       }
+
       &* {
         font-weight: normal;
       }
@@ -599,6 +631,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     height: 85vh !important;
     max-height: 85% !important;
   }
+
   label {
     color: $color-white;
     font-weight: 700;
@@ -612,12 +645,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       padding: 10px;
       border: 1px solid $color-dark-gray-extra;
     }
+
     .display-toggle.style-tiles,
     .display-toggle.style-list {
       background-color: $color-white;
       border: 0;
     }
   }
+
   .category-title {
     color: $color-white;
   }
@@ -667,6 +702,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
         }
       }
     }
+
     th.tabledrag-hide {
       vertical-align: inherit;
     }
@@ -748,9 +784,11 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
             .card-text-content {
               color: $color-white;
               padding: 20px;
+
               a {
                 color: $color-white;
               }
+
               .field--name-field-link {
                 a {
                   color: $color-white;
@@ -794,6 +832,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 // layout builder page
 .node-layout-builder-form {
   margin: 15px auto;
+
   .button {
     font-family: $article-font-regular;
     background-color: $color-primary;
@@ -807,20 +846,25 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     padding: 6px 12px;
     border: 0;
     margin: 0 5px 7px 0;
+
     &:hover {
       background-color: $color-primary-hover;
       cursor: pointer;
     }
   }
+
   #edit-preview-toggle {
     margin: 10px 0;
   }
+
   .vertical-tabs__panes {
     padding: 7px;
   }
+
   .js-form-type-select {
     margin: 7px 0;
   }
+
   select {
     border: 1px solid $color-border-line;
     border-radius: 4px;
@@ -837,12 +881,14 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     font-family: $article-font-regular;
     border: 2px dashed $color-green-lt-hover;
     font-size: $min-font-size;
+
     a {
       &:hover {
         background-color: $color-green-lt;
       }
     }
   }
+
   .layout-builder__add-block {
     border-radius: 5px;
     border: 2px dashed $color-primary;
@@ -858,15 +904,19 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       .slick__slide {
         pointer-events: all;
       }
+
       .hero-banner-wrapper {
         max-height: 270px;
         overflow-y: scroll;
+
         @media screen and (max-width: 1390px) {
           height: 580px;
         }
+
         @media screen and (max-width: 575px) {
           height: auto;
         }
+
         .hero-banner-body,
         .hero_banner-body {
           @media screen and (max-width: 575px) {
@@ -911,4 +961,3 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
     text-decoration: none;
   }
 }
-

@@ -333,6 +333,9 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
       margin-bottom: 20px;
       padding: 20px;
       border-radius: 4px;
+      .ck-editor__main {
+        color: $color-black;
+      }
     }
 
     &.shortcut-form {
